@@ -1,0 +1,102 @@
+{
+ "meta": {
+  "id": "pauvrete_monetaire",
+  "nom": "Taux de pauvreté monétaire (seuil à 60 % du revenu médian)",
+  "categorie": "Niveau de vie et bien-être",
+  "organisme": "Commission européenne — Eurostat",
+  "dataset": "ilc_li02",
+  "unite": "% de la population",
+  "decimales": 1,
+  "perimetre_geographique": "France",
+  "perimetre_institutionnel": "Ensemble de la population, enquête européenne SILC",
+  "periodicite_observation": "annuelle",
+  "frequence_publication": "annuelle (enquête SILC)",
+  "url_source": "https://ec.europa.eu/eurostat/databrowser/view/ilc_li02/default/table?lang=en",
+  "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
+  "date_publication": "2026-10-20T11:00:00+0200",
+  "date_collecte": "2026-11-06T18:22:55+00:00",
+  "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_li02?format=JSON&lang=EN&geo=FR&statinfo=MED_EI&unit=PC&rskpovth=B_60&sex=T&age=TOTAL&sinceTimePeriod=2010"
+ },
+ "observations": [
+  {
+   "periode": "2010",
+   "valeur": 13.3,
+   "statut": "publié"
+  },
+  {
+   "periode": "2011",
+   "valeur": 14.0,
+   "statut": "publié"
+  },
+  {
+   "periode": "2012",
+   "valeur": 14.1,
+   "statut": "publié"
+  },
+  {
+   "periode": "2013",
+   "valeur": 13.7,
+   "statut": "publié"
+  },
+  {
+   "periode": "2014",
+   "valeur": 13.3,
+   "statut": "publié"
+  },
+  {
+   "periode": "2015",
+   "valeur": 13.6,
+   "statut": "publié"
+  },
+  {
+   "periode": "2016",
+   "valeur": 13.6,
+   "statut": "publié"
+  },
+  {
+   "periode": "2017",
+   "valeur": 13.2,
+   "statut": "publié"
+  },
+  {
+   "periode": "2018",
+   "valeur": 13.4,
+   "statut": "publié"
+  },
+  {
+   "periode": "2019",
+   "valeur": 13.6,
+   "statut": "publié"
+  },
+  {
+   "periode": "2020",
+   "valeur": 14.2,
+   "statut": "rupture de série"
+  },
+  {
+   "periode": "2021",
+   "valeur": 14.3,
+   "statut": "publié"
+  },
+  {
+   "periode": "2022",
+   "valeur": 15.6,
+   "statut": "rupture de série"
+  },
+  {
+   "periode": "2023",
+   "valeur": 15.4,
+   "statut": "publié"
+  },
+  {
+   "periode": "2024",
+   "valeur": 15.9,
+   "statut": "publié"
+  },
+  {
+   "periode": "2025",
+   "valeur": 16.3,
+   "statut": "publié"
+  }
+ ]
+}

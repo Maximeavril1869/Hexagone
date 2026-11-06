@@ -15,7 +15,7 @@
   "url_source": "https://data.ecb.europa.eu/data/datasets/EXR",
   "licence": "Conditions de réutilisation de la BCE : mention de la source (à confirmer série par série)",
   "date_publication": null,
-  "date_collecte": "2026-11-06T18:04:35+00:00",
+  "date_collecte": "2026-11-06T18:22:55+00:00",
   "url_requete": "https://data-api.ecb.europa.eu/service/data/EXR/D.USD.EUR.SP00.A?format=csvdata&lastNObservations=120"
  },
  "observations": [
