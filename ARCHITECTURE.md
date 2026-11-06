@@ -103,7 +103,8 @@ Chaque mesure a une fiche : ce qu'elle change, délais légaux, effets en fourch
 ## 12. Décisions prises et points ouverts
 
 - Marchés : pas de pétrole à l'étape 1 (le Brent EIA exige une clé gratuite). Il viendra plus tard, quand le compte EIA sera créé. Pas de gaz en direct : hypothèse de scénario.
-- Points à vérifier à la première collecte réelle : les filtres Eurostat de chaque série (une réponse ambiguë est refusée avec un message explicite), la clé de la série BCE des taux à long terme, le rythme réel de mise à jour de chaque série.
+- Première collecte réelle faite : 10 séries sur 10 collectées, filtres Eurostat et clés BCE acceptés. Une série était périmée (inflation, jeu Eurostat figé fin 2025) : basculée sur `prc_hicp_minr`. Les producteurs peuvent changer de jeu de données sans prévenir : d'où le badge « données anciennes ».
+- Reste à confronter à une source indépendante : dette, solde public et PIB 2025 (ordres de grandeur plausibles).
 
 ## 13. Arborescence du dépôt
 
@@ -121,4 +122,4 @@ data/                             données normalisées (écrites par le collect
   <id_serie>.json                 série complète avec métadonnées
 ```
 
-Garde-fous du collecteur : une série en échec garde sa dernière version valide ; une réponse contenant plusieurs séries est refusée ; le statut de chaque série est écrit à chaque exécution ; les tests tournent avant chaque collecte.
+Garde-fous du collecteur : une série en échec garde sa dernière version valide ; une réponse contenant plusieurs séries est refusée ; le statut de chaque série est écrit à chaque exécution ; les tests tournent avant chaque collecte. Côté page, une série dont la dernière observation est plus ancienne que sa périodicité ne le permet (annuelle 700 jours, trimestrielle 200, mensuelle 130, quotidienne 12) reçoit le badge « données anciennes » ; les taux directeurs, valables jusqu'à la décision suivante, n'ont pas ce contrôle.

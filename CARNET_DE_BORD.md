@@ -35,8 +35,16 @@ Ce fichier retrace toutes les opérations effectuées, pour pouvoir reprendre le
 - La page est en ligne (GitHub Pages actif) et affiche l'état vide : aucune collecte n'a encore écrit de données dans le dépôt (vérifié : pas de dossier `data/` sur `main`).
 - Défaut corrigé : si toutes les séries échouaient, rien n'était enregistré et la page ne disait pas pourquoi. L'étape d'enregistrement du workflow s'exécute désormais même après un échec, et la page affiche les erreurs de la dernière collecte.
 
+### 2026-11-06 — Première collecte réelle et vérifications
+
+- Première collecte réussie : 10 séries sur 10, 12 fichiers poussés par `hexagone-bot`. L'application mobile GitHub affichait « Triggered via pull request » alors que le workflow n'a que deux déclencheurs (planification, lancement manuel) : probablement un affichage de l'application, non confirmé.
+- Vérifications contre des sources externes : taux BCE 2,5 % (dépôt) et 2,65 % (refinancement) au 16 septembre 2026, cohérents avec la presse (hausse de 25 points de base à cette date) ; chômage Eurostat 8,5 % en septembre 2026, cohérent avec l'Insee (8,1 % au T1 et 8,3 % au T2 2026) ; dette 2025 à 115,7 % du PIB et solde à −5,1 % : ordres de grandeur plausibles, pas encore confrontés à une source indépendante.
+- Anomalie : inflation arrêtée à 2025-12, dernière mise à jour par Eurostat en février 2026. Cause : le jeu `prc_hicp_manr` est figé fin 2025 ; son successeur est `prc_hicp_minr` (classification ECOICOP version 2, filtres `coicop18=TOTAL`, `unit=RCH_A`, `geo=FR`). Série basculée sur ce jeu.
+- Ajouts : badge « données anciennes » quand la dernière observation est plus vieille que ne le permet la périodicité de la série (aurait signalé l'anomalie de l'inflation) ; les taux directeurs BCE s'affichent « en vigueur depuis le [date de la dernière décision] », car la série ne change qu'aux décisions.
+- À vérifier au prochain lancement : l'inflation doit atteindre 2026-09 ou 2026-10. Si une erreur « série ambiguë » ou HTTP 400 apparaît sur cette série, lire le nom de la dimension dans le message et ajuster `sources.json`.
+
 ## Questions ouvertes
 
-- Résultat de la première collecte réelle : à lire dans l'onglet Actions et dans `data/status.json`.
-- Activation de GitHub Pages : à faire par le propriétaire du dépôt une fois la première collecte réussie.
+- Résultat du deuxième lancement de la collecte (inflation sur `prc_hicp_minr`) : à lire sur la page et dans `data/status.json`.
+- GitHub Pages : actif, la page s'ouvre sur iPhone.
 - Le texte de Perplexity contenait « [message 1/20] » : explication reçue (c'est son propre compteur), sans conséquence.

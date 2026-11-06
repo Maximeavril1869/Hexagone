@@ -39,6 +39,34 @@ function formatDate(iso) {
   });
 }
 
+// Date de fin de la période d'une observation (année, trimestre, mois ou jour).
+function periodEnd(period) {
+  let m;
+  if ((m = /^(\d{4})$/.exec(period))) return new Date(Date.UTC(+m[1], 11, 31));
+  if ((m = /^(\d{4})-Q([1-4])$/.exec(period))) return new Date(Date.UTC(+m[1], +m[2] * 3, 0));
+  if ((m = /^(\d{4})-(\d{2})$/.exec(period))) return new Date(Date.UTC(+m[1], +m[2], 0));
+  if ((m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(period))) return new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]));
+  return null;
+}
+
+// Âge maximal admis de la dernière observation, selon la périodicité de la série.
+// Une série qui dépasse cet âge est signalée : elle ne se met probablement plus à jour.
+function maxAgeDays(periodicity) {
+  const p = String(periodicity || "");
+  if (p.startsWith("annuelle")) return 700;
+  if (p.startsWith("trimestrielle")) return 200;
+  if (p.startsWith("mensuelle")) return 130;
+  if (p.startsWith("quotidienne")) return 12;
+  return null; // pas de contrôle (ex. taux directeurs, valables jusqu'à la décision suivante)
+}
+
+function isStale(serie) {
+  const limit = maxAgeDays(serie.periodicite_observation);
+  const end = periodEnd(serie.derniere.periode);
+  if (limit === null || end === null) return false;
+  return (Date.now() - end.getTime()) / 86400000 > limit;
+}
+
 function sparkline(points, decimals, unit) {
   const values = points.map((p) => p.valeur);
   const svg = document.createElementNS(SVG_NS, "svg");
@@ -86,10 +114,19 @@ function card(serie) {
     el("span", { class: "unite", text: serie.unite }),
   ]);
 
-  const period = el("p", { class: "periode" }, [
-    last.periode + " · ",
-    el("span", { class: "badge", text: last.statut }),
-  ]);
+  const periodLabel = (serie.libelle_periode ? serie.libelle_periode + " " : "") + last.periode;
+  const periodNodes = [periodLabel + " · ", el("span", { class: "badge", text: last.statut })];
+  if (isStale(serie)) {
+    periodNodes.push(
+      " ",
+      el("span", {
+        class: "badge badge-alerte",
+        title: "La dernière observation est plus ancienne que la périodicité de la série ne le laisse attendre : la source ne se met peut-être plus à jour.",
+        text: "données anciennes",
+      })
+    );
+  }
+  const period = el("p", { class: "periode" }, periodNodes);
 
   const link = el("a", { href: serie.url_source, target: "_blank", rel: "noopener noreferrer", text: "Jeu de données" });
 
