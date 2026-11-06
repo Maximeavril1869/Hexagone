@@ -105,6 +105,8 @@ function detailRow(label, content) {
   return [el("dt", { text: label }), el("dd", {}, [content])];
 }
 
+let EXPLICATIONS = { categories: {}, series: {} };
+
 function card(serie) {
   const decimals = Number.isInteger(serie.decimales) ? serie.decimales : 2;
   const last = serie.derniere;
@@ -134,9 +136,10 @@ function card(serie) {
   const ageDays = collected ? (Date.now() - collected.getTime()) / 86400000 : null;
   const stale = ageDays !== null && ageDays > STALE_DAYS;
 
-  const details = el("details", {}, [el("summary", { text: "Source, périmètre et licence" })]);
+  const details = el("details", {}, [el("summary", { text: "C'est quoi ? Source, périmètre et licence" })]);
   const dl = el("dl");
   const rows = [
+    ["En clair", EXPLICATIONS.series[serie.id] || "Pas d'explication rédigée pour cette série."],
     ["Producteur", serie.organisme],
     ["Jeu de données", link],
     ["Périmètre", serie.perimetre_institutionnel + " — " + serie.perimetre_geographique],
@@ -216,6 +219,12 @@ async function main() {
     /* le statut est facultatif */
   }
 
+  try {
+    EXPLICATIONS = Object.assign({ categories: {}, series: {} }, await loadJson("explications.json"));
+  } catch (err) {
+    /* les explications sont facultatives */
+  }
+
   const series = index.series || [];
   if (series.length === 0) {
     if ((status.resultats || []).length > 0) {
@@ -243,6 +252,9 @@ async function main() {
     const members = series.filter((s) => s.categorie === category);
     if (members.length === 0) continue;
     sections.push(el("h2", { text: category }));
+    if (EXPLICATIONS.categories[category]) {
+      sections.push(el("p", { class: "intro", text: EXPLICATIONS.categories[category] }));
+    }
     sections.push(el("div", { class: "grille" }, members.map(card)));
   }
   main.replaceChildren(...sections);

@@ -158,7 +158,7 @@
       "source": "eurostat",
       "organisme": "Commission européenne — Eurostat",
       "dataset": "ilc_li02",
-      "params": {"geo": "FR"},
+      "params": {"geo": "FR", "statinfo": "MED_EI", "unit": "PC", "rskpovth": "B_60", "sex": "T", "age": "TOTAL"},
       "since": "2010",
       "keep": 20,
       "unite": "% de la population",

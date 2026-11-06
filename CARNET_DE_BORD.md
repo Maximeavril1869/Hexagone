@@ -57,9 +57,15 @@ Ce fichier retrace toutes les opérations effectuées, pour pouvoir reprendre le
 - Échec : pauvreté monétaire. Eurostat répond « Dimension INDIC_IL is not defined » : `ilc_li02` n'a plus cette dimension. Filtres réduits à la France seule, pour que la prochaine erreur liste les vraies dimensions et leurs codes.
 - Drapeaux Eurostat désormais traduits (u faible fiabilité, r révisé, d définition différente, c confidentiel, n non significatif, s estimation d'Eurostat, i voir les métadonnées, z sans objet).
 
+### 2026-11-06 (soir) — Pauvreté corrigée et explications en clair
+
+- La collecte de 19:04 a listé les dimensions de `ilc_li02` : `statinfo` (MED_EI / MEAN_EI), `unit` (PC / THS_PER), `rskpovth` (A_40…B_70), `sex`, `age`. Filtres posés : `statinfo=MED_EI`, `unit=PC`, `rskpovth=B_60` (sous 60 % du revenu médian), `sex=T`, `age=TOTAL`. À confirmer au prochain lancement.
+- Ajout de `explications.json` (écrit à la main, hors collecte) : une phrase d'introduction par rubrique et une explication « En clair » par série, affichée en tête du déroulé de chaque carte. Aucune collecte nécessaire pour qu'elles apparaissent.
+- Lenteur d'actualisation signalée par l'utilisateur : pas de cause établie (voir échange). Pistes : déploiement de GitHub Pages après chaque envoi du robot, cache du navigateur ou de l'application installée.
+
 ## Questions ouvertes
 
-- Pauvreté monétaire : relancer la collecte, lire la liste des dimensions et codes affichée sur la page, puis fixer les filtres de `ilc_li02`.
+- Pauvreté monétaire : relancer la collecte pour confirmer les nouveaux filtres.
 - GitHub Pages : actif, la page s'ouvre sur iPhone.
 - Étape 1b suivante : Insee (pouvoir d'achat par unité de consommation), Data Économie, AFT, OFGL.
 - Le texte de Perplexity contenait « [message 1/20] » : explication reçue (c'est son propre compteur), sans conséquence.

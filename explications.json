@@ -1,0 +1,25 @@
+{
+ "categories": {
+  "Finances publiques": "Les comptes de l'ensemble des administrations (État, collectivités, Sécurité sociale). Ce sont les chiffres que le budget cherche à faire bouger.",
+  "Économie": "L'état de santé de l'activité : est-ce que le pays produit plus, les prix montent-ils, les gens ont-ils du travail.",
+  "Niveau de vie et bien-être": "Ce que vivent concrètement les ménages : revenus, inégalités, pauvreté, durée de vie, satisfaction. Ce sont ces indicateurs qui diront si une décision rend les gens mieux lotis.",
+  "Taux et changes": "Le prix de l'argent : ce que coûte un emprunt et la valeur de l'euro. Ils pèsent directement sur le coût de la dette."
+ },
+ "series": {
+  "dette_publique_pib": "Tout ce que doivent les administrations publiques, rapporté à la richesse produite en un an. Au-dessus de 100 %, la dette dépasse une année entière de production du pays.",
+  "deficit_public_pib": "Écart entre ce que les administrations dépensent et ce qu'elles encaissent sur l'année, rapporté au PIB. Un chiffre négatif est un déficit : l'argent manquant est emprunté, ce qui fait grossir la dette.",
+  "pib_valeur": "Valeur de tout ce qui est produit en France sur l'année, en euros courants (non corrigés de l'inflation). C'est la taille de l'économie et la base de comparaison des autres ratios.",
+  "croissance_pib_trim": "Variation de la production d'un trimestre à l'autre, une fois l'inflation retirée. Positif : l'économie progresse ; négatif : elle recule. Deux trimestres négatifs de suite s'appellent une récession.",
+  "inflation_ipch": "Hausse des prix sur un an, mesurée à la méthode européenne (comparable entre pays). Elle diffère légèrement de l'indice national de l'Insee, souvent de quelques dixièmes.",
+  "chomage_bit": "Part des actifs sans emploi, qui en cherchent un et sont disponibles, selon la définition du Bureau international du travail. Les variations de saison sont retirées pour comparer les mois entre eux.",
+  "revenu_reel_menages": "Ce qu'un habitant dispose en moyenne pour dépenser, après impôts et prestations et après inflation, comparé à 2008 (= 100). Au-dessus de 100, le pouvoir d'achat a progressé depuis 2008. C'est une approximation du pouvoir d'achat, pas la mesure de l'Insee.",
+  "gini_revenus": "Mesure des inégalités de revenus de 0 à 100. À 0, tout le monde gagne pareil ; à 100, une seule personne capte tout. Plus le chiffre monte, plus les inégalités sont fortes.",
+  "pauvrete_monetaire": "Part de la population dont le revenu est inférieur à 60 % du revenu médian du pays. C'est une pauvreté relative : elle mesure l'écart avec le niveau de vie habituel, pas un manque absolu.",
+  "esperance_vie_naissance": "Nombre d'années qu'un nouveau-né vivrait si les risques de décès de l'année en cours restaient les mêmes toute sa vie. C'est un reflet de la santé et des conditions de vie d'un pays.",
+  "satisfaction_vie": "Note donnée par les habitants à leur vie, de 0 à 10, lors d'une enquête. Elle n'est pas faite chaque année, et le drapeau « faible fiabilité » signale des données moins solides. Dans le simulateur, elle sera estimée par un modèle.",
+  "taux_depot_bce": "Taux que la Banque centrale européenne verse aux banques qui lui déposent de l'argent. C'est son taux directeur principal : quand il monte, les crédits deviennent plus chers. La valeur affichée reste en vigueur jusqu'à la décision suivante.",
+  "taux_refi_bce": "Taux auquel les banques empruntent à la BCE pour une semaine. Il suit le taux de dépôt, avec un écart fixé par la BCE. La valeur reste en vigueur jusqu'à la décision suivante.",
+  "taux_long_terme_fr": "Taux auquel l'État français emprunte sur environ 10 ans. C'est ce qui détermine le coût de la dette quand elle est renouvelée : plus il monte, plus les intérêts pèsent sur le budget.",
+  "eur_usd": "Combien de dollars on obtient pour un euro, au taux de référence de la BCE. Un euro fort rend les importations moins chères mais pénalise les exportations."
+ }
+}

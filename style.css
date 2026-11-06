@@ -100,3 +100,4 @@ a { color: var(--accent); }
 }
 
 .pied { max-width: 1100px; margin: 32px auto 24px; font-size: 0.85rem; color: var(--texte-doux); }
+.intro { margin: -4px 0 12px; font-size: 0.9rem; color: var(--texte-doux); }
