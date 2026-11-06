@@ -181,7 +181,17 @@ async function main() {
 
   const series = index.series || [];
   if (series.length === 0) {
-    showEmpty(main);
+    if ((status.resultats || []).length > 0) {
+      // Une collecte a eu lieu mais n'a rien produit : on montre pourquoi.
+      document.getElementById("collecte").textContent =
+        "Dernière collecte : " + formatDate(status.execution || index.genere) + " — aucune série collectée.";
+      showAlert(status, series);
+      main.replaceChildren(
+        el("div", { class: "vide" }, [el("p", { text: "La dernière collecte n'a produit aucune donnée. Les erreurs sont listées ci-dessus." })])
+      );
+    } else {
+      showEmpty(main);
+    }
     return;
   }
 

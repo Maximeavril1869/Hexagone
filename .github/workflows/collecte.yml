@@ -30,6 +30,7 @@ jobs:
         run: python collector/collect.py
 
       - name: Enregistrement des données
+        if: always()   # même si la collecte échoue : le statut des erreurs doit être visible sur la page
         run: |
           git config user.name "hexagone-bot"
           git config user.email "hexagone-bot@users.noreply.github.com"

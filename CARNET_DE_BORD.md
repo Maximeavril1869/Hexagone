@@ -30,6 +30,11 @@ Ce fichier retrace toutes les opérations effectuées, pour pouvoir reprendre le
 - Page contrôlée visuellement dans un vrai navigateur (mobile clair, bureau sombre) avec des données d'exemple fictives, jamais versées au dépôt. Une correction : le message d'alerte distingue maintenant « dernière version valide affichée » et « aucune donnée disponible ».
 - À faire ensuite : lancer la première collecte réelle (onglet Actions, « Collecte », « Run workflow »), lire les erreurs éventuelles, corriger les filtres ; puis activer GitHub Pages ; puis étape 1b (Insee, Data Économie, AFT, OFGL).
 
+### 2026-11-06 — Première ouverture de la page
+
+- La page est en ligne (GitHub Pages actif) et affiche l'état vide : aucune collecte n'a encore écrit de données dans le dépôt (vérifié : pas de dossier `data/` sur `main`).
+- Défaut corrigé : si toutes les séries échouaient, rien n'était enregistré et la page ne disait pas pourquoi. L'étape d'enregistrement du workflow s'exécute désormais même après un échec, et la page affiche les erreurs de la dernière collecte.
+
 ## Questions ouvertes
 
 - Résultat de la première collecte réelle : à lire dans l'onglet Actions et dans `data/status.json`.
