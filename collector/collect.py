@@ -52,7 +52,14 @@ def http_get(url, timeout=60, retries=3):
                 return resp.read().decode("utf-8-sig")
         except urllib.error.HTTPError as exc:
             if exc.code < 500 and exc.code != 429:
-                raise FetchError(exc.code, "HTTP %d" % exc.code) from exc
+                # Le corps de la réponse explique souvent quel paramètre est refusé.
+                detail = ""
+                try:
+                    detail = exc.read().decode("utf-8", "replace").strip().replace("\n", " ")[:300]
+                except Exception:
+                    pass
+                message = "HTTP %d" % exc.code + (" : " + detail if detail else "")
+                raise FetchError(exc.code, message) from exc
             last = FetchError(exc.code, "HTTP %d" % exc.code)
         except (urllib.error.URLError, TimeoutError, OSError) as exc:
             last = FetchError(None, str(exc))
@@ -81,11 +88,29 @@ def _eurostat_status(flag):
     return ", ".join(labels)
 
 
+def _category_codes(doc, dim, limit=12):
+    """Liste lisible des codes d'une dimension, pour les messages d'erreur."""
+    category = doc.get("dimension", {}).get(dim, {}).get("category", {})
+    index = category.get("index")
+    if not index:
+        return "codes non fournis"
+    if isinstance(index, list):
+        codes = list(index)
+    else:
+        codes = [code for code, _ in sorted(index.items(), key=lambda kv: kv[1])]
+    labels = category.get("label", {})
+    shown = [("%s (%s)" % (c, labels[c])) if c in labels else c for c in codes[:limit]]
+    if len(codes) > limit:
+        shown.append("… %d au total" % len(codes))
+    return ", ".join(shown)
+
+
 def parse_jsonstat(doc):
     """Extrait une série unique d'un document JSON-stat 2.0 (Eurostat).
 
     Refuse toute réponse qui contiendrait plusieurs séries : mieux vaut une
-    erreur explicite qu'une série mélangée.
+    erreur explicite qu'une série mélangée. Le message d'erreur liste les
+    dimensions à préciser et leurs codes possibles.
     Retourne (observations, date_de_mise_a_jour).
     """
     if "error" in doc:
@@ -94,12 +119,13 @@ def parse_jsonstat(doc):
     sizes = doc["size"]
     if "time" not in ids:
         raise ValueError("dimension « time » absente")
-    for dim, size in zip(ids, sizes):
-        if dim != "time" and size != 1:
-            raise ValueError(
-                "série ambiguë : la dimension « %s » a %d valeurs (filtres à préciser)"
-                % (dim, size)
-            )
+    ambiguous = [
+        "« %s » a %d valeurs [%s]" % (dim, size, _category_codes(doc, dim))
+        for dim, size in zip(ids, sizes)
+        if dim != "time" and size != 1
+    ]
+    if ambiguous:
+        raise ValueError("série ambiguë, filtres à préciser : " + " ; ".join(ambiguous))
     t_pos = ids.index("time")
     stride = 1
     for size in sizes[t_pos + 1:]:

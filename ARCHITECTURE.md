@@ -59,6 +59,7 @@ Les périmètres comptables restent séparés (dette de l'État ≠ dette des ad
 |---|---|---|---|
 | Finances publiques | Eurostat | dette publique, solde public, PIB en valeur | annuel |
 | Économie | Eurostat | croissance trimestrielle du PIB, inflation (IPCH), chômage (BIT) | trimestriel, mensuel |
+| Niveau de vie et bien-être | Eurostat | revenu réel des ménages (indice), coefficient de Gini, pauvreté monétaire, espérance de vie, satisfaction de vie | annuel ; satisfaction de vie irrégulière (enquête ponctuelle) |
 | Taux et changes | BCE | taux de dépôt, taux de refinancement, taux à long terme de la France, euro/dollar | quotidien ouvré, mensuel |
 
 **Étape 1b — à ajouter après la première collecte réelle** : Insee (BDM, Melodi), Data Économie (LFI, exécution, balances de l'État), Agence France Trésor (dette de l'État), OFGL (collectivités). Leurs identifiants de séries doivent être vérifiés contre les vraies réponses ; ils ne peuvent pas l'être depuis l'environnement de développement (accès réseau limité).
@@ -105,6 +106,7 @@ Chaque mesure a une fiche : ce qu'elle change, délais légaux, effets en fourch
 - Marchés : pas de pétrole à l'étape 1 (le Brent EIA exige une clé gratuite). Il viendra plus tard, quand le compte EIA sera créé. Pas de gaz en direct : hypothèse de scénario.
 - Première collecte réelle faite : 10 séries sur 10 collectées, filtres Eurostat et clés BCE acceptés. Une série était périmée (inflation, jeu Eurostat figé fin 2025) : basculée sur `prc_hicp_minr`. Les producteurs peuvent changer de jeu de données sans prévenir : d'où le badge « données anciennes ».
 - Reste à confronter à une source indépendante : dette, solde public et PIB 2025 (ordres de grandeur plausibles).
+- Cinq séries de niveau de vie ajoutées avec des filtres probables, non confirmés : à valider au premier lancement (le collecteur liste les codes possibles en cas d'erreur). Le revenu réel des ménages d'Eurostat n'est qu'une approximation du pouvoir d'achat.
 
 ## 13. Arborescence du dépôt
 

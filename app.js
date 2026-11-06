@@ -1,6 +1,6 @@
 "use strict";
 
-const CATEGORIES = ["Finances publiques", "Économie", "Taux et changes"];
+const CATEGORIES = ["Finances publiques", "Économie", "Niveau de vie et bien-être", "Taux et changes"];
 const SVG_NS = "http://www.w3.org/2000/svg";
 const STALE_DAYS = 3;
 

@@ -53,6 +53,25 @@ class TestParsing(unittest.TestCase):
         with self.assertRaises(ValueError):
             collect.parse_jsonstat(JSONSTAT_AMBIGU)
 
+    def test_jsonstat_ambiguite_liste_les_codes_possibles(self):
+        doc = {
+            "id": ["sex", "age", "time"],
+            "size": [3, 2, 1],
+            "dimension": {
+                "sex": {"category": {"index": {"F": 0, "M": 1, "T": 2}, "label": {"T": "Total"}}},
+                "age": {"category": {"index": ["Y_LT1", "Y1"]}},
+                "time": {"category": {"index": {"2024": 0}}},
+            },
+            "value": {"0": 1.0},
+        }
+        with self.assertRaises(ValueError) as ctx:
+            collect.parse_jsonstat(doc)
+        message = str(ctx.exception)
+        self.assertIn("« sex » a 3 valeurs", message)
+        self.assertIn("T (Total)", message)
+        self.assertIn("« age » a 2 valeurs", message)
+        self.assertIn("Y_LT1", message)
+
     def test_jsonstat_temps_en_premiere_dimension_et_valeurs_en_liste(self):
         obs, _ = collect.parse_jsonstat(JSONSTAT_TEMPS_NON_FINAL)
         self.assertEqual([(o["periode"], o["valeur"]) for o in obs], [("2023", 10.0), ("2025", 12.0)])

@@ -43,8 +43,16 @@ Ce fichier retrace toutes les opérations effectuées, pour pouvoir reprendre le
 - Ajouts : badge « données anciennes » quand la dernière observation est plus vieille que ne le permet la périodicité de la série (aurait signalé l'anomalie de l'inflation) ; les taux directeurs BCE s'affichent « en vigueur depuis le [date de la dernière décision] », car la série ne change qu'aux décisions.
 - À vérifier au prochain lancement : l'inflation doit atteindre 2026-09 ou 2026-10. Si une erreur « série ambiguë » ou HTTP 400 apparaît sur cette série, lire le nom de la dimension dans le message et ajuster `sources.json`.
 
+### 2026-11-06 — Cinq indicateurs de niveau de vie et de bien-être
+
+- Constat : le tableau de bord ne couvrait que la moitié des indicateurs de réussite demandés. Ajout d'une section « Niveau de vie et bien-être » : revenu disponible réel des ménages par habitant (`tepsr_wc310`, approximation du pouvoir d'achat), coefficient de Gini (`ilc_di12`), pauvreté monétaire à 60 % du revenu médian (`ilc_li02`), espérance de vie à la naissance (`demo_mlexpec`), satisfaction de vie (`ilc_pw01`, enquête irrégulière, donc sans contrôle de fraîcheur).
+- Les filtres de ces cinq séries n'ont pas pu être confirmés (l'API d'Eurostat n'est pas accessible depuis l'environnement de développement ni depuis la recherche web) : codes probables, à valider au premier lancement. Les plus incertains : `Y_GE16` (âge, satisfaction de vie) et les filtres de `tepsr_wc310` (aucun filtre autre que la France).
+- Le collecteur se diagnostique mieux : une réponse ambiguë liste les dimensions à préciser avec leurs codes possibles ; une erreur HTTP 4xx reprend le texte d'erreur du producteur. Tests : 12.
+- État de la collecte : aucun lancement depuis la correction de l'inflation (dernier passage du robot à 17:38, heure de Paris). Un seul lancement prendra en compte l'inflation corrigée et les cinq nouvelles séries.
+
 ## Questions ouvertes
 
-- Résultat du deuxième lancement de la collecte (inflation sur `prc_hicp_minr`) : à lire sur la page et dans `data/status.json`.
+- Résultat du prochain lancement de la collecte : inflation sur `prc_hicp_minr` (doit atteindre 2026-09 ou 2026-10) et cinq nouvelles séries ; erreurs éventuelles lisibles sur la page, avec les codes possibles.
 - GitHub Pages : actif, la page s'ouvre sur iPhone.
+- Étape 1b suivante : Insee (pouvoir d'achat par unité de consommation), Data Économie, AFT, OFGL.
 - Le texte de Perplexity contenait « [message 1/20] » : explication reçue (c'est son propre compteur), sans conséquence.
