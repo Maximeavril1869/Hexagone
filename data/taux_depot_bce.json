@@ -1,0 +1,368 @@
+{
+ "meta": {
+  "id": "taux_depot_bce",
+  "nom": "Taux de la facilité de dépôt de la BCE",
+  "categorie": "Taux et changes",
+  "organisme": "Banque centrale européenne",
+  "flux": "FM",
+  "cle": "B.U2.EUR.4F.KR.DFR.LEV",
+  "unite": "%",
+  "decimales": 2,
+  "perimetre_geographique": "Zone euro",
+  "perimetre_institutionnel": "Taux directeur de la BCE",
+  "periodicite_observation": "quotidienne ouvrée",
+  "frequence_publication": "à chaque décision de politique monétaire",
+  "url_source": "https://data.ecb.europa.eu/data/datasets/FM",
+  "licence": "Conditions de réutilisation de la BCE : mention de la source (à confirmer série par série)",
+  "date_publication": null,
+  "date_collecte": "2026-11-06T16:38:47+00:00",
+  "url_requete": "https://data-api.ecb.europa.eu/service/data/FM/B.U2.EUR.4F.KR.DFR.LEV?format=csvdata&lastNObservations=500"
+ },
+ "observations": [
+  {
+   "periode": "1999-01-01",
+   "valeur": 2.0,
+   "statut": "publié"
+  },
+  {
+   "periode": "1999-01-04",
+   "valeur": 2.75,
+   "statut": "publié"
+  },
+  {
+   "periode": "1999-01-22",
+   "valeur": 2.0,
+   "statut": "publié"
+  },
+  {
+   "periode": "1999-04-09",
+   "valeur": 1.5,
+   "statut": "publié"
+  },
+  {
+   "periode": "1999-11-05",
+   "valeur": 2.0,
+   "statut": "publié"
+  },
+  {
+   "periode": "2000-02-04",
+   "valeur": 2.25,
+   "statut": "publié"
+  },
+  {
+   "periode": "2000-03-17",
+   "valeur": 2.5,
+   "statut": "publié"
+  },
+  {
+   "periode": "2000-04-28",
+   "valeur": 2.75,
+   "statut": "publié"
+  },
+  {
+   "periode": "2000-06-09",
+   "valeur": 3.25,
+   "statut": "publié"
+  },
+  {
+   "periode": "2000-06-28",
+   "valeur": 3.25,
+   "statut": "publié"
+  },
+  {
+   "periode": "2000-09-01",
+   "valeur": 3.5,
+   "statut": "publié"
+  },
+  {
+   "periode": "2000-10-06",
+   "valeur": 3.75,
+   "statut": "publié"
+  },
+  {
+   "periode": "2001-05-11",
+   "valeur": 3.5,
+   "statut": "publié"
+  },
+  {
+   "periode": "2001-08-31",
+   "valeur": 3.25,
+   "statut": "publié"
+  },
+  {
+   "periode": "2001-09-18",
+   "valeur": 2.75,
+   "statut": "publié"
+  },
+  {
+   "periode": "2001-11-09",
+   "valeur": 2.25,
+   "statut": "publié"
+  },
+  {
+   "periode": "2002-12-06",
+   "valeur": 1.75,
+   "statut": "publié"
+  },
+  {
+   "periode": "2003-03-07",
+   "valeur": 1.5,
+   "statut": "publié"
+  },
+  {
+   "periode": "2003-06-06",
+   "valeur": 1.0,
+   "statut": "publié"
+  },
+  {
+   "periode": "2005-12-06",
+   "valeur": 1.25,
+   "statut": "publié"
+  },
+  {
+   "periode": "2006-03-08",
+   "valeur": 1.5,
+   "statut": "publié"
+  },
+  {
+   "periode": "2006-06-15",
+   "valeur": 1.75,
+   "statut": "publié"
+  },
+  {
+   "periode": "2006-08-09",
+   "valeur": 2.0,
+   "statut": "publié"
+  },
+  {
+   "periode": "2006-10-11",
+   "valeur": 2.25,
+   "statut": "publié"
+  },
+  {
+   "periode": "2006-12-13",
+   "valeur": 2.5,
+   "statut": "publié"
+  },
+  {
+   "periode": "2007-03-14",
+   "valeur": 2.75,
+   "statut": "publié"
+  },
+  {
+   "periode": "2007-06-13",
+   "valeur": 3.0,
+   "statut": "publié"
+  },
+  {
+   "periode": "2008-07-09",
+   "valeur": 3.25,
+   "statut": "publié"
+  },
+  {
+   "periode": "2008-10-08",
+   "valeur": 2.75,
+   "statut": "publié"
+  },
+  {
+   "periode": "2008-10-09",
+   "valeur": 3.25,
+   "statut": "publié"
+  },
+  {
+   "periode": "2008-10-15",
+   "valeur": 3.25,
+   "statut": "publié"
+  },
+  {
+   "periode": "2008-11-12",
+   "valeur": 2.75,
+   "statut": "publié"
+  },
+  {
+   "periode": "2008-12-10",
+   "valeur": 2.0,
+   "statut": "publié"
+  },
+  {
+   "periode": "2009-01-21",
+   "valeur": 1.0,
+   "statut": "publié"
+  },
+  {
+   "periode": "2009-03-11",
+   "valeur": 0.5,
+   "statut": "publié"
+  },
+  {
+   "periode": "2009-04-08",
+   "valeur": 0.25,
+   "statut": "publié"
+  },
+  {
+   "periode": "2009-05-13",
+   "valeur": 0.25,
+   "statut": "publié"
+  },
+  {
+   "periode": "2011-04-13",
+   "valeur": 0.5,
+   "statut": "publié"
+  },
+  {
+   "periode": "2011-07-13",
+   "valeur": 0.75,
+   "statut": "publié"
+  },
+  {
+   "periode": "2011-11-09",
+   "valeur": 0.5,
+   "statut": "publié"
+  },
+  {
+   "periode": "2011-12-14",
+   "valeur": 0.25,
+   "statut": "publié"
+  },
+  {
+   "periode": "2012-07-11",
+   "valeur": 0.0,
+   "statut": "publié"
+  },
+  {
+   "periode": "2013-05-08",
+   "valeur": 0.0,
+   "statut": "publié"
+  },
+  {
+   "periode": "2013-11-13",
+   "valeur": 0.0,
+   "statut": "publié"
+  },
+  {
+   "periode": "2014-06-11",
+   "valeur": -0.1,
+   "statut": "publié"
+  },
+  {
+   "periode": "2014-09-10",
+   "valeur": -0.2,
+   "statut": "publié"
+  },
+  {
+   "periode": "2015-12-09",
+   "valeur": -0.3,
+   "statut": "publié"
+  },
+  {
+   "periode": "2016-03-16",
+   "valeur": -0.4,
+   "statut": "publié"
+  },
+  {
+   "periode": "2019-09-18",
+   "valeur": -0.5,
+   "statut": "publié"
+  },
+  {
+   "periode": "2022-07-27",
+   "valeur": 0.0,
+   "statut": "publié"
+  },
+  {
+   "periode": "2022-09-14",
+   "valeur": 0.75,
+   "statut": "publié"
+  },
+  {
+   "periode": "2022-11-02",
+   "valeur": 1.5,
+   "statut": "publié"
+  },
+  {
+   "periode": "2022-12-21",
+   "valeur": 2.0,
+   "statut": "publié"
+  },
+  {
+   "periode": "2023-02-08",
+   "valeur": 2.5,
+   "statut": "publié"
+  },
+  {
+   "periode": "2023-03-22",
+   "valeur": 3.0,
+   "statut": "publié"
+  },
+  {
+   "periode": "2023-05-10",
+   "valeur": 3.25,
+   "statut": "publié"
+  },
+  {
+   "periode": "2023-06-21",
+   "valeur": 3.5,
+   "statut": "publié"
+  },
+  {
+   "periode": "2023-08-02",
+   "valeur": 3.75,
+   "statut": "publié"
+  },
+  {
+   "periode": "2023-09-20",
+   "valeur": 4.0,
+   "statut": "publié"
+  },
+  {
+   "periode": "2024-06-12",
+   "valeur": 3.75,
+   "statut": "publié"
+  },
+  {
+   "periode": "2024-09-18",
+   "valeur": 3.5,
+   "statut": "publié"
+  },
+  {
+   "periode": "2024-10-23",
+   "valeur": 3.25,
+   "statut": "publié"
+  },
+  {
+   "periode": "2024-12-18",
+   "valeur": 3.0,
+   "statut": "publié"
+  },
+  {
+   "periode": "2025-02-05",
+   "valeur": 2.75,
+   "statut": "publié"
+  },
+  {
+   "periode": "2025-03-12",
+   "valeur": 2.5,
+   "statut": "publié"
+  },
+  {
+   "periode": "2025-04-23",
+   "valeur": 2.25,
+   "statut": "publié"
+  },
+  {
+   "periode": "2025-06-11",
+   "valeur": 2.0,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-06-17",
+   "valeur": 2.25,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-09-16",
+   "valeur": 2.5,
+   "statut": "publié"
+  }
+ ]
+}

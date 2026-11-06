@@ -1,0 +1,623 @@
+{
+ "meta": {
+  "id": "taux_long_terme_fr",
+  "nom": "Taux d'intérêt à long terme de la France (environ 10 ans)",
+  "categorie": "Taux et changes",
+  "organisme": "Banque centrale européenne",
+  "flux": "IRS",
+  "cle": "M.FR.L.L40.CI.0000.EUR.N.Z",
+  "unite": "%",
+  "decimales": 2,
+  "perimetre_geographique": "France",
+  "perimetre_institutionnel": "Rendement des obligations d'État à long terme (critère de convergence)",
+  "periodicite_observation": "mensuelle",
+  "frequence_publication": "mensuelle",
+  "url_source": "https://data.ecb.europa.eu/data/datasets/IRS",
+  "licence": "Conditions de réutilisation de la BCE : mention de la source (à confirmer série par série)",
+  "date_publication": null,
+  "date_collecte": "2026-11-06T16:38:47+00:00",
+  "url_requete": "https://data-api.ecb.europa.eu/service/data/IRS/M.FR.L.L40.CI.0000.EUR.N.Z?format=csvdata&lastNObservations=120"
+ },
+ "observations": [
+  {
+   "periode": "2016-10",
+   "valeur": 0.33,
+   "statut": "publié"
+  },
+  {
+   "periode": "2016-11",
+   "valeur": 0.67,
+   "statut": "publié"
+  },
+  {
+   "periode": "2016-12",
+   "valeur": 0.75,
+   "statut": "publié"
+  },
+  {
+   "periode": "2017-01",
+   "valeur": 0.86,
+   "statut": "publié"
+  },
+  {
+   "periode": "2017-02",
+   "valeur": 1.03,
+   "statut": "publié"
+  },
+  {
+   "periode": "2017-03",
+   "valeur": 1.02,
+   "statut": "publié"
+  },
+  {
+   "periode": "2017-04",
+   "valeur": 0.88,
+   "statut": "publié"
+  },
+  {
+   "periode": "2017-05",
+   "valeur": 0.81,
+   "statut": "publié"
+  },
+  {
+   "periode": "2017-06",
+   "valeur": 0.66,
+   "statut": "publié"
+  },
+  {
+   "periode": "2017-07",
+   "valeur": 0.84,
+   "statut": "publié"
+  },
+  {
+   "periode": "2017-08",
+   "valeur": 0.71,
+   "statut": "publié"
+  },
+  {
+   "periode": "2017-09",
+   "valeur": 0.7,
+   "statut": "publié"
+  },
+  {
+   "periode": "2017-10",
+   "valeur": 0.81,
+   "statut": "publié"
+  },
+  {
+   "periode": "2017-11",
+   "valeur": 0.72,
+   "statut": "publié"
+  },
+  {
+   "periode": "2017-12",
+   "valeur": 0.67,
+   "statut": "publié"
+  },
+  {
+   "periode": "2018-01",
+   "valeur": 0.85,
+   "statut": "publié"
+  },
+  {
+   "periode": "2018-02",
+   "valeur": 0.98,
+   "statut": "publié"
+  },
+  {
+   "periode": "2018-03",
+   "valeur": 0.83,
+   "statut": "publié"
+  },
+  {
+   "periode": "2018-04",
+   "valeur": 0.78,
+   "statut": "publié"
+  },
+  {
+   "periode": "2018-05",
+   "valeur": 0.79,
+   "statut": "publié"
+  },
+  {
+   "periode": "2018-06",
+   "valeur": 0.75,
+   "statut": "publié"
+  },
+  {
+   "periode": "2018-07",
+   "valeur": 0.67,
+   "statut": "publié"
+  },
+  {
+   "periode": "2018-08",
+   "valeur": 0.7,
+   "statut": "publié"
+  },
+  {
+   "periode": "2018-09",
+   "valeur": 0.77,
+   "statut": "publié"
+  },
+  {
+   "periode": "2018-10",
+   "valeur": 0.82,
+   "statut": "publié"
+  },
+  {
+   "periode": "2018-11",
+   "valeur": 0.76,
+   "statut": "publié"
+  },
+  {
+   "periode": "2018-12",
+   "valeur": 0.7,
+   "statut": "publié"
+  },
+  {
+   "periode": "2019-01",
+   "valeur": 0.65,
+   "statut": "publié"
+  },
+  {
+   "periode": "2019-02",
+   "valeur": 0.55,
+   "statut": "publié"
+  },
+  {
+   "periode": "2019-03",
+   "valeur": 0.44,
+   "statut": "publié"
+  },
+  {
+   "periode": "2019-04",
+   "valeur": 0.37,
+   "statut": "publié"
+  },
+  {
+   "periode": "2019-05",
+   "valeur": 0.3,
+   "statut": "publié"
+  },
+  {
+   "periode": "2019-06",
+   "valeur": 0.08,
+   "statut": "publié"
+  },
+  {
+   "periode": "2019-07",
+   "valeur": -0.07,
+   "statut": "publié"
+  },
+  {
+   "periode": "2019-08",
+   "valeur": -0.34,
+   "statut": "publié"
+  },
+  {
+   "periode": "2019-09",
+   "valeur": -0.27,
+   "statut": "publié"
+  },
+  {
+   "periode": "2019-10",
+   "valeur": -0.16,
+   "statut": "publié"
+  },
+  {
+   "periode": "2019-11",
+   "valeur": -0.02,
+   "statut": "publié"
+  },
+  {
+   "periode": "2019-12",
+   "valeur": 0.04,
+   "statut": "publié"
+  },
+  {
+   "periode": "2020-01",
+   "valeur": -0.01,
+   "statut": "publié"
+  },
+  {
+   "periode": "2020-02",
+   "valeur": -0.18,
+   "statut": "publié"
+  },
+  {
+   "periode": "2020-03",
+   "valeur": -0.05,
+   "statut": "publié"
+  },
+  {
+   "periode": "2020-04",
+   "valeur": 0.06,
+   "statut": "publié"
+  },
+  {
+   "periode": "2020-05",
+   "valeur": -0.03,
+   "statut": "publié"
+  },
+  {
+   "periode": "2020-06",
+   "valeur": -0.04,
+   "statut": "publié"
+  },
+  {
+   "periode": "2020-07",
+   "valeur": -0.15,
+   "statut": "publié"
+  },
+  {
+   "periode": "2020-08",
+   "valeur": -0.17,
+   "statut": "publié"
+  },
+  {
+   "periode": "2020-09",
+   "valeur": -0.21,
+   "statut": "publié"
+  },
+  {
+   "periode": "2020-10",
+   "valeur": -0.3,
+   "statut": "publié"
+  },
+  {
+   "periode": "2020-11",
+   "valeur": -0.32,
+   "statut": "publié"
+  },
+  {
+   "periode": "2020-12",
+   "valeur": -0.34,
+   "statut": "publié"
+  },
+  {
+   "periode": "2021-01",
+   "valeur": -0.31,
+   "statut": "publié"
+  },
+  {
+   "periode": "2021-02",
+   "valeur": -0.15,
+   "statut": "publié"
+  },
+  {
+   "periode": "2021-03",
+   "valeur": -0.07,
+   "statut": "publié"
+  },
+  {
+   "periode": "2021-04",
+   "valeur": -0.01,
+   "statut": "publié"
+  },
+  {
+   "periode": "2021-05",
+   "valeur": 0.21,
+   "statut": "publié"
+  },
+  {
+   "periode": "2021-06",
+   "valeur": 0.15,
+   "statut": "publié"
+  },
+  {
+   "periode": "2021-07",
+   "valeur": -0.01,
+   "statut": "publié"
+  },
+  {
+   "periode": "2021-08",
+   "valeur": -0.12,
+   "statut": "publié"
+  },
+  {
+   "periode": "2021-09",
+   "valeur": 0.04,
+   "statut": "publié"
+  },
+  {
+   "periode": "2021-10",
+   "valeur": 0.2,
+   "statut": "publié"
+  },
+  {
+   "periode": "2021-11",
+   "valeur": 0.1,
+   "statut": "publié"
+  },
+  {
+   "periode": "2021-12",
+   "valeur": 0.05,
+   "statut": "publié"
+  },
+  {
+   "periode": "2022-01",
+   "valeur": 0.31,
+   "statut": "publié"
+  },
+  {
+   "periode": "2022-02",
+   "valeur": 0.68,
+   "statut": "publié"
+  },
+  {
+   "periode": "2022-03",
+   "valeur": 0.78,
+   "statut": "publié"
+  },
+  {
+   "periode": "2022-04",
+   "valeur": 1.28,
+   "statut": "publié"
+  },
+  {
+   "periode": "2022-05",
+   "valeur": 1.52,
+   "statut": "publié"
+  },
+  {
+   "periode": "2022-06",
+   "valeur": 2.06,
+   "statut": "publié"
+  },
+  {
+   "periode": "2022-07",
+   "valeur": 1.71,
+   "statut": "publié"
+  },
+  {
+   "periode": "2022-08",
+   "valeur": 1.69,
+   "statut": "publié"
+  },
+  {
+   "periode": "2022-09",
+   "valeur": 2.41,
+   "statut": "publié"
+  },
+  {
+   "periode": "2022-10",
+   "valeur": 2.77,
+   "statut": "publié"
+  },
+  {
+   "periode": "2022-11",
+   "valeur": 2.58,
+   "statut": "publié"
+  },
+  {
+   "periode": "2022-12",
+   "valeur": 2.62,
+   "statut": "publié"
+  },
+  {
+   "periode": "2023-01",
+   "valeur": 2.69,
+   "statut": "publié"
+  },
+  {
+   "periode": "2023-02",
+   "valeur": 2.87,
+   "statut": "publié"
+  },
+  {
+   "periode": "2023-03",
+   "valeur": 2.92,
+   "statut": "publié"
+  },
+  {
+   "periode": "2023-04",
+   "valeur": 2.9,
+   "statut": "publié"
+  },
+  {
+   "periode": "2023-05",
+   "valeur": 2.94,
+   "statut": "publié"
+  },
+  {
+   "periode": "2023-06",
+   "valeur": 2.93,
+   "statut": "publié"
+  },
+  {
+   "periode": "2023-07",
+   "valeur": 3.04,
+   "statut": "publié"
+  },
+  {
+   "periode": "2023-08",
+   "valeur": 3.11,
+   "statut": "publié"
+  },
+  {
+   "periode": "2023-09",
+   "valeur": 3.24,
+   "statut": "publié"
+  },
+  {
+   "periode": "2023-10",
+   "valeur": 3.45,
+   "statut": "publié"
+  },
+  {
+   "periode": "2023-11",
+   "valeur": 3.19,
+   "statut": "publié"
+  },
+  {
+   "periode": "2023-12",
+   "valeur": 2.65,
+   "statut": "publié"
+  },
+  {
+   "periode": "2024-01",
+   "valeur": 2.74,
+   "statut": "publié"
+  },
+  {
+   "periode": "2024-02",
+   "valeur": 2.85,
+   "statut": "publié"
+  },
+  {
+   "periode": "2024-03",
+   "valeur": 2.82,
+   "statut": "publié"
+  },
+  {
+   "periode": "2024-04",
+   "valeur": 2.97,
+   "statut": "publié"
+  },
+  {
+   "periode": "2024-05",
+   "valeur": 3.03,
+   "statut": "publié"
+  },
+  {
+   "periode": "2024-06",
+   "valeur": 3.15,
+   "statut": "publié"
+  },
+  {
+   "periode": "2024-07",
+   "valeur": 3.14,
+   "statut": "publié"
+  },
+  {
+   "periode": "2024-08",
+   "valeur": 2.94,
+   "statut": "publié"
+  },
+  {
+   "periode": "2024-09",
+   "valeur": 2.9,
+   "statut": "publié"
+  },
+  {
+   "periode": "2024-10",
+   "valeur": 2.99,
+   "statut": "publié"
+  },
+  {
+   "periode": "2024-11",
+   "valeur": 3.09,
+   "statut": "publié"
+  },
+  {
+   "periode": "2024-12",
+   "valeur": 3.01,
+   "statut": "publié"
+  },
+  {
+   "periode": "2025-01",
+   "valeur": 3.32,
+   "statut": "publié"
+  },
+  {
+   "periode": "2025-02",
+   "valeur": 3.15,
+   "statut": "publié"
+  },
+  {
+   "periode": "2025-03",
+   "valeur": 3.43,
+   "statut": "publié"
+  },
+  {
+   "periode": "2025-04",
+   "valeur": 3.26,
+   "statut": "publié"
+  },
+  {
+   "periode": "2025-05",
+   "valeur": 3.26,
+   "statut": "publié"
+  },
+  {
+   "periode": "2025-06",
+   "valeur": 3.24,
+   "statut": "publié"
+  },
+  {
+   "periode": "2025-07",
+   "valeur": 3.36,
+   "statut": "publié"
+  },
+  {
+   "periode": "2025-08",
+   "valeur": 3.42,
+   "statut": "publié"
+  },
+  {
+   "periode": "2025-09",
+   "valeur": 3.51,
+   "statut": "publié"
+  },
+  {
+   "periode": "2025-10",
+   "valeur": 3.44,
+   "statut": "publié"
+  },
+  {
+   "periode": "2025-11",
+   "valeur": 3.44,
+   "statut": "publié"
+  },
+  {
+   "periode": "2025-12",
+   "valeur": 3.56,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-01",
+   "valeur": 3.53,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-02",
+   "valeur": 3.4,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-03",
+   "valeur": 3.64,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-04",
+   "valeur": 3.73,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-05",
+   "valeur": 3.74,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-06",
+   "valeur": 3.68,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-07",
+   "valeur": 3.85,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-08",
+   "valeur": 4.0,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-09",
+   "valeur": 4.44,
+   "statut": "publié"
+  }
+ ]
+}

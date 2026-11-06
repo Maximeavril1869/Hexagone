@@ -1,0 +1,2063 @@
+{
+ "genere": "2026-11-06T16:38:47+00:00",
+ "series": [
+  {
+   "id": "dette_publique_pib",
+   "nom": "Dette publique (% du PIB)",
+   "categorie": "Finances publiques",
+   "organisme": "Commission européenne — Eurostat",
+   "dataset": "gov_10dd_edpt1",
+   "unite": "% du PIB",
+   "decimales": 1,
+   "perimetre_geographique": "France",
+   "perimetre_institutionnel": "Administrations publiques (S13), dette brute au sens de Maastricht",
+   "periodicite_observation": "annuelle",
+   "frequence_publication": "deux notifications par an (avril et octobre)",
+   "url_source": "https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1/default/table?lang=en",
+   "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
+   "date_publication": "2026-10-21T11:00:00+0200",
+   "date_collecte": "2026-11-06T16:38:47+00:00",
+   "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10dd_edpt1?format=JSON&lang=EN&na_item=GD&sector=S13&unit=PC_GDP&geo=FR&sinceTimePeriod=2005",
+   "derniere": {
+    "periode": "2025",
+    "valeur": 115.7,
+    "statut": "publié"
+   },
+   "serie": [
+    {
+     "periode": "2005",
+     "valeur": 68.2
+    },
+    {
+     "periode": "2006",
+     "valeur": 65.4
+    },
+    {
+     "periode": "2007",
+     "valeur": 65.5
+    },
+    {
+     "periode": "2008",
+     "valeur": 69.8
+    },
+    {
+     "periode": "2009",
+     "valeur": 84.1
+    },
+    {
+     "periode": "2010",
+     "valeur": 86.3
+    },
+    {
+     "periode": "2011",
+     "valeur": 88.7
+    },
+    {
+     "periode": "2012",
+     "valeur": 91.7
+    },
+    {
+     "periode": "2013",
+     "valeur": 94.6
+    },
+    {
+     "periode": "2014",
+     "valeur": 96.2
+    },
+    {
+     "periode": "2015",
+     "valeur": 97.0
+    },
+    {
+     "periode": "2016",
+     "valeur": 98.1
+    },
+    {
+     "periode": "2017",
+     "valeur": 98.8
+    },
+    {
+     "periode": "2018",
+     "valeur": 98.5
+    },
+    {
+     "periode": "2019",
+     "valeur": 98.2
+    },
+    {
+     "periode": "2020",
+     "valeur": 114.9
+    },
+    {
+     "periode": "2021",
+     "valeur": 112.8
+    },
+    {
+     "periode": "2022",
+     "valeur": 111.4
+    },
+    {
+     "periode": "2023",
+     "valeur": 109.5
+    },
+    {
+     "periode": "2024",
+     "valeur": 112.6
+    },
+    {
+     "periode": "2025",
+     "valeur": 115.7
+    }
+   ]
+  },
+  {
+   "id": "deficit_public_pib",
+   "nom": "Solde public : capacité (+) ou besoin (−) de financement (% du PIB)",
+   "categorie": "Finances publiques",
+   "organisme": "Commission européenne — Eurostat",
+   "dataset": "gov_10dd_edpt1",
+   "unite": "% du PIB",
+   "decimales": 1,
+   "perimetre_geographique": "France",
+   "perimetre_institutionnel": "Administrations publiques (S13), au sens de Maastricht",
+   "periodicite_observation": "annuelle",
+   "frequence_publication": "deux notifications par an (avril et octobre)",
+   "url_source": "https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1/default/table?lang=en",
+   "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
+   "date_publication": "2026-10-21T11:00:00+0200",
+   "date_collecte": "2026-11-06T16:38:47+00:00",
+   "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10dd_edpt1?format=JSON&lang=EN&na_item=B9&sector=S13&unit=PC_GDP&geo=FR&sinceTimePeriod=2005",
+   "derniere": {
+    "periode": "2025",
+    "valeur": -5.1,
+    "statut": "publié"
+   },
+   "serie": [
+    {
+     "periode": "2005",
+     "valeur": -3.5
+    },
+    {
+     "periode": "2006",
+     "valeur": -2.7
+    },
+    {
+     "periode": "2007",
+     "valeur": -3.0
+    },
+    {
+     "periode": "2008",
+     "valeur": -3.5
+    },
+    {
+     "periode": "2009",
+     "valeur": -7.4
+    },
+    {
+     "periode": "2010",
+     "valeur": -7.2
+    },
+    {
+     "periode": "2011",
+     "valeur": -5.3
+    },
+    {
+     "periode": "2012",
+     "valeur": -5.2
+    },
+    {
+     "periode": "2013",
+     "valeur": -4.9
+    },
+    {
+     "periode": "2014",
+     "valeur": -4.6
+    },
+    {
+     "periode": "2015",
+     "valeur": -3.9
+    },
+    {
+     "periode": "2016",
+     "valeur": -3.8
+    },
+    {
+     "periode": "2017",
+     "valeur": -3.4
+    },
+    {
+     "periode": "2018",
+     "valeur": -2.3
+    },
+    {
+     "periode": "2019",
+     "valeur": -2.4
+    },
+    {
+     "periode": "2020",
+     "valeur": -8.9
+    },
+    {
+     "periode": "2021",
+     "valeur": -6.6
+    },
+    {
+     "periode": "2022",
+     "valeur": -4.7
+    },
+    {
+     "periode": "2023",
+     "valeur": -5.4
+    },
+    {
+     "periode": "2024",
+     "valeur": -5.8
+    },
+    {
+     "periode": "2025",
+     "valeur": -5.1
+    }
+   ]
+  },
+  {
+   "id": "pib_valeur",
+   "nom": "PIB en valeur (millions d'euros courants)",
+   "categorie": "Finances publiques",
+   "organisme": "Commission européenne — Eurostat",
+   "dataset": "nama_10_gdp",
+   "unite": "M€",
+   "decimales": 0,
+   "perimetre_geographique": "France",
+   "perimetre_institutionnel": "Ensemble de l'économie",
+   "periodicite_observation": "annuelle",
+   "frequence_publication": "variable (révisions)",
+   "url_source": "https://ec.europa.eu/eurostat/databrowser/view/nama_10_gdp/default/table?lang=en",
+   "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
+   "date_publication": "2026-11-05T23:00:00+0100",
+   "date_collecte": "2026-11-06T16:38:47+00:00",
+   "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_gdp?format=JSON&lang=EN&na_item=B1GQ&unit=CP_MEUR&geo=FR&sinceTimePeriod=2005",
+   "derniere": {
+    "periode": "2025",
+    "valeur": 2991055.9,
+    "statut": "provisoire"
+   },
+   "serie": [
+    {
+     "periode": "2005",
+     "valeur": 1762047.7
+    },
+    {
+     "periode": "2006",
+     "valeur": 1846020.8
+    },
+    {
+     "periode": "2007",
+     "valeur": 1937876.3
+    },
+    {
+     "periode": "2008",
+     "valeur": 1989999.7
+    },
+    {
+     "periode": "2009",
+     "valeur": 1935840.2
+    },
+    {
+     "periode": "2010",
+     "valeur": 1996075.1
+    },
+    {
+     "periode": "2011",
+     "valeur": 2062141.4
+    },
+    {
+     "periode": "2012",
+     "valeur": 2088286.7
+    },
+    {
+     "periode": "2013",
+     "valeur": 2120351.9
+    },
+    {
+     "periode": "2014",
+     "valeur": 2153733.1
+    },
+    {
+     "periode": "2015",
+     "valeur": 2201401.6
+    },
+    {
+     "periode": "2016",
+     "valeur": 2231819.2
+    },
+    {
+     "periode": "2017",
+     "valeur": 2291680.5
+    },
+    {
+     "periode": "2018",
+     "valeur": 2355362.8
+    },
+    {
+     "periode": "2019",
+     "valeur": 2432206.8
+    },
+    {
+     "periode": "2020",
+     "valeur": 2318276.2
+    },
+    {
+     "periode": "2021",
+     "valeur": 2508102.3
+    },
+    {
+     "periode": "2022",
+     "valeur": 2653997.2
+    },
+    {
+     "periode": "2023",
+     "valeur": 2833826.4
+    },
+    {
+     "periode": "2024",
+     "valeur": 2935236.2
+    },
+    {
+     "periode": "2025",
+     "valeur": 2991055.9
+    }
+   ]
+  },
+  {
+   "id": "croissance_pib_trim",
+   "nom": "Croissance du PIB en volume (% par rapport au trimestre précédent)",
+   "categorie": "Économie",
+   "organisme": "Commission européenne — Eurostat",
+   "dataset": "namq_10_gdp",
+   "unite": "%",
+   "decimales": 1,
+   "perimetre_geographique": "France",
+   "perimetre_institutionnel": "Ensemble de l'économie, données corrigées des variations saisonnières et calendaires",
+   "periodicite_observation": "trimestrielle",
+   "frequence_publication": "trimestrielle (avec révisions)",
+   "url_source": "https://ec.europa.eu/eurostat/databrowser/view/namq_10_gdp/default/table?lang=en",
+   "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
+   "date_publication": "2026-11-05T23:00:00+0100",
+   "date_collecte": "2026-11-06T16:38:47+00:00",
+   "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?format=JSON&lang=EN&na_item=B1GQ&unit=CLV_PCH_PRE&s_adj=SCA&geo=FR&sinceTimePeriod=2015-Q1",
+   "derniere": {
+    "periode": "2026-Q3",
+    "valeur": -0.1,
+    "statut": "publié"
+   },
+   "serie": [
+    {
+     "periode": "2016-Q4",
+     "valeur": 0.6
+    },
+    {
+     "periode": "2017-Q1",
+     "valeur": 0.7
+    },
+    {
+     "periode": "2017-Q2",
+     "valeur": 0.7
+    },
+    {
+     "periode": "2017-Q3",
+     "valeur": 0.8
+    },
+    {
+     "periode": "2017-Q4",
+     "valeur": 0.6
+    },
+    {
+     "periode": "2018-Q1",
+     "valeur": -0.1
+    },
+    {
+     "periode": "2018-Q2",
+     "valeur": 0.2
+    },
+    {
+     "periode": "2018-Q3",
+     "valeur": 0.6
+    },
+    {
+     "periode": "2018-Q4",
+     "valeur": 0.7
+    },
+    {
+     "periode": "2019-Q1",
+     "valeur": 0.9
+    },
+    {
+     "periode": "2019-Q2",
+     "valeur": 0.5
+    },
+    {
+     "periode": "2019-Q3",
+     "valeur": 0.1
+    },
+    {
+     "periode": "2019-Q4",
+     "valeur": -0.5
+    },
+    {
+     "periode": "2020-Q1",
+     "valeur": -5.0
+    },
+    {
+     "periode": "2020-Q2",
+     "valeur": -12.2
+    },
+    {
+     "periode": "2020-Q3",
+     "valeur": 15.2
+    },
+    {
+     "periode": "2020-Q4",
+     "valeur": 0.0
+    },
+    {
+     "periode": "2021-Q1",
+     "valeur": 0.4
+    },
+    {
+     "periode": "2021-Q2",
+     "valeur": 1.2
+    },
+    {
+     "periode": "2021-Q3",
+     "valeur": 3.0
+    },
+    {
+     "periode": "2021-Q4",
+     "valeur": 0.5
+    },
+    {
+     "periode": "2022-Q1",
+     "valeur": 0.0
+    },
+    {
+     "periode": "2022-Q2",
+     "valeur": 0.4
+    },
+    {
+     "periode": "2022-Q3",
+     "valeur": 0.5
+    },
+    {
+     "periode": "2022-Q4",
+     "valeur": 0.4
+    },
+    {
+     "periode": "2023-Q1",
+     "valeur": 0.1
+    },
+    {
+     "periode": "2023-Q2",
+     "valeur": 0.9
+    },
+    {
+     "periode": "2023-Q3",
+     "valeur": 0.4
+    },
+    {
+     "periode": "2023-Q4",
+     "valeur": 0.5
+    },
+    {
+     "periode": "2024-Q1",
+     "valeur": 0.2
+    },
+    {
+     "periode": "2024-Q2",
+     "valeur": 0.2
+    },
+    {
+     "periode": "2024-Q3",
+     "valeur": 0.5
+    },
+    {
+     "periode": "2024-Q4",
+     "valeur": -0.1
+    },
+    {
+     "periode": "2025-Q1",
+     "valeur": 0.2
+    },
+    {
+     "periode": "2025-Q2",
+     "valeur": 0.2
+    },
+    {
+     "periode": "2025-Q3",
+     "valeur": 0.5
+    },
+    {
+     "periode": "2025-Q4",
+     "valeur": 0.2
+    },
+    {
+     "periode": "2026-Q1",
+     "valeur": -0.2
+    },
+    {
+     "periode": "2026-Q2",
+     "valeur": 0.0
+    },
+    {
+     "periode": "2026-Q3",
+     "valeur": -0.1
+    }
+   ]
+  },
+  {
+   "id": "inflation_ipch",
+   "nom": "Inflation (indice des prix harmonisé, glissement annuel)",
+   "categorie": "Économie",
+   "organisme": "Commission européenne — Eurostat",
+   "dataset": "prc_hicp_manr",
+   "unite": "%",
+   "decimales": 1,
+   "perimetre_geographique": "France",
+   "perimetre_institutionnel": "Ensemble des produits (IPCH)",
+   "periodicite_observation": "mensuelle",
+   "frequence_publication": "mensuelle",
+   "url_source": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_manr/default/table?lang=en",
+   "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
+   "date_publication": "2026-02-06T23:00:00+0100",
+   "date_collecte": "2026-11-06T16:38:47+00:00",
+   "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_manr?format=JSON&lang=EN&coicop=CP00&unit=RCH_A&geo=FR&sinceTimePeriod=2018-01",
+   "derniere": {
+    "periode": "2025-12",
+    "valeur": 0.7,
+    "statut": "publié"
+   },
+   "serie": [
+    {
+     "periode": "2021-01",
+     "valeur": 0.8
+    },
+    {
+     "periode": "2021-02",
+     "valeur": 0.8
+    },
+    {
+     "periode": "2021-03",
+     "valeur": 1.4
+    },
+    {
+     "periode": "2021-04",
+     "valeur": 1.6
+    },
+    {
+     "periode": "2021-05",
+     "valeur": 1.8
+    },
+    {
+     "periode": "2021-06",
+     "valeur": 1.9
+    },
+    {
+     "periode": "2021-07",
+     "valeur": 1.5
+    },
+    {
+     "periode": "2021-08",
+     "valeur": 2.4
+    },
+    {
+     "periode": "2021-09",
+     "valeur": 2.7
+    },
+    {
+     "periode": "2021-10",
+     "valeur": 3.2
+    },
+    {
+     "periode": "2021-11",
+     "valeur": 3.4
+    },
+    {
+     "periode": "2021-12",
+     "valeur": 3.4
+    },
+    {
+     "periode": "2022-01",
+     "valeur": 3.3
+    },
+    {
+     "periode": "2022-02",
+     "valeur": 4.2
+    },
+    {
+     "periode": "2022-03",
+     "valeur": 5.1
+    },
+    {
+     "periode": "2022-04",
+     "valeur": 5.4
+    },
+    {
+     "periode": "2022-05",
+     "valeur": 5.8
+    },
+    {
+     "periode": "2022-06",
+     "valeur": 6.5
+    },
+    {
+     "periode": "2022-07",
+     "valeur": 6.8
+    },
+    {
+     "periode": "2022-08",
+     "valeur": 6.6
+    },
+    {
+     "periode": "2022-09",
+     "valeur": 6.2
+    },
+    {
+     "periode": "2022-10",
+     "valeur": 7.1
+    },
+    {
+     "periode": "2022-11",
+     "valeur": 7.1
+    },
+    {
+     "periode": "2022-12",
+     "valeur": 6.7
+    },
+    {
+     "periode": "2023-01",
+     "valeur": 7.0
+    },
+    {
+     "periode": "2023-02",
+     "valeur": 7.3
+    },
+    {
+     "periode": "2023-03",
+     "valeur": 6.7
+    },
+    {
+     "periode": "2023-04",
+     "valeur": 6.9
+    },
+    {
+     "periode": "2023-05",
+     "valeur": 6.0
+    },
+    {
+     "periode": "2023-06",
+     "valeur": 5.3
+    },
+    {
+     "periode": "2023-07",
+     "valeur": 5.1
+    },
+    {
+     "periode": "2023-08",
+     "valeur": 5.7
+    },
+    {
+     "periode": "2023-09",
+     "valeur": 5.7
+    },
+    {
+     "periode": "2023-10",
+     "valeur": 4.5
+    },
+    {
+     "periode": "2023-11",
+     "valeur": 3.9
+    },
+    {
+     "periode": "2023-12",
+     "valeur": 4.1
+    },
+    {
+     "periode": "2024-01",
+     "valeur": 3.4
+    },
+    {
+     "periode": "2024-02",
+     "valeur": 3.2
+    },
+    {
+     "periode": "2024-03",
+     "valeur": 2.4
+    },
+    {
+     "periode": "2024-04",
+     "valeur": 2.4
+    },
+    {
+     "periode": "2024-05",
+     "valeur": 2.6
+    },
+    {
+     "periode": "2024-06",
+     "valeur": 2.5
+    },
+    {
+     "periode": "2024-07",
+     "valeur": 2.7
+    },
+    {
+     "periode": "2024-08",
+     "valeur": 2.2
+    },
+    {
+     "periode": "2024-09",
+     "valeur": 1.4
+    },
+    {
+     "periode": "2024-10",
+     "valeur": 1.6
+    },
+    {
+     "periode": "2024-11",
+     "valeur": 1.7
+    },
+    {
+     "periode": "2024-12",
+     "valeur": 1.8
+    },
+    {
+     "periode": "2025-01",
+     "valeur": 1.8
+    },
+    {
+     "periode": "2025-02",
+     "valeur": 0.9
+    },
+    {
+     "periode": "2025-03",
+     "valeur": 0.9
+    },
+    {
+     "periode": "2025-04",
+     "valeur": 0.9
+    },
+    {
+     "periode": "2025-05",
+     "valeur": 0.6
+    },
+    {
+     "periode": "2025-06",
+     "valeur": 0.9
+    },
+    {
+     "periode": "2025-07",
+     "valeur": 0.9
+    },
+    {
+     "periode": "2025-08",
+     "valeur": 0.8
+    },
+    {
+     "periode": "2025-09",
+     "valeur": 1.1
+    },
+    {
+     "periode": "2025-10",
+     "valeur": 0.8
+    },
+    {
+     "periode": "2025-11",
+     "valeur": 0.8
+    },
+    {
+     "periode": "2025-12",
+     "valeur": 0.7
+    }
+   ]
+  },
+  {
+   "id": "chomage_bit",
+   "nom": "Taux de chômage (% de la population active, corrigé des variations saisonnières)",
+   "categorie": "Économie",
+   "organisme": "Commission européenne — Eurostat",
+   "dataset": "une_rt_m",
+   "unite": "%",
+   "decimales": 1,
+   "perimetre_geographique": "France",
+   "perimetre_institutionnel": "Population de 15 à 74 ans, définition du Bureau international du travail",
+   "periodicite_observation": "mensuelle",
+   "frequence_publication": "mensuelle",
+   "url_source": "https://ec.europa.eu/eurostat/databrowser/view/une_rt_m/default/table?lang=en",
+   "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
+   "date_publication": "2026-11-05T23:00:00+0100",
+   "date_collecte": "2026-11-06T16:38:47+00:00",
+   "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_m?format=JSON&lang=EN&s_adj=SA&age=TOTAL&unit=PC_ACT&sex=T&geo=FR&sinceTimePeriod=2018-01",
+   "derniere": {
+    "periode": "2026-09",
+    "valeur": 8.5,
+    "statut": "publié"
+   },
+   "serie": [
+    {
+     "periode": "2021-10",
+     "valeur": 7.6
+    },
+    {
+     "periode": "2021-11",
+     "valeur": 7.5
+    },
+    {
+     "periode": "2021-12",
+     "valeur": 7.4
+    },
+    {
+     "periode": "2022-01",
+     "valeur": 7.3
+    },
+    {
+     "periode": "2022-02",
+     "valeur": 7.4
+    },
+    {
+     "periode": "2022-03",
+     "valeur": 7.5
+    },
+    {
+     "periode": "2022-04",
+     "valeur": 7.6
+    },
+    {
+     "periode": "2022-05",
+     "valeur": 7.5
+    },
+    {
+     "periode": "2022-06",
+     "valeur": 7.5
+    },
+    {
+     "periode": "2022-07",
+     "valeur": 7.4
+    },
+    {
+     "periode": "2022-08",
+     "valeur": 7.3
+    },
+    {
+     "periode": "2022-09",
+     "valeur": 7.1
+    },
+    {
+     "periode": "2022-10",
+     "valeur": 7.2
+    },
+    {
+     "periode": "2022-11",
+     "valeur": 7.2
+    },
+    {
+     "periode": "2022-12",
+     "valeur": 7.2
+    },
+    {
+     "periode": "2023-01",
+     "valeur": 7.1
+    },
+    {
+     "periode": "2023-02",
+     "valeur": 7.1
+    },
+    {
+     "periode": "2023-03",
+     "valeur": 7.1
+    },
+    {
+     "periode": "2023-04",
+     "valeur": 7.3
+    },
+    {
+     "periode": "2023-05",
+     "valeur": 7.3
+    },
+    {
+     "periode": "2023-06",
+     "valeur": 7.4
+    },
+    {
+     "periode": "2023-07",
+     "valeur": 7.5
+    },
+    {
+     "periode": "2023-08",
+     "valeur": 7.5
+    },
+    {
+     "periode": "2023-09",
+     "valeur": 7.4
+    },
+    {
+     "periode": "2023-10",
+     "valeur": 7.5
+    },
+    {
+     "periode": "2023-11",
+     "valeur": 7.6
+    },
+    {
+     "periode": "2023-12",
+     "valeur": 7.7
+    },
+    {
+     "periode": "2024-01",
+     "valeur": 7.6
+    },
+    {
+     "periode": "2024-02",
+     "valeur": 7.5
+    },
+    {
+     "periode": "2024-03",
+     "valeur": 7.4
+    },
+    {
+     "periode": "2024-04",
+     "valeur": 7.3
+    },
+    {
+     "periode": "2024-05",
+     "valeur": 7.4
+    },
+    {
+     "periode": "2024-06",
+     "valeur": 7.5
+    },
+    {
+     "periode": "2024-07",
+     "valeur": 7.5
+    },
+    {
+     "periode": "2024-08",
+     "valeur": 7.5
+    },
+    {
+     "periode": "2024-09",
+     "valeur": 7.5
+    },
+    {
+     "periode": "2024-10",
+     "valeur": 7.4
+    },
+    {
+     "periode": "2024-11",
+     "valeur": 7.3
+    },
+    {
+     "periode": "2024-12",
+     "valeur": 7.3
+    },
+    {
+     "periode": "2025-01",
+     "valeur": 7.3
+    },
+    {
+     "periode": "2025-02",
+     "valeur": 7.5
+    },
+    {
+     "periode": "2025-03",
+     "valeur": 7.6
+    },
+    {
+     "periode": "2025-04",
+     "valeur": 7.5
+    },
+    {
+     "periode": "2025-05",
+     "valeur": 7.6
+    },
+    {
+     "periode": "2025-06",
+     "valeur": 7.7
+    },
+    {
+     "periode": "2025-07",
+     "valeur": 7.8
+    },
+    {
+     "periode": "2025-08",
+     "valeur": 7.8
+    },
+    {
+     "periode": "2025-09",
+     "valeur": 7.9
+    },
+    {
+     "periode": "2025-10",
+     "valeur": 8.0
+    },
+    {
+     "periode": "2025-11",
+     "valeur": 7.9
+    },
+    {
+     "periode": "2025-12",
+     "valeur": 8.0
+    },
+    {
+     "periode": "2026-01",
+     "valeur": 8.0
+    },
+    {
+     "periode": "2026-02",
+     "valeur": 8.2
+    },
+    {
+     "periode": "2026-03",
+     "valeur": 8.2
+    },
+    {
+     "periode": "2026-04",
+     "valeur": 8.3
+    },
+    {
+     "periode": "2026-05",
+     "valeur": 8.4
+    },
+    {
+     "periode": "2026-06",
+     "valeur": 8.3
+    },
+    {
+     "periode": "2026-07",
+     "valeur": 8.3
+    },
+    {
+     "periode": "2026-08",
+     "valeur": 8.3
+    },
+    {
+     "periode": "2026-09",
+     "valeur": 8.5
+    }
+   ]
+  },
+  {
+   "id": "taux_depot_bce",
+   "nom": "Taux de la facilité de dépôt de la BCE",
+   "categorie": "Taux et changes",
+   "organisme": "Banque centrale européenne",
+   "flux": "FM",
+   "cle": "B.U2.EUR.4F.KR.DFR.LEV",
+   "unite": "%",
+   "decimales": 2,
+   "perimetre_geographique": "Zone euro",
+   "perimetre_institutionnel": "Taux directeur de la BCE",
+   "periodicite_observation": "quotidienne ouvrée",
+   "frequence_publication": "à chaque décision de politique monétaire",
+   "url_source": "https://data.ecb.europa.eu/data/datasets/FM",
+   "licence": "Conditions de réutilisation de la BCE : mention de la source (à confirmer série par série)",
+   "date_publication": null,
+   "date_collecte": "2026-11-06T16:38:47+00:00",
+   "url_requete": "https://data-api.ecb.europa.eu/service/data/FM/B.U2.EUR.4F.KR.DFR.LEV?format=csvdata&lastNObservations=500",
+   "derniere": {
+    "periode": "2026-09-16",
+    "valeur": 2.5,
+    "statut": "publié"
+   },
+   "serie": [
+    {
+     "periode": "2000-06-28",
+     "valeur": 3.25
+    },
+    {
+     "periode": "2000-09-01",
+     "valeur": 3.5
+    },
+    {
+     "periode": "2000-10-06",
+     "valeur": 3.75
+    },
+    {
+     "periode": "2001-05-11",
+     "valeur": 3.5
+    },
+    {
+     "periode": "2001-08-31",
+     "valeur": 3.25
+    },
+    {
+     "periode": "2001-09-18",
+     "valeur": 2.75
+    },
+    {
+     "periode": "2001-11-09",
+     "valeur": 2.25
+    },
+    {
+     "periode": "2002-12-06",
+     "valeur": 1.75
+    },
+    {
+     "periode": "2003-03-07",
+     "valeur": 1.5
+    },
+    {
+     "periode": "2003-06-06",
+     "valeur": 1.0
+    },
+    {
+     "periode": "2005-12-06",
+     "valeur": 1.25
+    },
+    {
+     "periode": "2006-03-08",
+     "valeur": 1.5
+    },
+    {
+     "periode": "2006-06-15",
+     "valeur": 1.75
+    },
+    {
+     "periode": "2006-08-09",
+     "valeur": 2.0
+    },
+    {
+     "periode": "2006-10-11",
+     "valeur": 2.25
+    },
+    {
+     "periode": "2006-12-13",
+     "valeur": 2.5
+    },
+    {
+     "periode": "2007-03-14",
+     "valeur": 2.75
+    },
+    {
+     "periode": "2007-06-13",
+     "valeur": 3.0
+    },
+    {
+     "periode": "2008-07-09",
+     "valeur": 3.25
+    },
+    {
+     "periode": "2008-10-08",
+     "valeur": 2.75
+    },
+    {
+     "periode": "2008-10-09",
+     "valeur": 3.25
+    },
+    {
+     "periode": "2008-10-15",
+     "valeur": 3.25
+    },
+    {
+     "periode": "2008-11-12",
+     "valeur": 2.75
+    },
+    {
+     "periode": "2008-12-10",
+     "valeur": 2.0
+    },
+    {
+     "periode": "2009-01-21",
+     "valeur": 1.0
+    },
+    {
+     "periode": "2009-03-11",
+     "valeur": 0.5
+    },
+    {
+     "periode": "2009-04-08",
+     "valeur": 0.25
+    },
+    {
+     "periode": "2009-05-13",
+     "valeur": 0.25
+    },
+    {
+     "periode": "2011-04-13",
+     "valeur": 0.5
+    },
+    {
+     "periode": "2011-07-13",
+     "valeur": 0.75
+    },
+    {
+     "periode": "2011-11-09",
+     "valeur": 0.5
+    },
+    {
+     "periode": "2011-12-14",
+     "valeur": 0.25
+    },
+    {
+     "periode": "2012-07-11",
+     "valeur": 0.0
+    },
+    {
+     "periode": "2013-05-08",
+     "valeur": 0.0
+    },
+    {
+     "periode": "2013-11-13",
+     "valeur": 0.0
+    },
+    {
+     "periode": "2014-06-11",
+     "valeur": -0.1
+    },
+    {
+     "periode": "2014-09-10",
+     "valeur": -0.2
+    },
+    {
+     "periode": "2015-12-09",
+     "valeur": -0.3
+    },
+    {
+     "periode": "2016-03-16",
+     "valeur": -0.4
+    },
+    {
+     "periode": "2019-09-18",
+     "valeur": -0.5
+    },
+    {
+     "periode": "2022-07-27",
+     "valeur": 0.0
+    },
+    {
+     "periode": "2022-09-14",
+     "valeur": 0.75
+    },
+    {
+     "periode": "2022-11-02",
+     "valeur": 1.5
+    },
+    {
+     "periode": "2022-12-21",
+     "valeur": 2.0
+    },
+    {
+     "periode": "2023-02-08",
+     "valeur": 2.5
+    },
+    {
+     "periode": "2023-03-22",
+     "valeur": 3.0
+    },
+    {
+     "periode": "2023-05-10",
+     "valeur": 3.25
+    },
+    {
+     "periode": "2023-06-21",
+     "valeur": 3.5
+    },
+    {
+     "periode": "2023-08-02",
+     "valeur": 3.75
+    },
+    {
+     "periode": "2023-09-20",
+     "valeur": 4.0
+    },
+    {
+     "periode": "2024-06-12",
+     "valeur": 3.75
+    },
+    {
+     "periode": "2024-09-18",
+     "valeur": 3.5
+    },
+    {
+     "periode": "2024-10-23",
+     "valeur": 3.25
+    },
+    {
+     "periode": "2024-12-18",
+     "valeur": 3.0
+    },
+    {
+     "periode": "2025-02-05",
+     "valeur": 2.75
+    },
+    {
+     "periode": "2025-03-12",
+     "valeur": 2.5
+    },
+    {
+     "periode": "2025-04-23",
+     "valeur": 2.25
+    },
+    {
+     "periode": "2025-06-11",
+     "valeur": 2.0
+    },
+    {
+     "periode": "2026-06-17",
+     "valeur": 2.25
+    },
+    {
+     "periode": "2026-09-16",
+     "valeur": 2.5
+    }
+   ]
+  },
+  {
+   "id": "taux_refi_bce",
+   "nom": "Taux des opérations principales de refinancement de la BCE",
+   "categorie": "Taux et changes",
+   "organisme": "Banque centrale européenne",
+   "flux": "FM",
+   "cle": "B.U2.EUR.4F.KR.MRR_FR.LEV",
+   "unite": "%",
+   "decimales": 2,
+   "perimetre_geographique": "Zone euro",
+   "perimetre_institutionnel": "Taux directeur de la BCE",
+   "periodicite_observation": "quotidienne ouvrée",
+   "frequence_publication": "à chaque décision de politique monétaire",
+   "url_source": "https://data.ecb.europa.eu/data/datasets/FM",
+   "licence": "Conditions de réutilisation de la BCE : mention de la source (à confirmer série par série)",
+   "date_publication": null,
+   "date_collecte": "2026-11-06T16:38:47+00:00",
+   "url_requete": "https://data-api.ecb.europa.eu/service/data/FM/B.U2.EUR.4F.KR.MRR_FR.LEV?format=csvdata&lastNObservations=500",
+   "derniere": {
+    "periode": "2026-09-16",
+    "valeur": 2.65,
+    "statut": "publié"
+   },
+   "serie": [
+    {
+     "periode": "1999-01-01",
+     "valeur": 3.0
+    },
+    {
+     "periode": "1999-01-04",
+     "valeur": 3.0
+    },
+    {
+     "periode": "1999-01-22",
+     "valeur": 3.0
+    },
+    {
+     "periode": "1999-04-09",
+     "valeur": 2.5
+    },
+    {
+     "periode": "1999-11-05",
+     "valeur": 3.0
+    },
+    {
+     "periode": "2000-02-04",
+     "valeur": 3.25
+    },
+    {
+     "periode": "2000-03-17",
+     "valeur": 3.5
+    },
+    {
+     "periode": "2000-04-28",
+     "valeur": 3.75
+    },
+    {
+     "periode": "2000-06-09",
+     "valeur": 4.25
+    },
+    {
+     "periode": "2008-10-15",
+     "valeur": 3.75
+    },
+    {
+     "periode": "2008-11-12",
+     "valeur": 3.25
+    },
+    {
+     "periode": "2008-12-10",
+     "valeur": 2.5
+    },
+    {
+     "periode": "2009-01-21",
+     "valeur": 2.0
+    },
+    {
+     "periode": "2009-03-11",
+     "valeur": 1.5
+    },
+    {
+     "periode": "2009-04-08",
+     "valeur": 1.25
+    },
+    {
+     "periode": "2009-05-13",
+     "valeur": 1.0
+    },
+    {
+     "periode": "2011-04-13",
+     "valeur": 1.25
+    },
+    {
+     "periode": "2011-07-13",
+     "valeur": 1.5
+    },
+    {
+     "periode": "2011-11-09",
+     "valeur": 1.25
+    },
+    {
+     "periode": "2011-12-14",
+     "valeur": 1.0
+    },
+    {
+     "periode": "2012-07-11",
+     "valeur": 0.75
+    },
+    {
+     "periode": "2013-05-08",
+     "valeur": 0.5
+    },
+    {
+     "periode": "2013-11-13",
+     "valeur": 0.25
+    },
+    {
+     "periode": "2014-06-11",
+     "valeur": 0.15
+    },
+    {
+     "periode": "2014-09-10",
+     "valeur": 0.05
+    },
+    {
+     "periode": "2015-12-09",
+     "valeur": 0.05
+    },
+    {
+     "periode": "2016-03-16",
+     "valeur": 0.0
+    },
+    {
+     "periode": "2019-09-18",
+     "valeur": 0.0
+    },
+    {
+     "periode": "2022-07-27",
+     "valeur": 0.5
+    },
+    {
+     "periode": "2022-09-14",
+     "valeur": 1.25
+    },
+    {
+     "periode": "2022-11-02",
+     "valeur": 2.0
+    },
+    {
+     "periode": "2022-12-21",
+     "valeur": 2.5
+    },
+    {
+     "periode": "2023-02-08",
+     "valeur": 3.0
+    },
+    {
+     "periode": "2023-03-22",
+     "valeur": 3.5
+    },
+    {
+     "periode": "2023-05-10",
+     "valeur": 3.75
+    },
+    {
+     "periode": "2023-06-21",
+     "valeur": 4.0
+    },
+    {
+     "periode": "2023-08-02",
+     "valeur": 4.25
+    },
+    {
+     "periode": "2023-09-20",
+     "valeur": 4.5
+    },
+    {
+     "periode": "2024-06-12",
+     "valeur": 4.25
+    },
+    {
+     "periode": "2024-09-18",
+     "valeur": 3.65
+    },
+    {
+     "periode": "2024-10-23",
+     "valeur": 3.4
+    },
+    {
+     "periode": "2024-12-18",
+     "valeur": 3.15
+    },
+    {
+     "periode": "2025-02-05",
+     "valeur": 2.9
+    },
+    {
+     "periode": "2025-03-12",
+     "valeur": 2.65
+    },
+    {
+     "periode": "2025-04-23",
+     "valeur": 2.4
+    },
+    {
+     "periode": "2025-06-11",
+     "valeur": 2.15
+    },
+    {
+     "periode": "2026-06-17",
+     "valeur": 2.4
+    },
+    {
+     "periode": "2026-09-16",
+     "valeur": 2.65
+    }
+   ]
+  },
+  {
+   "id": "taux_long_terme_fr",
+   "nom": "Taux d'intérêt à long terme de la France (environ 10 ans)",
+   "categorie": "Taux et changes",
+   "organisme": "Banque centrale européenne",
+   "flux": "IRS",
+   "cle": "M.FR.L.L40.CI.0000.EUR.N.Z",
+   "unite": "%",
+   "decimales": 2,
+   "perimetre_geographique": "France",
+   "perimetre_institutionnel": "Rendement des obligations d'État à long terme (critère de convergence)",
+   "periodicite_observation": "mensuelle",
+   "frequence_publication": "mensuelle",
+   "url_source": "https://data.ecb.europa.eu/data/datasets/IRS",
+   "licence": "Conditions de réutilisation de la BCE : mention de la source (à confirmer série par série)",
+   "date_publication": null,
+   "date_collecte": "2026-11-06T16:38:47+00:00",
+   "url_requete": "https://data-api.ecb.europa.eu/service/data/IRS/M.FR.L.L40.CI.0000.EUR.N.Z?format=csvdata&lastNObservations=120",
+   "derniere": {
+    "periode": "2026-09",
+    "valeur": 4.44,
+    "statut": "publié"
+   },
+   "serie": [
+    {
+     "periode": "2021-10",
+     "valeur": 0.2
+    },
+    {
+     "periode": "2021-11",
+     "valeur": 0.1
+    },
+    {
+     "periode": "2021-12",
+     "valeur": 0.05
+    },
+    {
+     "periode": "2022-01",
+     "valeur": 0.31
+    },
+    {
+     "periode": "2022-02",
+     "valeur": 0.68
+    },
+    {
+     "periode": "2022-03",
+     "valeur": 0.78
+    },
+    {
+     "periode": "2022-04",
+     "valeur": 1.28
+    },
+    {
+     "periode": "2022-05",
+     "valeur": 1.52
+    },
+    {
+     "periode": "2022-06",
+     "valeur": 2.06
+    },
+    {
+     "periode": "2022-07",
+     "valeur": 1.71
+    },
+    {
+     "periode": "2022-08",
+     "valeur": 1.69
+    },
+    {
+     "periode": "2022-09",
+     "valeur": 2.41
+    },
+    {
+     "periode": "2022-10",
+     "valeur": 2.77
+    },
+    {
+     "periode": "2022-11",
+     "valeur": 2.58
+    },
+    {
+     "periode": "2022-12",
+     "valeur": 2.62
+    },
+    {
+     "periode": "2023-01",
+     "valeur": 2.69
+    },
+    {
+     "periode": "2023-02",
+     "valeur": 2.87
+    },
+    {
+     "periode": "2023-03",
+     "valeur": 2.92
+    },
+    {
+     "periode": "2023-04",
+     "valeur": 2.9
+    },
+    {
+     "periode": "2023-05",
+     "valeur": 2.94
+    },
+    {
+     "periode": "2023-06",
+     "valeur": 2.93
+    },
+    {
+     "periode": "2023-07",
+     "valeur": 3.04
+    },
+    {
+     "periode": "2023-08",
+     "valeur": 3.11
+    },
+    {
+     "periode": "2023-09",
+     "valeur": 3.24
+    },
+    {
+     "periode": "2023-10",
+     "valeur": 3.45
+    },
+    {
+     "periode": "2023-11",
+     "valeur": 3.19
+    },
+    {
+     "periode": "2023-12",
+     "valeur": 2.65
+    },
+    {
+     "periode": "2024-01",
+     "valeur": 2.74
+    },
+    {
+     "periode": "2024-02",
+     "valeur": 2.85
+    },
+    {
+     "periode": "2024-03",
+     "valeur": 2.82
+    },
+    {
+     "periode": "2024-04",
+     "valeur": 2.97
+    },
+    {
+     "periode": "2024-05",
+     "valeur": 3.03
+    },
+    {
+     "periode": "2024-06",
+     "valeur": 3.15
+    },
+    {
+     "periode": "2024-07",
+     "valeur": 3.14
+    },
+    {
+     "periode": "2024-08",
+     "valeur": 2.94
+    },
+    {
+     "periode": "2024-09",
+     "valeur": 2.9
+    },
+    {
+     "periode": "2024-10",
+     "valeur": 2.99
+    },
+    {
+     "periode": "2024-11",
+     "valeur": 3.09
+    },
+    {
+     "periode": "2024-12",
+     "valeur": 3.01
+    },
+    {
+     "periode": "2025-01",
+     "valeur": 3.32
+    },
+    {
+     "periode": "2025-02",
+     "valeur": 3.15
+    },
+    {
+     "periode": "2025-03",
+     "valeur": 3.43
+    },
+    {
+     "periode": "2025-04",
+     "valeur": 3.26
+    },
+    {
+     "periode": "2025-05",
+     "valeur": 3.26
+    },
+    {
+     "periode": "2025-06",
+     "valeur": 3.24
+    },
+    {
+     "periode": "2025-07",
+     "valeur": 3.36
+    },
+    {
+     "periode": "2025-08",
+     "valeur": 3.42
+    },
+    {
+     "periode": "2025-09",
+     "valeur": 3.51
+    },
+    {
+     "periode": "2025-10",
+     "valeur": 3.44
+    },
+    {
+     "periode": "2025-11",
+     "valeur": 3.44
+    },
+    {
+     "periode": "2025-12",
+     "valeur": 3.56
+    },
+    {
+     "periode": "2026-01",
+     "valeur": 3.53
+    },
+    {
+     "periode": "2026-02",
+     "valeur": 3.4
+    },
+    {
+     "periode": "2026-03",
+     "valeur": 3.64
+    },
+    {
+     "periode": "2026-04",
+     "valeur": 3.73
+    },
+    {
+     "periode": "2026-05",
+     "valeur": 3.74
+    },
+    {
+     "periode": "2026-06",
+     "valeur": 3.68
+    },
+    {
+     "periode": "2026-07",
+     "valeur": 3.85
+    },
+    {
+     "periode": "2026-08",
+     "valeur": 4.0
+    },
+    {
+     "periode": "2026-09",
+     "valeur": 4.44
+    }
+   ]
+  },
+  {
+   "id": "eur_usd",
+   "nom": "Euro en dollars américains (taux de référence)",
+   "categorie": "Taux et changes",
+   "organisme": "Banque centrale européenne",
+   "flux": "EXR",
+   "cle": "D.USD.EUR.SP00.A",
+   "unite": "USD pour 1 EUR",
+   "decimales": 4,
+   "perimetre_geographique": "Zone euro",
+   "perimetre_institutionnel": "Taux de change de référence",
+   "periodicite_observation": "quotidienne ouvrée",
+   "frequence_publication": "quotidienne, vers 16 h (heure de Paris) les jours ouvrés",
+   "url_source": "https://data.ecb.europa.eu/data/datasets/EXR",
+   "licence": "Conditions de réutilisation de la BCE : mention de la source (à confirmer série par série)",
+   "date_publication": null,
+   "date_collecte": "2026-11-06T16:38:47+00:00",
+   "url_requete": "https://data-api.ecb.europa.eu/service/data/EXR/D.USD.EUR.SP00.A?format=csvdata&lastNObservations=120",
+   "derniere": {
+    "periode": "2026-11-06",
+    "valeur": 1.1165,
+    "statut": "publié"
+   },
+   "serie": [
+    {
+     "periode": "2026-08-17",
+     "valeur": 1.1593
+    },
+    {
+     "periode": "2026-08-18",
+     "valeur": 1.1576
+    },
+    {
+     "periode": "2026-08-19",
+     "valeur": 1.1605
+    },
+    {
+     "periode": "2026-08-20",
+     "valeur": 1.1681
+    },
+    {
+     "periode": "2026-08-21",
+     "valeur": 1.1699
+    },
+    {
+     "periode": "2026-08-24",
+     "valeur": 1.1664
+    },
+    {
+     "periode": "2026-08-25",
+     "valeur": 1.1662
+    },
+    {
+     "periode": "2026-08-26",
+     "valeur": 1.1669
+    },
+    {
+     "periode": "2026-08-27",
+     "valeur": 1.1645
+    },
+    {
+     "periode": "2026-08-28",
+     "valeur": 1.1643
+    },
+    {
+     "periode": "2026-08-31",
+     "valeur": 1.1596
+    },
+    {
+     "periode": "2026-09-01",
+     "valeur": 1.159
+    },
+    {
+     "periode": "2026-09-02",
+     "valeur": 1.1578
+    },
+    {
+     "periode": "2026-09-03",
+     "valeur": 1.1615
+    },
+    {
+     "periode": "2026-09-04",
+     "valeur": 1.1622
+    },
+    {
+     "periode": "2026-09-07",
+     "valeur": 1.1622
+    },
+    {
+     "periode": "2026-09-08",
+     "valeur": 1.1614
+    },
+    {
+     "periode": "2026-09-09",
+     "valeur": 1.1652
+    },
+    {
+     "periode": "2026-09-10",
+     "valeur": 1.1616
+    },
+    {
+     "periode": "2026-09-11",
+     "valeur": 1.1592
+    },
+    {
+     "periode": "2026-09-14",
+     "valeur": 1.1551
+    },
+    {
+     "periode": "2026-09-15",
+     "valeur": 1.1539
+    },
+    {
+     "periode": "2026-09-16",
+     "valeur": 1.1537
+    },
+    {
+     "periode": "2026-09-17",
+     "valeur": 1.1481
+    },
+    {
+     "periode": "2026-09-18",
+     "valeur": 1.146
+    },
+    {
+     "periode": "2026-09-21",
+     "valeur": 1.149
+    },
+    {
+     "periode": "2026-09-22",
+     "valeur": 1.1463
+    },
+    {
+     "periode": "2026-09-23",
+     "valeur": 1.1411
+    },
+    {
+     "periode": "2026-09-24",
+     "valeur": 1.1367
+    },
+    {
+     "periode": "2026-09-25",
+     "valeur": 1.1403
+    },
+    {
+     "periode": "2026-09-28",
+     "valeur": 1.1378
+    },
+    {
+     "periode": "2026-09-29",
+     "valeur": 1.1355
+    },
+    {
+     "periode": "2026-09-30",
+     "valeur": 1.1355
+    },
+    {
+     "periode": "2026-10-01",
+     "valeur": 1.1298
+    },
+    {
+     "periode": "2026-10-02",
+     "valeur": 1.1225
+    },
+    {
+     "periode": "2026-10-05",
+     "valeur": 1.1204
+    },
+    {
+     "periode": "2026-10-06",
+     "valeur": 1.1269
+    },
+    {
+     "periode": "2026-10-07",
+     "valeur": 1.1177
+    },
+    {
+     "periode": "2026-10-08",
+     "valeur": 1.1186
+    },
+    {
+     "periode": "2026-10-09",
+     "valeur": 1.1206
+    },
+    {
+     "periode": "2026-10-12",
+     "valeur": 1.1181
+    },
+    {
+     "periode": "2026-10-13",
+     "valeur": 1.1188
+    },
+    {
+     "periode": "2026-10-14",
+     "valeur": 1.1195
+    },
+    {
+     "periode": "2026-10-15",
+     "valeur": 1.1208
+    },
+    {
+     "periode": "2026-10-16",
+     "valeur": 1.1253
+    },
+    {
+     "periode": "2026-10-19",
+     "valeur": 1.1225
+    },
+    {
+     "periode": "2026-10-20",
+     "valeur": 1.1215
+    },
+    {
+     "periode": "2026-10-21",
+     "valeur": 1.1234
+    },
+    {
+     "periode": "2026-10-22",
+     "valeur": 1.1205
+    },
+    {
+     "periode": "2026-10-23",
+     "valeur": 1.1193
+    },
+    {
+     "periode": "2026-10-26",
+     "valeur": 1.1188
+    },
+    {
+     "periode": "2026-10-27",
+     "valeur": 1.115
+    },
+    {
+     "periode": "2026-10-28",
+     "valeur": 1.1133
+    },
+    {
+     "periode": "2026-10-29",
+     "valeur": 1.113
+    },
+    {
+     "periode": "2026-10-30",
+     "valeur": 1.1172
+    },
+    {
+     "periode": "2026-11-02",
+     "valeur": 1.1216
+    },
+    {
+     "periode": "2026-11-03",
+     "valeur": 1.1179
+    },
+    {
+     "periode": "2026-11-04",
+     "valeur": 1.1267
+    },
+    {
+     "periode": "2026-11-05",
+     "valeur": 1.1224
+    },
+    {
+     "periode": "2026-11-06",
+     "valeur": 1.1165
+    }
+   ]
+  }
+ ]
+}

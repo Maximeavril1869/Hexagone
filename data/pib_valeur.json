@@ -1,0 +1,127 @@
+{
+ "meta": {
+  "id": "pib_valeur",
+  "nom": "PIB en valeur (millions d'euros courants)",
+  "categorie": "Finances publiques",
+  "organisme": "Commission européenne — Eurostat",
+  "dataset": "nama_10_gdp",
+  "unite": "M€",
+  "decimales": 0,
+  "perimetre_geographique": "France",
+  "perimetre_institutionnel": "Ensemble de l'économie",
+  "periodicite_observation": "annuelle",
+  "frequence_publication": "variable (révisions)",
+  "url_source": "https://ec.europa.eu/eurostat/databrowser/view/nama_10_gdp/default/table?lang=en",
+  "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
+  "date_publication": "2026-11-05T23:00:00+0100",
+  "date_collecte": "2026-11-06T16:38:47+00:00",
+  "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_gdp?format=JSON&lang=EN&na_item=B1GQ&unit=CP_MEUR&geo=FR&sinceTimePeriod=2005"
+ },
+ "observations": [
+  {
+   "periode": "2005",
+   "valeur": 1762047.7,
+   "statut": "publié"
+  },
+  {
+   "periode": "2006",
+   "valeur": 1846020.8,
+   "statut": "publié"
+  },
+  {
+   "periode": "2007",
+   "valeur": 1937876.3,
+   "statut": "publié"
+  },
+  {
+   "periode": "2008",
+   "valeur": 1989999.7,
+   "statut": "publié"
+  },
+  {
+   "periode": "2009",
+   "valeur": 1935840.2,
+   "statut": "publié"
+  },
+  {
+   "periode": "2010",
+   "valeur": 1996075.1,
+   "statut": "publié"
+  },
+  {
+   "periode": "2011",
+   "valeur": 2062141.4,
+   "statut": "publié"
+  },
+  {
+   "periode": "2012",
+   "valeur": 2088286.7,
+   "statut": "publié"
+  },
+  {
+   "periode": "2013",
+   "valeur": 2120351.9,
+   "statut": "publié"
+  },
+  {
+   "periode": "2014",
+   "valeur": 2153733.1,
+   "statut": "publié"
+  },
+  {
+   "periode": "2015",
+   "valeur": 2201401.6,
+   "statut": "publié"
+  },
+  {
+   "periode": "2016",
+   "valeur": 2231819.2,
+   "statut": "publié"
+  },
+  {
+   "periode": "2017",
+   "valeur": 2291680.5,
+   "statut": "publié"
+  },
+  {
+   "periode": "2018",
+   "valeur": 2355362.8,
+   "statut": "publié"
+  },
+  {
+   "periode": "2019",
+   "valeur": 2432206.8,
+   "statut": "publié"
+  },
+  {
+   "periode": "2020",
+   "valeur": 2318276.2,
+   "statut": "publié"
+  },
+  {
+   "periode": "2021",
+   "valeur": 2508102.3,
+   "statut": "publié"
+  },
+  {
+   "periode": "2022",
+   "valeur": 2653997.2,
+   "statut": "publié"
+  },
+  {
+   "periode": "2023",
+   "valeur": 2833826.4,
+   "statut": "publié"
+  },
+  {
+   "periode": "2024",
+   "valeur": 2935236.2,
+   "statut": "provisoire"
+  },
+  {
+   "periode": "2025",
+   "valeur": 2991055.9,
+   "statut": "provisoire"
+  }
+ ]
+}

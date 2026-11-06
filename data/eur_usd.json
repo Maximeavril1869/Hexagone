@@ -1,0 +1,623 @@
+{
+ "meta": {
+  "id": "eur_usd",
+  "nom": "Euro en dollars américains (taux de référence)",
+  "categorie": "Taux et changes",
+  "organisme": "Banque centrale européenne",
+  "flux": "EXR",
+  "cle": "D.USD.EUR.SP00.A",
+  "unite": "USD pour 1 EUR",
+  "decimales": 4,
+  "perimetre_geographique": "Zone euro",
+  "perimetre_institutionnel": "Taux de change de référence",
+  "periodicite_observation": "quotidienne ouvrée",
+  "frequence_publication": "quotidienne, vers 16 h (heure de Paris) les jours ouvrés",
+  "url_source": "https://data.ecb.europa.eu/data/datasets/EXR",
+  "licence": "Conditions de réutilisation de la BCE : mention de la source (à confirmer série par série)",
+  "date_publication": null,
+  "date_collecte": "2026-11-06T16:38:47+00:00",
+  "url_requete": "https://data-api.ecb.europa.eu/service/data/EXR/D.USD.EUR.SP00.A?format=csvdata&lastNObservations=120"
+ },
+ "observations": [
+  {
+   "periode": "2026-05-25",
+   "valeur": 1.1643,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-05-26",
+   "valeur": 1.1634,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-05-27",
+   "valeur": 1.1637,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-05-28",
+   "valeur": 1.1617,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-05-29",
+   "valeur": 1.1644,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-06-01",
+   "valeur": 1.1646,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-06-02",
+   "valeur": 1.1649,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-06-03",
+   "valeur": 1.1614,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-06-04",
+   "valeur": 1.164,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-06-05",
+   "valeur": 1.164,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-06-08",
+   "valeur": 1.154,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-06-09",
+   "valeur": 1.1573,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-06-10",
+   "valeur": 1.1539,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-06-11",
+   "valeur": 1.1537,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-06-12",
+   "valeur": 1.1567,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-06-15",
+   "valeur": 1.1607,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-06-16",
+   "valeur": 1.1594,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-06-17",
+   "valeur": 1.1591,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-06-18",
+   "valeur": 1.1461,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-06-19",
+   "valeur": 1.1467,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-06-22",
+   "valeur": 1.1456,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-06-23",
+   "valeur": 1.1392,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-06-24",
+   "valeur": 1.134,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-06-25",
+   "valeur": 1.1342,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-06-26",
+   "valeur": 1.1401,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-06-29",
+   "valeur": 1.1406,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-06-30",
+   "valeur": 1.1394,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-07-01",
+   "valeur": 1.1383,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-07-02",
+   "valeur": 1.1399,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-07-03",
+   "valeur": 1.1448,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-07-06",
+   "valeur": 1.1415,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-07-07",
+   "valeur": 1.1433,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-07-08",
+   "valeur": 1.1404,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-07-09",
+   "valeur": 1.1435,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-07-10",
+   "valeur": 1.143,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-07-13",
+   "valeur": 1.1424,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-07-14",
+   "valeur": 1.1405,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-07-15",
+   "valeur": 1.1406,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-07-16",
+   "valeur": 1.1467,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-07-17",
+   "valeur": 1.1435,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-07-20",
+   "valeur": 1.1426,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-07-21",
+   "valeur": 1.1418,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-07-22",
+   "valeur": 1.1408,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-07-23",
+   "valeur": 1.1392,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-07-24",
+   "valeur": 1.1377,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-07-27",
+   "valeur": 1.1389,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-07-28",
+   "valeur": 1.1367,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-07-29",
+   "valeur": 1.138,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-07-30",
+   "valeur": 1.1476,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-07-31",
+   "valeur": 1.1485,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-08-03",
+   "valeur": 1.1535,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-08-04",
+   "valeur": 1.1515,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-08-05",
+   "valeur": 1.1554,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-08-06",
+   "valeur": 1.1542,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-08-07",
+   "valeur": 1.1535,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-08-10",
+   "valeur": 1.1555,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-08-11",
+   "valeur": 1.154,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-08-12",
+   "valeur": 1.1545,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-08-13",
+   "valeur": 1.1534,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-08-14",
+   "valeur": 1.1567,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-08-17",
+   "valeur": 1.1593,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-08-18",
+   "valeur": 1.1576,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-08-19",
+   "valeur": 1.1605,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-08-20",
+   "valeur": 1.1681,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-08-21",
+   "valeur": 1.1699,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-08-24",
+   "valeur": 1.1664,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-08-25",
+   "valeur": 1.1662,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-08-26",
+   "valeur": 1.1669,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-08-27",
+   "valeur": 1.1645,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-08-28",
+   "valeur": 1.1643,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-08-31",
+   "valeur": 1.1596,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-09-01",
+   "valeur": 1.159,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-09-02",
+   "valeur": 1.1578,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-09-03",
+   "valeur": 1.1615,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-09-04",
+   "valeur": 1.1622,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-09-07",
+   "valeur": 1.1622,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-09-08",
+   "valeur": 1.1614,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-09-09",
+   "valeur": 1.1652,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-09-10",
+   "valeur": 1.1616,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-09-11",
+   "valeur": 1.1592,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-09-14",
+   "valeur": 1.1551,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-09-15",
+   "valeur": 1.1539,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-09-16",
+   "valeur": 1.1537,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-09-17",
+   "valeur": 1.1481,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-09-18",
+   "valeur": 1.146,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-09-21",
+   "valeur": 1.149,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-09-22",
+   "valeur": 1.1463,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-09-23",
+   "valeur": 1.1411,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-09-24",
+   "valeur": 1.1367,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-09-25",
+   "valeur": 1.1403,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-09-28",
+   "valeur": 1.1378,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-09-29",
+   "valeur": 1.1355,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-09-30",
+   "valeur": 1.1355,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-10-01",
+   "valeur": 1.1298,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-10-02",
+   "valeur": 1.1225,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-10-05",
+   "valeur": 1.1204,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-10-06",
+   "valeur": 1.1269,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-10-07",
+   "valeur": 1.1177,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-10-08",
+   "valeur": 1.1186,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-10-09",
+   "valeur": 1.1206,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-10-12",
+   "valeur": 1.1181,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-10-13",
+   "valeur": 1.1188,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-10-14",
+   "valeur": 1.1195,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-10-15",
+   "valeur": 1.1208,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-10-16",
+   "valeur": 1.1253,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-10-19",
+   "valeur": 1.1225,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-10-20",
+   "valeur": 1.1215,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-10-21",
+   "valeur": 1.1234,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-10-22",
+   "valeur": 1.1205,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-10-23",
+   "valeur": 1.1193,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-10-26",
+   "valeur": 1.1188,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-10-27",
+   "valeur": 1.115,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-10-28",
+   "valeur": 1.1133,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-10-29",
+   "valeur": 1.113,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-10-30",
+   "valeur": 1.1172,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-11-02",
+   "valeur": 1.1216,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-11-03",
+   "valeur": 1.1179,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-11-04",
+   "valeur": 1.1267,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-11-05",
+   "valeur": 1.1224,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-11-06",
+   "valeur": 1.1165,
+   "statut": "publié"
+  }
+ ]
+}

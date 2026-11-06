@@ -1,0 +1,65 @@
+{
+ "execution": "2026-11-06T16:38:47+00:00",
+ "resultats": [
+  {
+   "id": "dette_publique_pib",
+   "ok": true,
+   "observations": 21,
+   "derniere_periode": "2025"
+  },
+  {
+   "id": "deficit_public_pib",
+   "ok": true,
+   "observations": 21,
+   "derniere_periode": "2025"
+  },
+  {
+   "id": "pib_valeur",
+   "ok": true,
+   "observations": 21,
+   "derniere_periode": "2025"
+  },
+  {
+   "id": "croissance_pib_trim",
+   "ok": true,
+   "observations": 40,
+   "derniere_periode": "2026-Q3"
+  },
+  {
+   "id": "inflation_ipch",
+   "ok": true,
+   "observations": 96,
+   "derniere_periode": "2025-12"
+  },
+  {
+   "id": "chomage_bit",
+   "ok": true,
+   "observations": 105,
+   "derniere_periode": "2026-09"
+  },
+  {
+   "id": "taux_depot_bce",
+   "ok": true,
+   "observations": 69,
+   "derniere_periode": "2026-09-16"
+  },
+  {
+   "id": "taux_refi_bce",
+   "ok": true,
+   "observations": 48,
+   "derniere_periode": "2026-09-16"
+  },
+  {
+   "id": "taux_long_terme_fr",
+   "ok": true,
+   "observations": 120,
+   "derniere_periode": "2026-09"
+  },
+  {
+   "id": "eur_usd",
+   "ok": true,
+   "observations": 120,
+   "derniere_periode": "2026-11-06"
+  }
+ ]
+}
