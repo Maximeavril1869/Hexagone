@@ -63,6 +63,11 @@ Ce fichier retrace toutes les opérations effectuées, pour pouvoir reprendre le
 - Ajout de `explications.json` (écrit à la main, hors collecte) : une phrase d'introduction par rubrique et une explication « En clair » par série, affichée en tête du déroulé de chaque carte. Aucune collecte nécessaire pour qu'elles apparaissent.
 - Lenteur d'actualisation signalée par l'utilisateur : pas de cause établie (voir échange). Pistes : déploiement de GitHub Pages après chaque envoi du robot, cache du navigateur ou de l'application installée.
 
+### 2026-11-06 (soir) — Pages en panne, puis cache de l'application
+
+- Trois déploiements GitHub Pages ont échoué (« Deployment failed, try again later », 19:04, 19:08, 19:19 heure de Paris) alors que la construction réussissait : problème côté GitHub, pas dans le code. Un déploiement a fini par passer à 19:23 (commit 32372f2).
+- Capture de l'utilisateur à 19:25 : données à jour (collecte de 19:22) mais ancien code affiché (pas de ligne « En clair »). Cause probable : le navigateur gardait `app.js` en cache HTTP (GitHub Pages l'autorise 10 minutes). Correctif : le service worker demande désormais toujours une revalidation (`cache: "no-cache"`), cache renommé `hexagone-v2`.
+
 ## Questions ouvertes
 
 - Pauvreté monétaire : relancer la collecte pour confirmer les nouveaux filtres.
