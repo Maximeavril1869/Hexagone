@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Collecteur Hexagone.
 
-Télécharge des séries officielles (Eurostat, BCE), les normalise avec leurs
-métadonnées et les écrit dans data/. Aucune dépendance externe, aucune clé.
+Télécharge des séries officielles (Eurostat, BCE, Insee), les normalise avec
+leurs métadonnées et les écrit dans data/. Aucune dépendance externe, aucune clé.
 
 Règles :
 - une source qui échoue ne détruit jamais la dernière version valide ;
@@ -17,6 +17,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -28,6 +29,9 @@ CONFIG_PATH = HERE / "sources.json"
 USER_AGENT = "Hexagone-collecteur/0.1 (+https://github.com/Maximeavril1869/Hexagone)"
 EUROSTAT_BASE = "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/"
 ECB_BASE = "https://data-api.ecb.europa.eu/service/data/"
+# Service web SDMX direct de la Banque de données macroéconomiques (BDM) de l'Insee.
+# Distinct du portail api.insee.fr (qui exige une inscription).
+INSEE_BDM_BASE = "https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/"
 
 # Clés de configuration purement techniques, non reprises dans les métadonnées.
 TECH_KEYS = {"params", "since", "derniers", "keep", "source"}
@@ -197,6 +201,82 @@ def parse_ecb_csv(text):
     return observations
 
 
+# Codes de statut des observations de la BDM : seuls A, P et E sont traduits ;
+# tout autre code est repris tel quel plutôt que deviné.
+INSEE_STATUS = {"A": "publié", "P": "provisoire", "E": "estimé"}
+
+
+def _local_name(name):
+    """Nom sans espace de noms XML : « {urn:x}Obs » devient « Obs »."""
+    return name.rsplit("}", 1)[-1] if isinstance(name, str) else ""
+
+
+def _insee_attrs(element):
+    return {_local_name(k).upper(): v for k, v in element.attrib.items()}
+
+
+def parse_insee_sdmx(text):
+    """Extrait une série unique d'une réponse SDMX-ML de la BDM de l'Insee.
+
+    Lecture indépendante des espaces de noms (seuls comptent les éléments
+    « Series » et « Obs » et leurs attributs TIME_PERIOD, OBS_VALUE,
+    OBS_STATUS). Refuse une réponse à plusieurs séries ou sans observation, avec
+    un message qui décrit ce qui a été reçu, pour pouvoir corriger la
+    configuration sans accès direct à l'API.
+    Retourne (observations, date_de_mise_a_jour).
+    """
+    try:
+        root = ET.fromstring(text)
+    except ET.ParseError as exc:
+        extrait = " ".join(text[:200].split())
+        raise ValueError("réponse Insee illisible (%s) : %s" % (exc, extrait))
+
+    series = [e for e in root.iter() if _local_name(e.tag) == "Series"]
+    if len(series) > 1:
+        ids = [_insee_attrs(s).get("IDBANK", "?") for s in series]
+        raise ValueError("série ambiguë : %d séries dans la réponse (%s)" % (len(series), ", ".join(ids[:10])))
+    scope = series[0] if series else root
+    meta = _insee_attrs(scope) if series else {}
+
+    elements = [e for e in scope.iter() if _local_name(e.tag) == "Obs"]
+    if not elements:
+        presents = sorted({_local_name(e.tag) for e in root.iter()})
+        raise ValueError(
+            "aucune observation (<Obs>) dans la réponse Insee ; éléments présents : %s ; attributs de la série : %s"
+            % (", ".join(presents), ", ".join(sorted(meta)) or "aucun")
+        )
+    first = _insee_attrs(elements[0])
+    if "TIME_PERIOD" not in first or "OBS_VALUE" not in first:
+        raise ValueError(
+            "attributs de <Obs> inattendus : %s (attendus : TIME_PERIOD, OBS_VALUE)" % ", ".join(sorted(first))
+        )
+
+    observations = []
+    for element in elements:
+        attrs = _insee_attrs(element)
+        raw = (attrs.get("OBS_VALUE") or "").strip()
+        if raw == "" or raw.lower() == "nan":
+            continue
+        code = (attrs.get("OBS_STATUS") or "").strip()
+        status = INSEE_STATUS.get(code) if code else "publié"
+        observations.append(
+            {
+                "periode": attrs["TIME_PERIOD"],
+                "valeur": float(raw),
+                "statut": status or "statut Insee « %s »" % code,
+            }
+        )
+    observations.sort(key=lambda o: o["periode"])
+
+    updated = meta.get("LAST_UPDATE")
+    if updated:
+        try:
+            datetime.fromisoformat(updated)
+        except ValueError:
+            updated = None  # format inattendu : mieux vaut « non fournie » qu'une date fausse
+    return observations, updated or None
+
+
 # --------------------------------------------------------------------------
 # Collecte
 # --------------------------------------------------------------------------
@@ -213,6 +293,11 @@ def build_url(cfg, with_since=True):
         if cfg.get("derniers"):
             query["lastNObservations"] = cfg["derniers"]
         return ECB_BASE + cfg["flux"] + "/" + cfg["cle"] + "?" + urllib.parse.urlencode(query)
+    if cfg["source"] == "insee":
+        url = INSEE_BDM_BASE + urllib.parse.quote(str(cfg["idbank"]), safe="")
+        if cfg.get("derniers"):
+            url += "?" + urllib.parse.urlencode({"lastNObservations": cfg["derniers"]})
+        return url
     raise ValueError("source inconnue : %s" % cfg["source"])
 
 
@@ -230,6 +315,8 @@ def collect_series(cfg, fetch, now):
 
     if cfg["source"] == "eurostat":
         observations, updated = parse_jsonstat(json.loads(text))
+    elif cfg["source"] == "insee":
+        observations, updated = parse_insee_sdmx(text)
     else:
         observations, updated = parse_ecb_csv(text), None
 

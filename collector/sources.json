@@ -96,6 +96,24 @@
       "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur"
     },
     {
+      "id": "inflation_ipch_insee",
+      "nom": "Inflation (IPCH, glissement annuel) — source Insee",
+      "categorie": "Économie",
+      "source": "insee",
+      "organisme": "Insee (Banque de données macroéconomiques)",
+      "idbank": "011812232",
+      "derniers": 120,
+      "keep": 120,
+      "unite": "%",
+      "decimales": 1,
+      "perimetre_geographique": "France",
+      "perimetre_institutionnel": "Ensemble des ménages, nomenclature Coicop 00 « Ensemble », base 2025 (indice harmonisé, pas l'indice national IPC)",
+      "periodicite_observation": "mensuelle",
+      "frequence_publication": "mensuelle (estimation provisoire en fin de mois, résultats définitifs à la mi-mois suivant)",
+      "url_source": "https://www.insee.fr/fr/statistiques/serie/011812232",
+      "licence": "Réutilisation avec mention de la source (Insee) ; condition exacte à confirmer série par série"
+    },
+    {
       "id": "chomage_bit",
       "nom": "Taux de chômage (% de la population active, corrigé des variations saisonnières)",
       "categorie": "Économie",

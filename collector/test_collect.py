@@ -39,6 +39,27 @@ ECB_OK = (
     "FM.B.U2.EUR.4F.KR.DFR.LEV,B,2026-10-06,2.25,P\n"
 )
 
+# ATTENTION : échantillons écrits à la main d'après le format SDMX-ML décrit par
+# l'Insee, pas de vraies réponses (l'API est inaccessible depuis l'environnement
+# de développement). Ils vérifient la logique de lecture, pas la forme réelle du
+# service : celle-ci se confirme au premier lancement de la collecte.
+INSEE_OK = """<?xml version="1.0" encoding="UTF-8"?>
+<message:StructureSpecificData xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message"
+    xmlns:ss="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/structurespecific">
+  <message:DataSet>
+    <Series IDBANK="011812232" FREQ="M" LAST_UPDATE="2026-10-30T08:45:00" TITLE_FR="IPCH - glissement annuel">
+      <Obs TIME_PERIOD="2026-10" OBS_VALUE="3.8" OBS_STATUS="P"/>
+      <Obs TIME_PERIOD="2026-08" OBS_VALUE="3.1" OBS_STATUS="A"/>
+      <Obs TIME_PERIOD="2026-09" OBS_VALUE="3.4" OBS_STATUS="A"/>
+      <Obs TIME_PERIOD="2026-07" OBS_VALUE="" OBS_STATUS="A"/>
+    </Series>
+  </message:DataSet>
+</message:StructureSpecificData>
+"""
+
+INSEE_DEUX_SERIES = """<Root><Series IDBANK="000000001"><Obs TIME_PERIOD="2025" OBS_VALUE="1"/></Series>
+<Series IDBANK="000000002"><Obs TIME_PERIOD="2025" OBS_VALUE="2"/></Series></Root>"""
+
 
 class TestParsing(unittest.TestCase):
     def test_jsonstat_valeurs_manquantes_et_statut(self):
@@ -197,6 +218,78 @@ class TestCollecte(unittest.TestCase):
             for champ in ("nom", "categorie", "source", "organisme", "unite", "licence", "url_source"):
                 self.assertIn(champ, s, "%s : champ « %s » manquant" % (s["id"], champ))
             collect.build_url(s)
+
+
+class TestInsee(unittest.TestCase):
+    CFG = {
+        "id": "ipch_insee",
+        "nom": "IPCH Insee",
+        "categorie": "Économie",
+        "source": "insee",
+        "idbank": "011812232",
+        "derniers": 24,
+        "keep": 24,
+        "unite": "%",
+    }
+    NOW = datetime(2026, 11, 6, 5, 17, tzinfo=timezone.utc)
+
+    def test_lecture_triee_valeurs_manquantes_et_statuts(self):
+        obs, updated = collect.parse_insee_sdmx(INSEE_OK)
+        self.assertEqual([o["periode"] for o in obs], ["2026-08", "2026-09", "2026-10"])
+        self.assertEqual(obs[-1]["valeur"], 3.8)
+        self.assertEqual(obs[-1]["statut"], "provisoire")
+        self.assertEqual(obs[0]["statut"], "publié")
+        self.assertEqual(updated, "2026-10-30T08:45:00")
+
+    def test_statut_inconnu_repris_tel_quel(self):
+        xml = '<S><Series><Obs TIME_PERIOD="2025" OBS_VALUE="1" OBS_STATUS="Z"/></Series></S>'
+        obs, updated = collect.parse_insee_sdmx(xml)
+        self.assertEqual(obs[0]["statut"], "statut Insee « Z »")
+        self.assertIsNone(updated)
+
+    def test_date_de_mise_a_jour_illisible_est_ignoree(self):
+        xml = '<S><Series LAST_UPDATE="hier"><Obs TIME_PERIOD="2025" OBS_VALUE="1"/></Series></S>'
+        self.assertIsNone(collect.parse_insee_sdmx(xml)[1])
+
+    def test_refuse_plusieurs_series(self):
+        with self.assertRaises(ValueError) as ctx:
+            collect.parse_insee_sdmx(INSEE_DEUX_SERIES)
+        self.assertIn("000000002", str(ctx.exception))
+
+    def test_reponse_sans_observation_decrit_ce_qui_est_recu(self):
+        xml = '<Erreur><Series IDBANK="1" TITRE="x"/></Erreur>'
+        with self.assertRaises(ValueError) as ctx:
+            collect.parse_insee_sdmx(xml)
+        self.assertIn("Erreur", str(ctx.exception))
+        self.assertIn("IDBANK", str(ctx.exception))
+
+    def test_attributs_inattendus_sont_nommes(self):
+        xml = '<S><Series><Obs PERIODE="2025" VALEUR="1"/></Series></S>'
+        with self.assertRaises(ValueError) as ctx:
+            collect.parse_insee_sdmx(xml)
+        self.assertIn("PERIODE", str(ctx.exception))
+
+    def test_xml_illisible(self):
+        with self.assertRaises(ValueError):
+            collect.parse_insee_sdmx("<html><body>Page d'erreur")
+
+    def test_url(self):
+        self.assertEqual(
+            collect.build_url(self.CFG),
+            collect.INSEE_BDM_BASE + "011812232?lastNObservations=24",
+        )
+        sans_limite = dict(self.CFG, derniers=None)
+        self.assertEqual(collect.build_url(sans_limite), collect.INSEE_BDM_BASE + "011812232")
+
+    def test_collecte_complete(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            data = Path(tmp)
+            ok, results = collect.collect_all({"series": [self.CFG]}, lambda url: INSEE_OK, data, self.NOW)
+            self.assertEqual(ok, 1, results)
+            doc = json.loads((data / "ipch_insee.json").read_text(encoding="utf-8"))
+            self.assertEqual(doc["meta"]["idbank"], "011812232")
+            self.assertEqual(doc["meta"]["date_publication"], "2026-10-30T08:45:00")
+            self.assertEqual(doc["observations"][-1]["periode"], "2026-10")
 
 
 if __name__ == "__main__":

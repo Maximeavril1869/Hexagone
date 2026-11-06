@@ -4,9 +4,10 @@ Ce fichier retrace toutes les opérations effectuées, pour pouvoir reprendre le
 
 ## État actuel
 
-- Étape en cours : étape 1 — tableau de bord de la France réelle.
+- Étape en cours : étape 1b — ajout des sources françaises (Insee d'abord).
 - Dépôt : public (pour la page GitHub Pages). Passage en privé possible plus tard.
-- Étape 1a terminée côté code (collecteur Eurostat + BCE, tableau de bord, tâche planifiée) ; première collecte réelle pas encore lancée.
+- Étape 1a terminée : 15 séries sur 15 collectées et affichées (Eurostat, BCE).
+- Étape 1b : lecteur Insee (BDM) écrit et testé sur échantillon, 1 série configurée (IPCH Insee), en attente de la première collecte réelle. Pouvoir d'achat par unité de consommation : idBank introuvable pour l'instant.
 - Rien de simulé pour l'instant.
 
 ## Journal
@@ -68,9 +69,20 @@ Ce fichier retrace toutes les opérations effectuées, pour pouvoir reprendre le
 - Trois déploiements GitHub Pages ont échoué (« Deployment failed, try again later », 19:04, 19:08, 19:19 heure de Paris) alors que la construction réussissait : problème côté GitHub, pas dans le code. Un déploiement a fini par passer à 19:23 (commit 32372f2).
 - Capture de l'utilisateur à 19:25 : données à jour (collecte de 19:22) mais ancien code affiché (pas de ligne « En clair »). Cause probable : le navigateur gardait `app.js` en cache HTTP (GitHub Pages l'autorise 10 minutes). Correctif : le service worker demande désormais toujours une revalidation (`cache: "no-cache"`), cache renommé `hexagone-v2`.
 
+### 2026-11-06 (soir) — Étape 1b : début avec l'Insee
+
+- Périmètre décidé avec l'utilisateur : Insee seul pour commencer ; les « En clair » sont poussés directement, sans relecture préalable.
+- Tests réseau depuis l'environnement de développement : Insee (`api.insee.fr`, `www.insee.fr`) et Data Économie refusés par le proxy (HTTP 403 à la connexion) ; AFT et OFGL échouent aussi à la connexion (cause non détaillée). Même situation que pour Eurostat et la BCE : les identifiants se valident donc sur GitHub. Aucune tentative de contournement.
+- Recoupements faits sur les pages Insee (lecture seule) : IPCH d'octobre 2026 = +3,8 % (septembre : +3,4 %), IPC national = +3,4 %, estimation provisoire du 30 octobre 2026, résultats définitifs le 13 novembre 2026. L'écart 3,8 % / 3,4 % observé entre Eurostat et l'indice national est donc l'écart IPCH / IPC, pas une erreur. Pouvoir d'achat par unité de consommation : −0,7 % en 2025 (provisoire) et +2,2 % en 2024 (semi-définitif), tableau paru le 29/05/2026 ; la page de l'année précédente donnait +2,1 % pour 2024 (révision).
+- Perplexity a fourni l'idBank 011812232 (IPCH, base 2025, glissement annuel, France, ensemble), non confirmé par une vraie réponse de l'API : il n'a pu récupérer aucun XML. Il n'a pas trouvé l'idBank de la série pouvoir d'achat par unité de consommation en base 2020 (le 010562205 qu'il a lu est une ancienne série en base 2014, arrêtée en 2021 : à ne pas utiliser).
+- Code : nouvelle source `insee` dans `collect.py` (`parse_insee_sdmx`, lecture du SDMX-ML de `bdm.insee.fr` indépendante des espaces de noms ; refuse plusieurs séries ; décrit ce qui a été reçu quand il ne trouve pas d'observation ; statuts A, P, E traduits, autre code repris tel quel). Série `inflation_ipch_insee` ajoutée à `sources.json` après l'IPCH d'Eurostat, avec son « En clair ». 9 tests ajoutés, 22 au total, tous passés. Les échantillons XML des tests sont écrits à la main, pas de vraies réponses.
+- Corrections de suivi : doublon supprimé dans ARCHITECTURE.md (paragraphe sur le « J+1 » répété) ; section « État actuel » de ce carnet remise à jour (elle disait encore que la première collecte n'était pas lancée).
+- À vérifier au prochain lancement de « Collecte » : la série `inflation_ipch_insee` doit atteindre 2026-10 avec 3,8. Si elle échoue, le message d'erreur de `status.json` dira si le problème est l'accès (HTTP), le format XML (attributs ou éléments listés) ou l'identifiant.
+
 ## Questions ouvertes
 
-- Pauvreté monétaire : relancer la collecte pour confirmer les nouveaux filtres.
 - GitHub Pages : actif, la page s'ouvre sur iPhone.
-- Étape 1b suivante : Insee (pouvoir d'achat par unité de consommation), Data Économie, AFT, OFGL.
+- Insee : idBank de la série « pouvoir d'achat du RDB par unité de consommation » (base 2020) à trouver, puis à ajouter.
+- Étape 1b suivante : Data Économie, AFT, OFGL, Melodi.
+- Pauvreté monétaire : résolu (15 séries sur 15 constatées par l'utilisateur au 6 novembre).
 - Le texte de Perplexity contenait « [message 1/20] » : explication reçue (c'est son propre compteur), sans conséquence.
