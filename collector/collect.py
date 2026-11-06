@@ -76,6 +76,14 @@ EUROSTAT_FLAGS = {
     "e": "estimé",
     "f": "prévision officielle",
     "b": "rupture de série",
+    "u": "faible fiabilité",
+    "r": "révisé",
+    "d": "définition différente",
+    "c": "confidentiel",
+    "n": "non significatif",
+    "s": "estimation d'Eurostat",
+    "i": "voir les métadonnées",
+    "z": "sans objet",
 }
 
 
@@ -88,7 +96,7 @@ def _eurostat_status(flag):
     return ", ".join(labels)
 
 
-def _category_codes(doc, dim, limit=12):
+def _category_codes(doc, dim, limit=30):
     """Liste lisible des codes d'une dimension, pour les messages d'erreur."""
     category = doc.get("dimension", {}).get(dim, {}).get("category", {})
     index = category.get("index")

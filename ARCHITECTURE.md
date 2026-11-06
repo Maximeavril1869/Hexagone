@@ -106,7 +106,7 @@ Chaque mesure a une fiche : ce qu'elle change, délais légaux, effets en fourch
 - Marchés : pas de pétrole à l'étape 1 (le Brent EIA exige une clé gratuite). Il viendra plus tard, quand le compte EIA sera créé. Pas de gaz en direct : hypothèse de scénario.
 - Première collecte réelle faite : 10 séries sur 10 collectées, filtres Eurostat et clés BCE acceptés. Une série était périmée (inflation, jeu Eurostat figé fin 2025) : basculée sur `prc_hicp_minr`. Les producteurs peuvent changer de jeu de données sans prévenir : d'où le badge « données anciennes ».
 - Reste à confronter à une source indépendante : dette, solde public et PIB 2025 (ordres de grandeur plausibles).
-- Cinq séries de niveau de vie ajoutées avec des filtres probables, non confirmés : à valider au premier lancement (le collecteur liste les codes possibles en cas d'erreur). Le revenu réel des ménages d'Eurostat n'est qu'une approximation du pouvoir d'achat.
+- Niveau de vie : quatre séries sur cinq collectées avec succès (revenu réel des ménages, Gini, espérance de vie, satisfaction de vie). La pauvreté monétaire (`ilc_li02`) attend ses filtres : la dimension `indic_il` n'existe plus, le prochain message d'erreur listera les dimensions réelles. Le revenu réel des ménages d'Eurostat n'est qu'une approximation du pouvoir d'achat.
 
 ## 13. Arborescence du dépôt
 

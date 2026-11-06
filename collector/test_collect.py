@@ -49,6 +49,12 @@ class TestParsing(unittest.TestCase):
         self.assertEqual(obs[0]["statut"], "publié")
         self.assertEqual(updated, "2026-10-30T11:00:00+0100")
 
+    def test_drapeaux_eurostat_traduits(self):
+        self.assertEqual(collect._eurostat_status("u"), "faible fiabilité")
+        self.assertEqual(collect._eurostat_status("bp"), "rupture de série, provisoire")
+        self.assertEqual(collect._eurostat_status(""), "publié")
+        self.assertIn("«", collect._eurostat_status("q"))  # drapeau inconnu : repris tel quel
+
     def test_jsonstat_refuse_les_series_ambigues(self):
         with self.assertRaises(ValueError):
             collect.parse_jsonstat(JSONSTAT_AMBIGU)

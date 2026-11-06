@@ -50,9 +50,16 @@ Ce fichier retrace toutes les opérations effectuées, pour pouvoir reprendre le
 - Le collecteur se diagnostique mieux : une réponse ambiguë liste les dimensions à préciser avec leurs codes possibles ; une erreur HTTP 4xx reprend le texte d'erreur du producteur. Tests : 12.
 - État de la collecte : aucun lancement depuis la correction de l'inflation (dernier passage du robot à 17:38, heure de Paris). Un seul lancement prendra en compte l'inflation corrigée et les cinq nouvelles séries.
 
+### 2026-11-06 (soir) — Deuxième collecte réelle : 14 séries sur 15
+
+- Inflation à jour : 3,8 % en octobre 2026 (IPCH, estimation rapide), contre 0,7 % en décembre 2025. Recoupement : la presse rapporte une inflation nationale de 3,4 % en octobre 2026 (énergie à +24,1 %) ; l'IPCH, plus élevé de quelques dixièmes, est de l'ordre attendu. Le chiffre IPCH publié par l'Insee n'a pas été consulté.
+- Indicateurs de niveau de vie acceptés par Eurostat (filtres justes) : revenu réel des ménages 112,3 (2025), Gini 30,4 (2025), espérance de vie 83,0 (2024, provisoire), satisfaction de vie 7,1 sur 10 (2025, drapeau « u » : faible fiabilité).
+- Échec : pauvreté monétaire. Eurostat répond « Dimension INDIC_IL is not defined » : `ilc_li02` n'a plus cette dimension. Filtres réduits à la France seule, pour que la prochaine erreur liste les vraies dimensions et leurs codes.
+- Drapeaux Eurostat désormais traduits (u faible fiabilité, r révisé, d définition différente, c confidentiel, n non significatif, s estimation d'Eurostat, i voir les métadonnées, z sans objet).
+
 ## Questions ouvertes
 
-- Résultat du prochain lancement de la collecte : inflation sur `prc_hicp_minr` (doit atteindre 2026-09 ou 2026-10) et cinq nouvelles séries ; erreurs éventuelles lisibles sur la page, avec les codes possibles.
+- Pauvreté monétaire : relancer la collecte, lire la liste des dimensions et codes affichée sur la page, puis fixer les filtres de `ilc_li02`.
 - GitHub Pages : actif, la page s'ouvre sur iPhone.
 - Étape 1b suivante : Insee (pouvoir d'achat par unité de consommation), Data Économie, AFT, OFGL.
 - Le texte de Perplexity contenait « [message 1/20] » : explication reçue (c'est son propre compteur), sans conséquence.
