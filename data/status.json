@@ -1,5 +1,5 @@
 {
- "execution": "2026-11-06T17:55:25+00:00",
+ "execution": "2026-11-06T18:04:35+00:00",
  "resultats": [
   {
    "id": "dette_publique_pib",
@@ -52,7 +52,7 @@
   {
    "id": "pauvrete_monetaire",
    "ok": false,
-   "erreur": "FetchError : HTTP 400 : { \"error\": [{\"status\": 400,\"id\": 150,\"label\": \"INVALID_QUERY_DIMENSION: Query is invalid as per its structure's definition. Dimension \\\"INDIC_IL\\\" is not defined\"}]}"
+   "erreur": "ValueError : série ambiguë, filtres à préciser : « statinfo » a 2 valeurs [MEAN_EI (Mean equivalised income), MED_EI (Median equivalised income)] ; « unit » a 2 valeurs [THS_PER (Thousand persons), PC (Percentage)] ; « rskpovth » a 8 valeurs [A_40 (Above 40%), A_50 (Above 50%), A_60 (Above 60%), A_70 (Above 70%), B_40 (Below 40%), B_50 (Below 50%), B_60 (Below 60%), B_70 (Below 70%)] ; « sex » a 3 valeurs [T (Total), M (Males), F (Females)] ; « age » a 33 valeurs [TOTAL (Total), Y_LT6 (Less than 6 years), Y6-10 (From 6 to 10 years), Y6-11 (From 6 to 11 years), Y11-15 (From 11 to 15 years), Y12-17 (From 12 to 17 years), Y15-19 (From 15 to 19 years), Y15-24 (From 15 to 24 years), Y15-29 (From 15 to 29 years), Y_LT16 (Less than 16 years), Y16-19 (From 16 to 19 years), Y16-24 (From 16 to 24 years), Y16-29 (From 16 to 29 years), Y16-64 (From 16 to 64 years), Y_GE16 (16 years or over), Y_LT18 (Less than 18 years), Y18-24 (From 18 to 24 years), Y18-64 (From 18 to 64 years), Y_GE18 (18 years or over), Y20-24 (From 20 to 24 years), Y20-29 (From 20 to 29 years), Y25-29 (From 25 to 29 years), Y25-49 (From 25 to 49 years), Y25-54 (From 25 to 54 years), Y50-64 (From 50 to 64 years), Y55-64 (From 55 to 64 years), Y_LT60 (Less than 60 years), Y_GE60 (60 years or over), Y_LT65 (Less than 65 years), Y65-74 (From 65 to 74 years), … 33 au total]"
   },
   {
    "id": "esperance_vie_naissance",

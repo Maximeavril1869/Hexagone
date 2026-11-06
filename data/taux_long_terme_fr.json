@@ -15,7 +15,7 @@
   "url_source": "https://data.ecb.europa.eu/data/datasets/IRS",
   "licence": "Conditions de réutilisation de la BCE : mention de la source (à confirmer série par série)",
   "date_publication": null,
-  "date_collecte": "2026-11-06T17:55:25+00:00",
+  "date_collecte": "2026-11-06T18:04:35+00:00",
   "url_requete": "https://data-api.ecb.europa.eu/service/data/IRS/M.FR.L.L40.CI.0000.EUR.N.Z?format=csvdata&lastNObservations=120"
  },
  "observations": [
