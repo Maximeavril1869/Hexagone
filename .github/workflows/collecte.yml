@@ -1,0 +1,42 @@
+name: Collecte
+
+on:
+  schedule:
+    - cron: "17 5 * * *"   # tous les jours à 05 h 17 UTC
+  workflow_dispatch:        # lancement manuel depuis l'onglet Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collecte
+  cancel-in-progress: false
+
+jobs:
+  collecte:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Tests du collecteur
+        working-directory: collector
+        run: python -m unittest test_collect -v
+
+      - name: Collecte des données
+        run: python collector/collect.py
+
+      - name: Enregistrement des données
+        run: |
+          git config user.name "hexagone-bot"
+          git config user.email "hexagone-bot@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "Aucun changement."
+          else
+            git commit -m "Collecte automatique du $(date -u +%F)"
+            git push
+          fi

@@ -53,14 +53,17 @@ Les périmètres comptables restent séparés (dette de l'État ≠ dette des ad
 
 ## 6. Sources de l'étape 1 (sans clé ni compte)
 
-| Domaine | Source | Rythme réel |
-|---|---|---|
-| Macroéconomie | Insee BDM, Insee Melodi | mensuel à annuel |
-| Comparaisons européennes | Eurostat | mensuel à annuel |
-| Budget de l'État | Data Économie (LFI, exécution, balances de l'État) | annuel + étapes budgétaires |
-| Dette de l'État | Agence France Trésor | mensuel |
-| Collectivités | OFGL | annuel |
-| Taux et changes | Banque centrale européenne | quotidien ouvré |
+**Étape 1a — dans le code** (`collector/sources.json`) :
+
+| Domaine | Source | Séries | Rythme réel |
+|---|---|---|---|
+| Finances publiques | Eurostat | dette publique, solde public, PIB en valeur | annuel |
+| Économie | Eurostat | croissance trimestrielle du PIB, inflation (IPCH), chômage (BIT) | trimestriel, mensuel |
+| Taux et changes | BCE | taux de dépôt, taux de refinancement, taux à long terme de la France, euro/dollar | quotidien ouvré, mensuel |
+
+**Étape 1b — à ajouter après la première collecte réelle** : Insee (BDM, Melodi), Data Économie (LFI, exécution, balances de l'État), Agence France Trésor (dette de l'État), OFGL (collectivités). Leurs identifiants de séries doivent être vérifiés contre les vraies réponses ; ils ne peuvent pas l'être depuis l'environnement de développement (accès réseau limité).
+
+Le « J+1 » réel ne concerne que quelques familles : taux et changes, énergie, signaux géopolitiques, droit publié. Le reste arrive par paliers, avec sa date de publication.
 
 Le « J+1 » réel ne concerne que quelques familles : taux et changes, énergie, signaux géopolitiques, droit publié. Le reste arrive par paliers, avec sa date de publication.
 
@@ -97,6 +100,25 @@ Chaque mesure a une fiche : ce qu'elle change, délais légaux, effets en fourch
 5. Régimes alternatifs, collectivités, Sécu.
 6. Époques anciennes (option, avec niveau de fiabilité affiché).
 
-## 12. Décisions en attente
+## 12. Décisions prises et points ouverts
 
-- Marchés : le Brent EIA exige une clé gratuite, donc incompatible avec « aucune clé en étape 1 ». Décision à prendre.
+- Marchés : pas de pétrole à l'étape 1 (le Brent EIA exige une clé gratuite). Il viendra plus tard, quand le compte EIA sera créé. Pas de gaz en direct : hypothèse de scénario.
+- Points à vérifier à la première collecte réelle : les filtres Eurostat de chaque série (une réponse ambiguë est refusée avec un message explicite), la clé de la série BCE des taux à long terme, le rythme réel de mise à jour de chaque série.
+
+## 13. Arborescence du dépôt
+
+```
+index.html, style.css, app.js     tableau de bord (PWA)
+sw.js, manifest.webmanifest       mode hors ligne et installation
+icon.svg
+collector/collect.py              collecteur (Python, sans dépendance)
+collector/sources.json            liste des séries et leurs métadonnées
+collector/test_collect.py         tests sur échantillons
+.github/workflows/collecte.yml    tâche planifiée quotidienne (+ lancement manuel)
+data/                             données normalisées (écrites par le collecteur)
+  index.json                      séries et dernière observation
+  status.json                     résultat de la dernière collecte, par série
+  <id_serie>.json                 série complète avec métadonnées
+```
+
+Garde-fous du collecteur : une série en échec garde sa dernière version valide ; une réponse contenant plusieurs séries est refusée ; le statut de chaque série est écrit à chaque exécution ; les tests tournent avant chaque collecte.

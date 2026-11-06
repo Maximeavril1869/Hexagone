@@ -6,6 +6,7 @@ Ce fichier retrace toutes les opérations effectuées, pour pouvoir reprendre le
 
 - Étape en cours : étape 1 — tableau de bord de la France réelle.
 - Dépôt : public (pour la page GitHub Pages). Passage en privé possible plus tard.
+- Étape 1a terminée côté code (collecteur Eurostat + BCE, tableau de bord, tâche planifiée) ; première collecte réelle pas encore lancée.
 - Rien de simulé pour l'instant.
 
 ## Journal
@@ -20,7 +21,17 @@ Ce fichier retrace toutes les opérations effectuées, pour pouvoir reprendre le
 - Décisions : dépôt public « Hexagone » ; collecteur = tâche planifiée GitHub qui dépose les données dans le dépôt ; pas de clés ni de comptes en étape 1 ; ACLED exclu (licence).
 - Fichiers créés : README.md, LICENSE, CARNET_DE_BORD.md, ARCHITECTURE.md.
 
+### 2026-11-06 — Étape 1a : collecteur et tableau de bord
+
+- Décision : pas de pétrole à l'étape 1 (clé EIA requise), taux et changes BCE conservés.
+- Test d'accès réseau depuis l'environnement de développement : Eurostat et BCE refusés (403 du proxy). Le collecteur n'a donc pas pu être essayé sur les vraies API ; il est vérifié par 11 tests sur échantillons (formats JSON-stat et CSV, séries ambiguës refusées, conservation de la dernière version valide en cas de panne, repli sans filtre temporel sur erreur 400).
+- Créé : `collector/` (collect.py, sources.json, test_collect.py), tableau de bord (index.html, style.css, app.js, sw.js, manifest, icône), `.github/workflows/collecte.yml`.
+- 10 séries configurées : dette publique, solde public, PIB (Eurostat annuel) ; croissance trimestrielle, inflation, chômage (Eurostat) ; taux de dépôt, taux de refinancement, taux long terme France, euro/dollar (BCE).
+- Page contrôlée visuellement dans un vrai navigateur (mobile clair, bureau sombre) avec des données d'exemple fictives, jamais versées au dépôt. Une correction : le message d'alerte distingue maintenant « dernière version valide affichée » et « aucune donnée disponible ».
+- À faire ensuite : lancer la première collecte réelle (onglet Actions, « Collecte », « Run workflow »), lire les erreurs éventuelles, corriger les filtres ; puis activer GitHub Pages ; puis étape 1b (Insee, Data Économie, AFT, OFGL).
+
 ## Questions ouvertes
 
-- Marchés (Brent, gaz) : voir ARCHITECTURE.md, section « Décisions en attente ».
-- Activation de GitHub Pages : à faire par le propriétaire du dépôt quand la première page existera.
+- Résultat de la première collecte réelle : à lire dans l'onglet Actions et dans `data/status.json`.
+- Activation de GitHub Pages : à faire par le propriétaire du dépôt une fois la première collecte réussie.
+- Le texte de Perplexity contenait « [message 1/20] » : explication reçue (c'est son propre compteur), sans conséquence.
