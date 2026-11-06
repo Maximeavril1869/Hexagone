@@ -1,0 +1,127 @@
+{
+ "meta": {
+  "id": "revenu_reel_menages",
+  "nom": "Revenu disponible réel des ménages par habitant (indice, 2008 = 100)",
+  "categorie": "Niveau de vie et bien-être",
+  "organisme": "Commission européenne — Eurostat",
+  "dataset": "tepsr_wc310",
+  "unite": "indice 2008 = 100",
+  "decimales": 1,
+  "perimetre_geographique": "France",
+  "perimetre_institutionnel": "Ménages et institutions sans but lucratif au service des ménages, en termes réels ; approximation du pouvoir d'achat (l'Insee publie une mesure par unité de consommation, à ajouter plus tard)",
+  "periodicite_observation": "annuelle",
+  "frequence_publication": "annuelle (avec révisions)",
+  "url_source": "https://ec.europa.eu/eurostat/databrowser/view/tepsr_wc310/default/table?lang=en",
+  "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
+  "date_publication": "2026-10-29T23:00:00+0100",
+  "date_collecte": "2026-11-06T17:54:02+00:00",
+  "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tepsr_wc310?format=JSON&lang=EN&geo=FR"
+ },
+ "observations": [
+  {
+   "periode": "2005",
+   "valeur": 95.18,
+   "statut": "publié"
+  },
+  {
+   "periode": "2006",
+   "valeur": 97.52,
+   "statut": "publié"
+  },
+  {
+   "periode": "2007",
+   "valeur": 100.04,
+   "statut": "publié"
+  },
+  {
+   "periode": "2008",
+   "valeur": 100.0,
+   "statut": "publié"
+  },
+  {
+   "periode": "2009",
+   "valeur": 101.38,
+   "statut": "publié"
+  },
+  {
+   "periode": "2010",
+   "valeur": 102.54,
+   "statut": "publié"
+  },
+  {
+   "periode": "2011",
+   "valeur": 102.41,
+   "statut": "publié"
+  },
+  {
+   "periode": "2012",
+   "valeur": 101.71,
+   "statut": "publié"
+  },
+  {
+   "periode": "2013",
+   "valeur": 100.28,
+   "statut": "publié"
+  },
+  {
+   "periode": "2014",
+   "valeur": 101.11,
+   "statut": "publié"
+  },
+  {
+   "periode": "2015",
+   "valeur": 101.64,
+   "statut": "publié"
+  },
+  {
+   "periode": "2016",
+   "valeur": 102.77,
+   "statut": "publié"
+  },
+  {
+   "periode": "2017",
+   "valeur": 104.16,
+   "statut": "publié"
+  },
+  {
+   "periode": "2018",
+   "valeur": 104.62,
+   "statut": "publié"
+  },
+  {
+   "periode": "2019",
+   "valeur": 106.84,
+   "statut": "publié"
+  },
+  {
+   "periode": "2020",
+   "valeur": 106.51,
+   "statut": "publié"
+  },
+  {
+   "periode": "2021",
+   "valeur": 109.83,
+   "statut": "publié"
+  },
+  {
+   "periode": "2022",
+   "valeur": 109.98,
+   "statut": "publié"
+  },
+  {
+   "periode": "2023",
+   "valeur": 110.81,
+   "statut": "publié"
+  },
+  {
+   "periode": "2024",
+   "valeur": 113.18,
+   "statut": "provisoire"
+  },
+  {
+   "periode": "2025",
+   "valeur": 112.34,
+   "statut": "provisoire"
+  }
+ ]
+}

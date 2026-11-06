@@ -1,0 +1,102 @@
+{
+ "meta": {
+  "id": "gini_revenus",
+  "nom": "Inégalités de revenus : coefficient de Gini",
+  "categorie": "Niveau de vie et bien-être",
+  "organisme": "Commission européenne — Eurostat",
+  "dataset": "ilc_di12",
+  "unite": "sur 100 (0 = égalité parfaite)",
+  "decimales": 1,
+  "perimetre_geographique": "France",
+  "perimetre_institutionnel": "Revenu disponible équivalent des ménages, enquête européenne SILC",
+  "periodicite_observation": "annuelle",
+  "frequence_publication": "annuelle (enquête SILC)",
+  "url_source": "https://ec.europa.eu/eurostat/databrowser/view/ilc_di12/default/table?lang=en",
+  "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
+  "date_publication": "2026-11-06T11:00:00+0100",
+  "date_collecte": "2026-11-06T17:54:02+00:00",
+  "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_di12?format=JSON&lang=EN&age=TOTAL&statinfo=GINI_HND&geo=FR&sinceTimePeriod=2010"
+ },
+ "observations": [
+  {
+   "periode": "2010",
+   "valeur": 29.8,
+   "statut": "publié"
+  },
+  {
+   "periode": "2011",
+   "valeur": 30.8,
+   "statut": "publié"
+  },
+  {
+   "periode": "2012",
+   "valeur": 30.5,
+   "statut": "publié"
+  },
+  {
+   "periode": "2013",
+   "valeur": 30.1,
+   "statut": "publié"
+  },
+  {
+   "periode": "2014",
+   "valeur": 29.2,
+   "statut": "publié"
+  },
+  {
+   "periode": "2015",
+   "valeur": 29.2,
+   "statut": "publié"
+  },
+  {
+   "periode": "2016",
+   "valeur": 29.3,
+   "statut": "publié"
+  },
+  {
+   "periode": "2017",
+   "valeur": 28.8,
+   "statut": "publié"
+  },
+  {
+   "periode": "2018",
+   "valeur": 28.5,
+   "statut": "publié"
+  },
+  {
+   "periode": "2019",
+   "valeur": 29.2,
+   "statut": "publié"
+  },
+  {
+   "periode": "2020",
+   "valeur": 29.2,
+   "statut": "rupture de série"
+  },
+  {
+   "periode": "2021",
+   "valeur": 29.3,
+   "statut": "publié"
+  },
+  {
+   "periode": "2022",
+   "valeur": 29.8,
+   "statut": "rupture de série"
+  },
+  {
+   "periode": "2023",
+   "valeur": 29.7,
+   "statut": "publié"
+  },
+  {
+   "periode": "2024",
+   "valeur": 30.0,
+   "statut": "publié"
+  },
+  {
+   "periode": "2025",
+   "valeur": 30.4,
+   "statut": "publié"
+  }
+ ]
+}

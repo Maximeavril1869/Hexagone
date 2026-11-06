@@ -1,0 +1,147 @@
+{
+ "meta": {
+  "id": "esperance_vie_naissance",
+  "nom": "Espérance de vie à la naissance (femmes et hommes)",
+  "categorie": "Niveau de vie et bien-être",
+  "organisme": "Commission européenne — Eurostat",
+  "dataset": "demo_mlexpec",
+  "unite": "années",
+  "decimales": 1,
+  "perimetre_geographique": "France",
+  "perimetre_institutionnel": "Ensemble de la population",
+  "periodicite_observation": "annuelle",
+  "frequence_publication": "annuelle (données provisoires puis révisées)",
+  "url_source": "https://ec.europa.eu/eurostat/databrowser/view/demo_mlexpec/default/table?lang=en",
+  "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
+  "date_publication": "2026-09-25T23:00:00+0200",
+  "date_collecte": "2026-11-06T17:54:02+00:00",
+  "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_mlexpec?format=JSON&lang=EN&sex=T&age=Y_LT1&geo=FR&sinceTimePeriod=2000"
+ },
+ "observations": [
+  {
+   "periode": "2000",
+   "valeur": 79.2,
+   "statut": "publié"
+  },
+  {
+   "periode": "2001",
+   "valeur": 79.3,
+   "statut": "publié"
+  },
+  {
+   "periode": "2002",
+   "valeur": 79.4,
+   "statut": "publié"
+  },
+  {
+   "periode": "2003",
+   "valeur": 79.3,
+   "statut": "publié"
+  },
+  {
+   "periode": "2004",
+   "valeur": 80.3,
+   "statut": "publié"
+  },
+  {
+   "periode": "2005",
+   "valeur": 80.3,
+   "statut": "publié"
+  },
+  {
+   "periode": "2006",
+   "valeur": 80.9,
+   "statut": "publié"
+  },
+  {
+   "periode": "2007",
+   "valeur": 81.3,
+   "statut": "publié"
+  },
+  {
+   "periode": "2008",
+   "valeur": 81.4,
+   "statut": "publié"
+  },
+  {
+   "periode": "2009",
+   "valeur": 81.5,
+   "statut": "publié"
+  },
+  {
+   "periode": "2010",
+   "valeur": 81.8,
+   "statut": "publié"
+  },
+  {
+   "periode": "2011",
+   "valeur": 82.3,
+   "statut": "publié"
+  },
+  {
+   "periode": "2012",
+   "valeur": 82.1,
+   "statut": "rupture de série"
+  },
+  {
+   "periode": "2013",
+   "valeur": 82.4,
+   "statut": "publié"
+  },
+  {
+   "periode": "2014",
+   "valeur": 82.4,
+   "statut": "rupture de série"
+  },
+  {
+   "periode": "2015",
+   "valeur": 82.1,
+   "statut": "publié"
+  },
+  {
+   "periode": "2016",
+   "valeur": 82.4,
+   "statut": "publié"
+  },
+  {
+   "periode": "2017",
+   "valeur": 82.4,
+   "statut": "publié"
+  },
+  {
+   "periode": "2018",
+   "valeur": 82.6,
+   "statut": "publié"
+  },
+  {
+   "periode": "2019",
+   "valeur": 82.7,
+   "statut": "publié"
+  },
+  {
+   "periode": "2020",
+   "valeur": 82.2,
+   "statut": "publié"
+  },
+  {
+   "periode": "2021",
+   "valeur": 82.2,
+   "statut": "publié"
+  },
+  {
+   "periode": "2022",
+   "valeur": 82.2,
+   "statut": "publié"
+  },
+  {
+   "periode": "2023",
+   "valeur": 82.9,
+   "statut": "provisoire"
+  },
+  {
+   "periode": "2024",
+   "valeur": 83.0,
+   "statut": "provisoire"
+  }
+ ]
+}

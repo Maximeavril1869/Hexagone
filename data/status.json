@@ -1,5 +1,5 @@
 {
- "execution": "2026-11-06T16:38:47+00:00",
+ "execution": "2026-11-06T17:54:02+00:00",
  "resultats": [
   {
    "id": "dette_publique_pib",
@@ -28,14 +28,43 @@
   {
    "id": "inflation_ipch",
    "ok": true,
-   "observations": 96,
-   "derniere_periode": "2025-12"
+   "observations": 106,
+   "derniere_periode": "2026-10"
   },
   {
    "id": "chomage_bit",
    "ok": true,
    "observations": 105,
    "derniere_periode": "2026-09"
+  },
+  {
+   "id": "revenu_reel_menages",
+   "ok": true,
+   "observations": 21,
+   "derniere_periode": "2025"
+  },
+  {
+   "id": "gini_revenus",
+   "ok": true,
+   "observations": 16,
+   "derniere_periode": "2025"
+  },
+  {
+   "id": "pauvrete_monetaire",
+   "ok": false,
+   "erreur": "FetchError : HTTP 400 : { \"error\": [{\"status\": 400,\"id\": 150,\"label\": \"INVALID_QUERY_DIMENSION: Query is invalid as per its structure's definition. Dimension \\\"INDIC_IL\\\" is not defined\"}]}"
+  },
+  {
+   "id": "esperance_vie_naissance",
+   "ok": true,
+   "observations": 25,
+   "derniere_periode": "2024"
+  },
+  {
+   "id": "satisfaction_vie",
+   "ok": true,
+   "observations": 7,
+   "derniere_periode": "2025"
   },
   {
    "id": "taux_depot_bce",

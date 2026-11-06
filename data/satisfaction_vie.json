@@ -1,0 +1,57 @@
+{
+ "meta": {
+  "id": "satisfaction_vie",
+  "nom": "Satisfaction de vie (note moyenne sur 10)",
+  "categorie": "Niveau de vie et bien-être",
+  "organisme": "Commission européenne — Eurostat",
+  "dataset": "ilc_pw01",
+  "unite": "sur 10",
+  "decimales": 1,
+  "perimetre_geographique": "France",
+  "perimetre_institutionnel": "Personnes de 16 ans ou plus, enquête européenne SILC (module bien-être)",
+  "periodicite_observation": "irrégulière : enquête ponctuelle, une année sur quelques-unes",
+  "frequence_publication": "irrégulière",
+  "url_source": "https://ec.europa.eu/eurostat/databrowser/view/ilc_pw01/default/table?lang=en",
+  "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
+  "date_publication": "2026-10-20T23:00:00+0200",
+  "date_collecte": "2026-11-06T17:54:02+00:00",
+  "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_pw01?format=JSON&lang=EN&isced11=TOTAL&sex=T&age=Y_GE16&geo=FR&sinceTimePeriod=2010"
+ },
+ "observations": [
+  {
+   "periode": "2013",
+   "valeur": 7.1,
+   "statut": "drapeau Eurostat « u »"
+  },
+  {
+   "periode": "2018",
+   "valeur": 7.3,
+   "statut": "drapeau Eurostat « u »"
+  },
+  {
+   "periode": "2021",
+   "valeur": 6.8,
+   "statut": "drapeau Eurostat « u »"
+  },
+  {
+   "periode": "2022",
+   "valeur": 7.0,
+   "statut": "rupture de série, drapeau Eurostat « u »"
+  },
+  {
+   "periode": "2023",
+   "valeur": 7.1,
+   "statut": "drapeau Eurostat « u »"
+  },
+  {
+   "periode": "2024",
+   "valeur": 7.1,
+   "statut": "drapeau Eurostat « u »"
+  },
+  {
+   "periode": "2025",
+   "valeur": 7.1,
+   "statut": "drapeau Eurostat « u »"
+  }
+ ]
+}

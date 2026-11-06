@@ -1,5 +1,5 @@
 {
- "genere": "2026-11-06T16:38:47+00:00",
+ "genere": "2026-11-06T17:54:02+00:00",
  "series": [
   {
    "id": "dette_publique_pib",
@@ -16,7 +16,7 @@
    "url_source": "https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1/default/table?lang=en",
    "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
    "date_publication": "2026-10-21T11:00:00+0200",
-   "date_collecte": "2026-11-06T16:38:47+00:00",
+   "date_collecte": "2026-11-06T17:54:02+00:00",
    "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10dd_edpt1?format=JSON&lang=EN&na_item=GD&sector=S13&unit=PC_GDP&geo=FR&sinceTimePeriod=2005",
    "derniere": {
     "periode": "2025",
@@ -125,7 +125,7 @@
    "url_source": "https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1/default/table?lang=en",
    "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
    "date_publication": "2026-10-21T11:00:00+0200",
-   "date_collecte": "2026-11-06T16:38:47+00:00",
+   "date_collecte": "2026-11-06T17:54:02+00:00",
    "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10dd_edpt1?format=JSON&lang=EN&na_item=B9&sector=S13&unit=PC_GDP&geo=FR&sinceTimePeriod=2005",
    "derniere": {
     "periode": "2025",
@@ -234,7 +234,7 @@
    "url_source": "https://ec.europa.eu/eurostat/databrowser/view/nama_10_gdp/default/table?lang=en",
    "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
    "date_publication": "2026-11-05T23:00:00+0100",
-   "date_collecte": "2026-11-06T16:38:47+00:00",
+   "date_collecte": "2026-11-06T17:54:02+00:00",
    "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_gdp?format=JSON&lang=EN&na_item=B1GQ&unit=CP_MEUR&geo=FR&sinceTimePeriod=2005",
    "derniere": {
     "periode": "2025",
@@ -343,7 +343,7 @@
    "url_source": "https://ec.europa.eu/eurostat/databrowser/view/namq_10_gdp/default/table?lang=en",
    "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
    "date_publication": "2026-11-05T23:00:00+0100",
-   "date_collecte": "2026-11-06T16:38:47+00:00",
+   "date_collecte": "2026-11-06T17:54:02+00:00",
    "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?format=JSON&lang=EN&na_item=B1GQ&unit=CLV_PCH_PRE&s_adj=SCA&geo=FR&sinceTimePeriod=2015-Q1",
    "derniere": {
     "periode": "2026-Q3",
@@ -518,64 +518,24 @@
    "nom": "Inflation (indice des prix harmonisé, glissement annuel)",
    "categorie": "Économie",
    "organisme": "Commission européenne — Eurostat",
-   "dataset": "prc_hicp_manr",
+   "dataset": "prc_hicp_minr",
    "unite": "%",
    "decimales": 1,
    "perimetre_geographique": "France",
-   "perimetre_institutionnel": "Ensemble des produits (IPCH)",
+   "perimetre_institutionnel": "Ensemble des produits (IPCH, classification ECOICOP version 2 ; remplace le jeu prc_hicp_manr, figé fin 2025)",
    "periodicite_observation": "mensuelle",
    "frequence_publication": "mensuelle",
-   "url_source": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_manr/default/table?lang=en",
+   "url_source": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_minr/default/table?lang=en",
    "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
-   "date_publication": "2026-02-06T23:00:00+0100",
-   "date_collecte": "2026-11-06T16:38:47+00:00",
-   "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_manr?format=JSON&lang=EN&coicop=CP00&unit=RCH_A&geo=FR&sinceTimePeriod=2018-01",
+   "date_publication": "2026-11-04T11:00:00+0100",
+   "date_collecte": "2026-11-06T17:54:02+00:00",
+   "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr?format=JSON&lang=EN&coicop18=TOTAL&unit=RCH_A&geo=FR&sinceTimePeriod=2018-01",
    "derniere": {
-    "periode": "2025-12",
-    "valeur": 0.7,
-    "statut": "publié"
+    "periode": "2026-10",
+    "valeur": 3.8,
+    "statut": "estimé"
    },
    "serie": [
-    {
-     "periode": "2021-01",
-     "valeur": 0.8
-    },
-    {
-     "periode": "2021-02",
-     "valeur": 0.8
-    },
-    {
-     "periode": "2021-03",
-     "valeur": 1.4
-    },
-    {
-     "periode": "2021-04",
-     "valeur": 1.6
-    },
-    {
-     "periode": "2021-05",
-     "valeur": 1.8
-    },
-    {
-     "periode": "2021-06",
-     "valeur": 1.9
-    },
-    {
-     "periode": "2021-07",
-     "valeur": 1.5
-    },
-    {
-     "periode": "2021-08",
-     "valeur": 2.4
-    },
-    {
-     "periode": "2021-09",
-     "valeur": 2.7
-    },
-    {
-     "periode": "2021-10",
-     "valeur": 3.2
-    },
     {
      "periode": "2021-11",
      "valeur": 3.4
@@ -775,6 +735,46 @@
     {
      "periode": "2025-12",
      "valeur": 0.7
+    },
+    {
+     "periode": "2026-01",
+     "valeur": 0.4
+    },
+    {
+     "periode": "2026-02",
+     "valeur": 1.1
+    },
+    {
+     "periode": "2026-03",
+     "valeur": 2.0
+    },
+    {
+     "periode": "2026-04",
+     "valeur": 2.5
+    },
+    {
+     "periode": "2026-05",
+     "valeur": 2.8
+    },
+    {
+     "periode": "2026-06",
+     "valeur": 2.0
+    },
+    {
+     "periode": "2026-07",
+     "valeur": 2.4
+    },
+    {
+     "periode": "2026-08",
+     "valeur": 2.6
+    },
+    {
+     "periode": "2026-09",
+     "valeur": 3.4
+    },
+    {
+     "periode": "2026-10",
+     "valeur": 3.8
     }
    ]
   },
@@ -793,7 +793,7 @@
    "url_source": "https://ec.europa.eu/eurostat/databrowser/view/une_rt_m/default/table?lang=en",
    "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
    "date_publication": "2026-11-05T23:00:00+0100",
-   "date_collecte": "2026-11-06T16:38:47+00:00",
+   "date_collecte": "2026-11-06T17:54:02+00:00",
    "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_m?format=JSON&lang=EN&s_adj=SA&age=TOTAL&unit=PC_ACT&sex=T&geo=FR&sinceTimePeriod=2018-01",
    "derniere": {
     "periode": "2026-09",
@@ -1044,6 +1044,382 @@
    ]
   },
   {
+   "id": "revenu_reel_menages",
+   "nom": "Revenu disponible réel des ménages par habitant (indice, 2008 = 100)",
+   "categorie": "Niveau de vie et bien-être",
+   "organisme": "Commission européenne — Eurostat",
+   "dataset": "tepsr_wc310",
+   "unite": "indice 2008 = 100",
+   "decimales": 1,
+   "perimetre_geographique": "France",
+   "perimetre_institutionnel": "Ménages et institutions sans but lucratif au service des ménages, en termes réels ; approximation du pouvoir d'achat (l'Insee publie une mesure par unité de consommation, à ajouter plus tard)",
+   "periodicite_observation": "annuelle",
+   "frequence_publication": "annuelle (avec révisions)",
+   "url_source": "https://ec.europa.eu/eurostat/databrowser/view/tepsr_wc310/default/table?lang=en",
+   "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
+   "date_publication": "2026-10-29T23:00:00+0100",
+   "date_collecte": "2026-11-06T17:54:02+00:00",
+   "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tepsr_wc310?format=JSON&lang=EN&geo=FR",
+   "derniere": {
+    "periode": "2025",
+    "valeur": 112.34,
+    "statut": "provisoire"
+   },
+   "serie": [
+    {
+     "periode": "2005",
+     "valeur": 95.18
+    },
+    {
+     "periode": "2006",
+     "valeur": 97.52
+    },
+    {
+     "periode": "2007",
+     "valeur": 100.04
+    },
+    {
+     "periode": "2008",
+     "valeur": 100.0
+    },
+    {
+     "periode": "2009",
+     "valeur": 101.38
+    },
+    {
+     "periode": "2010",
+     "valeur": 102.54
+    },
+    {
+     "periode": "2011",
+     "valeur": 102.41
+    },
+    {
+     "periode": "2012",
+     "valeur": 101.71
+    },
+    {
+     "periode": "2013",
+     "valeur": 100.28
+    },
+    {
+     "periode": "2014",
+     "valeur": 101.11
+    },
+    {
+     "periode": "2015",
+     "valeur": 101.64
+    },
+    {
+     "periode": "2016",
+     "valeur": 102.77
+    },
+    {
+     "periode": "2017",
+     "valeur": 104.16
+    },
+    {
+     "periode": "2018",
+     "valeur": 104.62
+    },
+    {
+     "periode": "2019",
+     "valeur": 106.84
+    },
+    {
+     "periode": "2020",
+     "valeur": 106.51
+    },
+    {
+     "periode": "2021",
+     "valeur": 109.83
+    },
+    {
+     "periode": "2022",
+     "valeur": 109.98
+    },
+    {
+     "periode": "2023",
+     "valeur": 110.81
+    },
+    {
+     "periode": "2024",
+     "valeur": 113.18
+    },
+    {
+     "periode": "2025",
+     "valeur": 112.34
+    }
+   ]
+  },
+  {
+   "id": "gini_revenus",
+   "nom": "Inégalités de revenus : coefficient de Gini",
+   "categorie": "Niveau de vie et bien-être",
+   "organisme": "Commission européenne — Eurostat",
+   "dataset": "ilc_di12",
+   "unite": "sur 100 (0 = égalité parfaite)",
+   "decimales": 1,
+   "perimetre_geographique": "France",
+   "perimetre_institutionnel": "Revenu disponible équivalent des ménages, enquête européenne SILC",
+   "periodicite_observation": "annuelle",
+   "frequence_publication": "annuelle (enquête SILC)",
+   "url_source": "https://ec.europa.eu/eurostat/databrowser/view/ilc_di12/default/table?lang=en",
+   "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
+   "date_publication": "2026-11-06T11:00:00+0100",
+   "date_collecte": "2026-11-06T17:54:02+00:00",
+   "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_di12?format=JSON&lang=EN&age=TOTAL&statinfo=GINI_HND&geo=FR&sinceTimePeriod=2010",
+   "derniere": {
+    "periode": "2025",
+    "valeur": 30.4,
+    "statut": "publié"
+   },
+   "serie": [
+    {
+     "periode": "2010",
+     "valeur": 29.8
+    },
+    {
+     "periode": "2011",
+     "valeur": 30.8
+    },
+    {
+     "periode": "2012",
+     "valeur": 30.5
+    },
+    {
+     "periode": "2013",
+     "valeur": 30.1
+    },
+    {
+     "periode": "2014",
+     "valeur": 29.2
+    },
+    {
+     "periode": "2015",
+     "valeur": 29.2
+    },
+    {
+     "periode": "2016",
+     "valeur": 29.3
+    },
+    {
+     "periode": "2017",
+     "valeur": 28.8
+    },
+    {
+     "periode": "2018",
+     "valeur": 28.5
+    },
+    {
+     "periode": "2019",
+     "valeur": 29.2
+    },
+    {
+     "periode": "2020",
+     "valeur": 29.2
+    },
+    {
+     "periode": "2021",
+     "valeur": 29.3
+    },
+    {
+     "periode": "2022",
+     "valeur": 29.8
+    },
+    {
+     "periode": "2023",
+     "valeur": 29.7
+    },
+    {
+     "periode": "2024",
+     "valeur": 30.0
+    },
+    {
+     "periode": "2025",
+     "valeur": 30.4
+    }
+   ]
+  },
+  {
+   "id": "esperance_vie_naissance",
+   "nom": "Espérance de vie à la naissance (femmes et hommes)",
+   "categorie": "Niveau de vie et bien-être",
+   "organisme": "Commission européenne — Eurostat",
+   "dataset": "demo_mlexpec",
+   "unite": "années",
+   "decimales": 1,
+   "perimetre_geographique": "France",
+   "perimetre_institutionnel": "Ensemble de la population",
+   "periodicite_observation": "annuelle",
+   "frequence_publication": "annuelle (données provisoires puis révisées)",
+   "url_source": "https://ec.europa.eu/eurostat/databrowser/view/demo_mlexpec/default/table?lang=en",
+   "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
+   "date_publication": "2026-09-25T23:00:00+0200",
+   "date_collecte": "2026-11-06T17:54:02+00:00",
+   "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_mlexpec?format=JSON&lang=EN&sex=T&age=Y_LT1&geo=FR&sinceTimePeriod=2000",
+   "derniere": {
+    "periode": "2024",
+    "valeur": 83.0,
+    "statut": "provisoire"
+   },
+   "serie": [
+    {
+     "periode": "2000",
+     "valeur": 79.2
+    },
+    {
+     "periode": "2001",
+     "valeur": 79.3
+    },
+    {
+     "periode": "2002",
+     "valeur": 79.4
+    },
+    {
+     "periode": "2003",
+     "valeur": 79.3
+    },
+    {
+     "periode": "2004",
+     "valeur": 80.3
+    },
+    {
+     "periode": "2005",
+     "valeur": 80.3
+    },
+    {
+     "periode": "2006",
+     "valeur": 80.9
+    },
+    {
+     "periode": "2007",
+     "valeur": 81.3
+    },
+    {
+     "periode": "2008",
+     "valeur": 81.4
+    },
+    {
+     "periode": "2009",
+     "valeur": 81.5
+    },
+    {
+     "periode": "2010",
+     "valeur": 81.8
+    },
+    {
+     "periode": "2011",
+     "valeur": 82.3
+    },
+    {
+     "periode": "2012",
+     "valeur": 82.1
+    },
+    {
+     "periode": "2013",
+     "valeur": 82.4
+    },
+    {
+     "periode": "2014",
+     "valeur": 82.4
+    },
+    {
+     "periode": "2015",
+     "valeur": 82.1
+    },
+    {
+     "periode": "2016",
+     "valeur": 82.4
+    },
+    {
+     "periode": "2017",
+     "valeur": 82.4
+    },
+    {
+     "periode": "2018",
+     "valeur": 82.6
+    },
+    {
+     "periode": "2019",
+     "valeur": 82.7
+    },
+    {
+     "periode": "2020",
+     "valeur": 82.2
+    },
+    {
+     "periode": "2021",
+     "valeur": 82.2
+    },
+    {
+     "periode": "2022",
+     "valeur": 82.2
+    },
+    {
+     "periode": "2023",
+     "valeur": 82.9
+    },
+    {
+     "periode": "2024",
+     "valeur": 83.0
+    }
+   ]
+  },
+  {
+   "id": "satisfaction_vie",
+   "nom": "Satisfaction de vie (note moyenne sur 10)",
+   "categorie": "Niveau de vie et bien-être",
+   "organisme": "Commission européenne — Eurostat",
+   "dataset": "ilc_pw01",
+   "unite": "sur 10",
+   "decimales": 1,
+   "perimetre_geographique": "France",
+   "perimetre_institutionnel": "Personnes de 16 ans ou plus, enquête européenne SILC (module bien-être)",
+   "periodicite_observation": "irrégulière : enquête ponctuelle, une année sur quelques-unes",
+   "frequence_publication": "irrégulière",
+   "url_source": "https://ec.europa.eu/eurostat/databrowser/view/ilc_pw01/default/table?lang=en",
+   "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
+   "date_publication": "2026-10-20T23:00:00+0200",
+   "date_collecte": "2026-11-06T17:54:02+00:00",
+   "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_pw01?format=JSON&lang=EN&isced11=TOTAL&sex=T&age=Y_GE16&geo=FR&sinceTimePeriod=2010",
+   "derniere": {
+    "periode": "2025",
+    "valeur": 7.1,
+    "statut": "drapeau Eurostat « u »"
+   },
+   "serie": [
+    {
+     "periode": "2013",
+     "valeur": 7.1
+    },
+    {
+     "periode": "2018",
+     "valeur": 7.3
+    },
+    {
+     "periode": "2021",
+     "valeur": 6.8
+    },
+    {
+     "periode": "2022",
+     "valeur": 7.0
+    },
+    {
+     "periode": "2023",
+     "valeur": 7.1
+    },
+    {
+     "periode": "2024",
+     "valeur": 7.1
+    },
+    {
+     "periode": "2025",
+     "valeur": 7.1
+    }
+   ]
+  },
+  {
    "id": "taux_depot_bce",
    "nom": "Taux de la facilité de dépôt de la BCE",
    "categorie": "Taux et changes",
@@ -1054,12 +1430,13 @@
    "decimales": 2,
    "perimetre_geographique": "Zone euro",
    "perimetre_institutionnel": "Taux directeur de la BCE",
-   "periodicite_observation": "quotidienne ouvrée",
-   "frequence_publication": "à chaque décision de politique monétaire",
+   "periodicite_observation": "à chaque décision de politique monétaire",
+   "libelle_periode": "en vigueur depuis le",
+   "frequence_publication": "à chaque décision de politique monétaire (valeur maintenue entre deux décisions)",
    "url_source": "https://data.ecb.europa.eu/data/datasets/FM",
    "licence": "Conditions de réutilisation de la BCE : mention de la source (à confirmer série par série)",
    "date_publication": null,
-   "date_collecte": "2026-11-06T16:38:47+00:00",
+   "date_collecte": "2026-11-06T17:54:02+00:00",
    "url_requete": "https://data-api.ecb.europa.eu/service/data/FM/B.U2.EUR.4F.KR.DFR.LEV?format=csvdata&lastNObservations=500",
    "derniere": {
     "periode": "2026-09-16",
@@ -1320,12 +1697,13 @@
    "decimales": 2,
    "perimetre_geographique": "Zone euro",
    "perimetre_institutionnel": "Taux directeur de la BCE",
-   "periodicite_observation": "quotidienne ouvrée",
-   "frequence_publication": "à chaque décision de politique monétaire",
+   "periodicite_observation": "à chaque décision de politique monétaire",
+   "libelle_periode": "en vigueur depuis le",
+   "frequence_publication": "à chaque décision de politique monétaire (valeur maintenue entre deux décisions)",
    "url_source": "https://data.ecb.europa.eu/data/datasets/FM",
    "licence": "Conditions de réutilisation de la BCE : mention de la source (à confirmer série par série)",
    "date_publication": null,
-   "date_collecte": "2026-11-06T16:38:47+00:00",
+   "date_collecte": "2026-11-06T17:54:02+00:00",
    "url_requete": "https://data-api.ecb.europa.eu/service/data/FM/B.U2.EUR.4F.KR.MRR_FR.LEV?format=csvdata&lastNObservations=500",
    "derniere": {
     "periode": "2026-09-16",
@@ -1543,7 +1921,7 @@
    "url_source": "https://data.ecb.europa.eu/data/datasets/IRS",
    "licence": "Conditions de réutilisation de la BCE : mention de la source (à confirmer série par série)",
    "date_publication": null,
-   "date_collecte": "2026-11-06T16:38:47+00:00",
+   "date_collecte": "2026-11-06T17:54:02+00:00",
    "url_requete": "https://data-api.ecb.europa.eu/service/data/IRS/M.FR.L.L40.CI.0000.EUR.N.Z?format=csvdata&lastNObservations=120",
    "derniere": {
     "periode": "2026-09",
@@ -1809,7 +2187,7 @@
    "url_source": "https://data.ecb.europa.eu/data/datasets/EXR",
    "licence": "Conditions de réutilisation de la BCE : mention de la source (à confirmer série par série)",
    "date_publication": null,
-   "date_collecte": "2026-11-06T16:38:47+00:00",
+   "date_collecte": "2026-11-06T17:54:02+00:00",
    "url_requete": "https://data-api.ecb.europa.eu/service/data/EXR/D.USD.EUR.SP00.A?format=csvdata&lastNObservations=120",
    "derniere": {
     "periode": "2026-11-06",
