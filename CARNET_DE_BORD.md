@@ -7,7 +7,7 @@ Ce fichier retrace toutes les opérations effectuées, pour pouvoir reprendre le
 - Étape en cours : étape 1b — ajout des sources françaises (Insee d'abord).
 - Dépôt : public (pour la page GitHub Pages). Passage en privé possible plus tard.
 - Étape 1a terminée : 15 séries sur 15 collectées et affichées (Eurostat, BCE).
-- Étape 1b : lecteur Insee (BDM) validé par la collecte réelle du 7 novembre, 2 séries configurées (IPCH et IPC Insee, 17 séries au total). Pouvoir d'achat par unité de consommation : idBank introuvable, mis de côté.
+- Étape 1b : lecteur Insee (BDM) validé par la collecte réelle du 7 novembre, 2 séries Insee validées en réel (IPCH et IPC, 17 séries au total, 17 en succès). Pouvoir d'achat par unité de consommation : idBank introuvable, mis de côté.
 - Rien de simulé pour l'instant.
 
 ## Journal
@@ -95,12 +95,20 @@ Ce fichier retrace toutes les opérations effectuées, pour pouvoir reprendre le
 - Série ajoutée : `inflation_ipc_insee`, idBank 011814632, tirée d'une liste de résultats de Perplexity (titre de page lu : « Indice des prix à la consommation - Base 2025 - Glissement annuel - Ensemble des ménages - France - Nomenclature Coicop : 00 - Ensemble »), **non vérifiée par une vraie réponse de l'API**. Attendus à la prochaine collecte : titre contenant « glissement annuel » et « base 2025 », sans « harmonisé » ; dernier mois publié proche de 3,4 pour octobre 2026 si l'Insee l'a déjà mis en base, sinon septembre. Si la série échoue, le message d'erreur donnera le titre reçu.
 - Data Économie : la recherche web montre de nombreux jeux de données distincts par année (LFI, projet de LFI, exécution par ministère, comptes spéciaux), pas une série unique. Choix des jeux à faire avec une source fiable avant d'écrire du code.
 
+### 2026-11-07 (matin, fin) — Indice national validé, Data Économie repéré, pause
+
+- Collecte manuelle de l'utilisateur à 9 h 37 (heure de Paris) : 17 séries sur 17 en succès. `inflation_ipc_insee` : titre reçu « Indice des prix à la consommation - Base 2025 - Glissement annuel - Ensemble des ménages - France - Nomenclature Coicop : 00 - Ensemble » (conforme), dernière période 2026-10 à 3,4 (statut provisoire, publication du 30 octobre 2026), septembre à 3,1. L'idBank 011814632 est validé. Les titres des deux séries Insee sont aussi enregistrés en français et en anglais (`titre_insee`), ce qui confirme au passage que l'idBank 011812232 est bien l'IPCH.
+- Point à surveiller : l'IPC national contient déjà octobre (provisoire, 30 octobre) alors que l'IPCH de l'Insee s'arrête à septembre (mise à jour du 15 octobre). L'hypothèse « la BDM ne reçoit l'IPCH qu'avec les résultats définitifs » reste à confirmer après le 13 novembre 2026.
+- Pause du développement demandée par l'utilisateur (9 h 38). Aucune ligne de code écrite après cette demande.
+- Réponse de Perplexity sur Data Économie (aucun accès direct possible depuis l'environnement de développement), à relire avec prudence : l'outil précise lui-même ce qu'il n'a pas pu lire. Éléments : (1) jeu `situations-mensuelles-budgetaires-series-longues`, « situations mensuelles budgétaires de l'État des exercices 2013 à nos jours », fréquence « mensuel », mise à jour affichée le 13 octobre 2026 ; les données semblent être des fichiers joints (xlsx / csv, dont un « series_longues_smb_opendata_2024_20xx ») et non des enregistrements consultables par l'API ; champs, types et licence non lus ; (2) LFI récente : jeu non identifié (seul `loi-de-finances-initiale-pour-2019-lfi-2019` est confirmé, pour 2019) ; (3) exécution 2025 : identifiant `projet-de-loi-relatif-aux-resultats-de-la-gestion-et-portant-approbation-des-comptes-de-lannee-plrg-2025` lu dans une URL de pièce jointe, page non ouverte ; en-tête CSV de `annexe1_etat_ae_2025csv` lu (séparateur « ; », colonnes Mission, Programme, Titre, LFI, LFR, Report_N-1, …, AE_Consommees, Report_N+1) ; (4) `situation-mensuelle-de-l-etat` : publication en PDF, inutilisable pour le collecteur.
+- Conséquence pour la suite : Data Économie ne correspond pas au modèle actuel du collecteur (une série = une requête = des observations datées). Il faudra soit lire des fichiers joints (CSV, éventuellement xlsx), soit traiter ces données comme des tables annuelles pour l'étape 2 (leviers budgétaires). Décision à prendre avec l'utilisateur à la reprise.
+
 ## Questions ouvertes
 
 - GitHub Pages : actif, la page s'ouvre sur iPhone.
 - Insee : idBank de la série « pouvoir d'achat du RDB par unité de consommation » (base 2020) introuvable, mis de côté.
 - Insee : octobre 2026 de l'IPCH à revérifier après le 13 novembre 2026.
-- Insee : confirmer l'idBank 011814632 (indice national) à la prochaine collecte.
-- Étape 1b suivante : Data Économie, AFT, OFGL, Melodi.
+- Insee : l'idBank 011814632 est confirmé (collecte du 7 novembre).
+- Reprise (développement en pause) : Data Économie (format à décider, voir entrée du 7 novembre), puis AFT, OFGL, Melodi.
 - Pauvreté monétaire : résolu (15 séries sur 15 constatées par l'utilisateur au 6 novembre).
 - Le texte de Perplexity contenait « [message 1/20] » : explication reçue (c'est son propre compteur), sans conséquence.
