@@ -66,8 +66,8 @@ Les périmètres comptables restent séparés (dette de l'État ≠ dette des ad
 
 | Source | État | Séries |
 |---|---|---|
-| Insee, BDM (service SDMX direct `bdm.insee.fr`, sans clé) | lecteur écrit (`parse_insee_sdmx`), **en attente de première collecte réelle** | `inflation_ipch_insee` (idBank 011812232) : contrôle de l'IPCH d'Eurostat par une source nationale |
-| Insee, BDM | idBank introuvable à ce jour | pouvoir d'achat du revenu disponible brut par unité de consommation (comptes nationaux annuels, base 2020) |
+| Insee, BDM (service SDMX direct `bdm.insee.fr`, sans clé) | lecteur validé par la collecte réelle du 7 novembre 2026 (`parse_insee_sdmx`) | `inflation_ipch_insee` (idBank 011812232) : contrôle de l'IPCH d'Eurostat par une source nationale |
+| Insee, BDM | idBank introuvable, mis de côté | pouvoir d'achat du revenu disponible brut par unité de consommation (comptes nationaux annuels, base 2020) |
 | Insee Melodi, Data Économie, AFT, OFGL | pas commencé | — |
 
 Le « J+1 » réel ne concerne que quelques familles : taux et changes, énergie, signaux géopolitiques, droit publié. Le reste arrive par paliers, avec sa date de publication.
@@ -110,7 +110,7 @@ Chaque mesure a une fiche : ce qu'elle change, délais légaux, effets en fourch
 - Marchés : pas de pétrole à l'étape 1 (le Brent EIA exige une clé gratuite). Il viendra plus tard, quand le compte EIA sera créé. Pas de gaz en direct : hypothèse de scénario.
 - Première collecte réelle faite : 10 séries sur 10 collectées, filtres Eurostat et clés BCE acceptés. Une série était périmée (inflation, jeu Eurostat figé fin 2025) : basculée sur `prc_hicp_minr`. Les producteurs peuvent changer de jeu de données sans prévenir : d'où le badge « données anciennes ».
 - Reste à confronter à une source indépendante : dette, solde public et PIB 2025 (ordres de grandeur plausibles).
-- Insee : deux IPCH à comparer, celui d'Eurostat et celui de l'Insee (même mesure, deux producteurs). L'indice national (IPC, 3,4 % en octobre 2026) est un autre indicateur que l'IPCH (3,8 %) : l'écart est normal et sourcé (note Insee du 30 octobre 2026). Le format de réponse réel de la BDM n'est pas encore vu : le lecteur XML est écrit d'après la documentation et testé sur un échantillon écrit à la main.
+- Insee : deux IPCH à comparer, celui d'Eurostat et celui de l'Insee (même mesure, deux producteurs). L'indice national (IPC, 3,4 % en octobre 2026) est un autre indicateur que l'IPCH (3,8 %) : l'écart est normal et sourcé (note Insee du 30 octobre 2026). Le lecteur XML a été écrit d'après la documentation puis validé en conditions réelles (120 observations lues, date de mise à jour présente) ; mai à septembre 2026 sont identiques chez Eurostat et chez l'Insee. Le mois le plus récent peut manquer chez l'Insee (voir le carnet de bord du 7 novembre).
 - Niveau de vie : quatre séries sur cinq collectées avec succès (revenu réel des ménages, Gini, espérance de vie, satisfaction de vie). La pauvreté monétaire (`ilc_li02`) attend ses filtres : la dimension `indic_il` n'existe plus, le prochain message d'erreur listera les dimensions réelles. Le revenu réel des ménages d'Eurostat n'est qu'une approximation du pouvoir d'achat.
 
 ## 13. Arborescence du dépôt
