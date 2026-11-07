@@ -7,7 +7,7 @@ Ce fichier retrace toutes les opérations effectuées, pour pouvoir reprendre le
 - Étape en cours : étape 1b — ajout des sources françaises (Insee d'abord).
 - Dépôt : public (pour la page GitHub Pages). Passage en privé possible plus tard.
 - Étape 1a terminée : 15 séries sur 15 collectées et affichées (Eurostat, BCE).
-- Étape 1b : lecteur Insee (BDM) validé par la collecte réelle du 7 novembre, 1 série configurée (IPCH Insee, 16 séries au total). Pouvoir d'achat par unité de consommation : idBank introuvable, mis de côté.
+- Étape 1b : lecteur Insee (BDM) validé par la collecte réelle du 7 novembre, 2 séries configurées (IPCH et IPC Insee, 17 séries au total). Pouvoir d'achat par unité de consommation : idBank introuvable, mis de côté.
 - Rien de simulé pour l'instant.
 
 ## Journal
@@ -85,14 +85,22 @@ Ce fichier retrace toutes les opérations effectuées, pour pouvoir reprendre le
 - Écart constaté : octobre 2026 (3,8, statut « estimé ») figure chez Eurostat mais pas encore chez l'Insee. Hypothèse, non confirmée : la BDM n'ajoute l'IPCH d'octobre qu'avec les résultats définitifs du 13 novembre 2026. À revérifier après cette date ; si octobre n'apparaît toujours pas, chercher la cause (statut ou valeur vide ignorés par le lecteur ?). Mon attente initiale « atteindre 2026-10 » était donc trop optimiste.
 - L'« En clair » de la série a été corrigé : il disait que les deux cartes donnent « le même chiffre » ; il précise maintenant que le dernier mois peut manquer côté Insee.
 - Pouvoir d'achat par unité de consommation : idBank introuvable par la page Insee, par une page tierce, par Perplexity (deuxième demande) et par l'utilisateur dans son navigateur. Mis de côté (décision de l'utilisateur) ; reprendre plus tard, par exemple via le fichier Excel du tableau annuel 1960-2025.
-- Les crédits Perplexity de l'utilisateur sont épuisés jusqu'au 20 novembre (renouvellement) : Hexagone n'en consomme pas (aucune clé ni appel à Perplexity dans le dépôt). Éviter de lui adresser des demandes d'ici là.
+- Les crédits « Computer » de Perplexity sont épuisés jusqu'au 20 novembre, mais l'utilisateur ne s'en sert pas : sa recherche normale reste utilisable, donc Perplexity peut être sollicité. Hexagone ne consomme aucun crédit (aucune clé ni appel à Perplexity dans le dépôt).
 - Fichiers de suivi : ce carnet et ARCHITECTURE.md mis à jour.
+
+### 2026-11-07 (matin, suite) — Indice national et vérification des titres
+
+- Décisions de l'utilisateur : ajouter l'indice national des prix (IPC) ; Data Économie en prochaine source ; Perplexity sollicitable (ses crédits « Computer » épuisés ne concernent pas sa recherche normale).
+- Code : le collecteur enregistre désormais le titre déclaré par l'Insee pour chaque série (`titre_insee` dans les métadonnées, attributs TITLE*). Une série peut déclarer `titre_attendu` / `titre_interdit` dans `sources.json` : si le titre reçu ne correspond pas, la série échoue en citant le titre reçu, au lieu d'afficher le mauvais indicateur. Si la réponse ne contient aucun titre alors qu'une vérification est demandée, la série échoue aussi (avec ce constat). 5 tests ajoutés, 27 au total, tous passés.
+- Série ajoutée : `inflation_ipc_insee`, idBank 011814632, tirée d'une liste de résultats de Perplexity (titre de page lu : « Indice des prix à la consommation - Base 2025 - Glissement annuel - Ensemble des ménages - France - Nomenclature Coicop : 00 - Ensemble »), **non vérifiée par une vraie réponse de l'API**. Attendus à la prochaine collecte : titre contenant « glissement annuel » et « base 2025 », sans « harmonisé » ; dernier mois publié proche de 3,4 pour octobre 2026 si l'Insee l'a déjà mis en base, sinon septembre. Si la série échoue, le message d'erreur donnera le titre reçu.
+- Data Économie : la recherche web montre de nombreux jeux de données distincts par année (LFI, projet de LFI, exécution par ministère, comptes spéciaux), pas une série unique. Choix des jeux à faire avec une source fiable avant d'écrire du code.
 
 ## Questions ouvertes
 
 - GitHub Pages : actif, la page s'ouvre sur iPhone.
 - Insee : idBank de la série « pouvoir d'achat du RDB par unité de consommation » (base 2020) introuvable, mis de côté.
 - Insee : octobre 2026 de l'IPCH à revérifier après le 13 novembre 2026.
+- Insee : confirmer l'idBank 011814632 (indice national) à la prochaine collecte.
 - Étape 1b suivante : Data Économie, AFT, OFGL, Melodi.
 - Pauvreté monétaire : résolu (15 séries sur 15 constatées par l'utilisateur au 6 novembre).
 - Le texte de Perplexity contenait « [message 1/20] » : explication reçue (c'est son propre compteur), sans conséquence.

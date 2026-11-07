@@ -290,6 +290,39 @@ class TestInsee(unittest.TestCase):
             self.assertEqual(doc["meta"]["idbank"], "011812232")
             self.assertEqual(doc["meta"]["date_publication"], "2026-10-30T08:45:00")
             self.assertEqual(doc["observations"][-1]["periode"], "2026-10")
+            self.assertEqual(doc["meta"]["titre_insee"], "IPCH - glissement annuel")
+
+    def _collecte(self, cfg, xml):
+        with tempfile.TemporaryDirectory() as tmp:
+            return collect.collect_all({"series": [cfg]}, lambda url: xml, Path(tmp), self.NOW)
+
+    def test_titre_conforme_accepte(self):
+        cfg = dict(self.CFG, titre_attendu=["glissement annuel"], titre_interdit=["national"])
+        ok, results = self._collecte(cfg, INSEE_OK)
+        self.assertEqual(ok, 1, results)
+
+    def test_titre_non_conforme_refuse_avec_le_titre_recu(self):
+        cfg = dict(self.CFG, titre_attendu=["base 2025"])
+        ok, results = self._collecte(cfg, INSEE_OK)
+        self.assertEqual(ok, 0)
+        self.assertIn("IPCH - glissement annuel", str(results))
+
+    def test_fragment_interdit_refuse(self):
+        cfg = dict(self.CFG, titre_interdit=["IPCH"])
+        ok, _ = self._collecte(cfg, INSEE_OK)
+        self.assertEqual(ok, 0)
+
+    def test_titre_absent_refuse_si_verification_demandee(self):
+        cfg = dict(self.CFG, titre_attendu=["x"])
+        sans_titre = '<S><Series IDBANK="1"><Obs TIME_PERIOD="2025" OBS_VALUE="1"/></Series></S>'
+        ok, results = self._collecte(cfg, sans_titre)
+        self.assertEqual(ok, 0)
+        self.assertIn("aucun titre", str(results))
+
+    def test_sans_verification_demandee_titre_absent_tolere(self):
+        sans_titre = '<S><Series IDBANK="1"><Obs TIME_PERIOD="2025" OBS_VALUE="1"/></Series></S>'
+        ok, _ = self._collecte(self.CFG, sans_titre)
+        self.assertEqual(ok, 1)
 
 
 if __name__ == "__main__":

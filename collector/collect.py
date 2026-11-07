@@ -34,7 +34,7 @@ ECB_BASE = "https://data-api.ecb.europa.eu/service/data/"
 INSEE_BDM_BASE = "https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/"
 
 # Clés de configuration purement techniques, non reprises dans les métadonnées.
-TECH_KEYS = {"params", "since", "derniers", "keep", "source"}
+TECH_KEYS = {"params", "since", "derniers", "keep", "source", "titre_attendu", "titre_interdit"}
 SPARK_POINTS = 60
 
 
@@ -277,6 +277,43 @@ def parse_insee_sdmx(text):
     return observations, updated or None
 
 
+def insee_series_titles(text):
+    """Titres déclarés par l'Insee pour la série (attributs dont le nom commence
+    par « TITLE »), tels que reçus : {nom_de_l_attribut: titre}. Vide si la
+    réponse n'en contient pas. Sert à vérifier qu'un idBank désigne bien la
+    série voulue, puisqu'aucun accès direct à l'API n'est possible en dev."""
+    try:
+        root = ET.fromstring(text)
+    except ET.ParseError:
+        return {}
+    for element in root.iter():
+        if _local_name(element.tag) == "Series":
+            return {k: v for k, v in _insee_attrs(element).items() if k.startswith("TITLE") and v}
+    return {}
+
+
+def check_insee_title(cfg, titles):
+    """Refuse la série si son titre ne contient pas les fragments attendus (ou
+    contient un fragment interdit). Sans configuration, ne vérifie rien."""
+    attendus = cfg.get("titre_attendu") or []
+    interdits = cfg.get("titre_interdit") or []
+    if not attendus and not interdits:
+        return
+    if not titles:
+        raise ValueError(
+            "idBank %s : la réponse ne donne aucun titre (attributs TITLE*) pour vérifier la série"
+            % cfg["idbank"]
+        )
+    titre = " | ".join(titles.values()).lower()
+    manquants = [f for f in attendus if f.lower() not in titre]
+    presents = [f for f in interdits if f.lower() in titre]
+    if manquants or presents:
+        raise ValueError(
+            "idBank %s ne désigne pas la série voulue : titre reçu « %s » ; fragments absents : %s ; fragments interdits présents : %s"
+            % (cfg["idbank"], " | ".join(titles.values()), manquants or "aucun", presents or "aucun")
+        )
+
+
 # --------------------------------------------------------------------------
 # Collecte
 # --------------------------------------------------------------------------
@@ -316,6 +353,8 @@ def collect_series(cfg, fetch, now):
     if cfg["source"] == "eurostat":
         observations, updated = parse_jsonstat(json.loads(text))
     elif cfg["source"] == "insee":
+        titles = insee_series_titles(text)
+        check_insee_title(cfg, titles)
         observations, updated = parse_insee_sdmx(text)
     else:
         observations, updated = parse_ecb_csv(text), None
@@ -325,6 +364,8 @@ def collect_series(cfg, fetch, now):
     observations = observations[-int(cfg.get("keep", 120)):]
 
     meta = {k: v for k, v in cfg.items() if k not in TECH_KEYS}
+    if cfg["source"] == "insee" and titles:
+        meta["titre_insee"] = " | ".join(titles.values())
     meta["date_publication"] = updated
     meta["date_collecte"] = now.isoformat(timespec="seconds")
     meta["url_requete"] = url

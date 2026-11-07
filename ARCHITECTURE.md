@@ -67,6 +67,7 @@ Les périmètres comptables restent séparés (dette de l'État ≠ dette des ad
 | Source | État | Séries |
 |---|---|---|
 | Insee, BDM (service SDMX direct `bdm.insee.fr`, sans clé) | lecteur validé par la collecte réelle du 7 novembre 2026 (`parse_insee_sdmx`) | `inflation_ipch_insee` (idBank 011812232) : contrôle de l'IPCH d'Eurostat par une source nationale |
+| Insee, BDM | `inflation_ipc_insee` (idBank 011814632) : indice national, **non vérifié**, protégé par une vérification du titre (`titre_attendu`, `titre_interdit`) | indice national des prix à côté de l'IPCH, pour rendre visible l'écart entre les deux |
 | Insee, BDM | idBank introuvable, mis de côté | pouvoir d'achat du revenu disponible brut par unité de consommation (comptes nationaux annuels, base 2020) |
 | Insee Melodi, Data Économie, AFT, OFGL | pas commencé | — |
 
