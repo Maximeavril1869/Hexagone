@@ -14,7 +14,7 @@
   "url_source": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_minr/default/table?lang=en",
   "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
   "date_publication": "2026-11-04T11:00:00+0100",
-  "date_collecte": "2026-11-08T11:54:45+00:00",
+  "date_collecte": "2026-11-09T13:51:49+00:00",
   "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr?format=JSON&lang=EN&coicop18=TOTAL&unit=RCH_A&geo=FR&sinceTimePeriod=2018-01"
  },
  "observations": [
