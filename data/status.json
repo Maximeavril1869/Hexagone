@@ -1,5 +1,5 @@
 {
- "execution": "2026-11-09T13:51:49+00:00",
+ "execution": "2026-11-10T13:27:16+00:00",
  "resultats": [
   {
    "id": "dette_publique_pib",
@@ -101,7 +101,7 @@
    "id": "eur_usd",
    "ok": true,
    "observations": 120,
-   "derniere_periode": "2026-11-06"
+   "derniere_periode": "2026-11-09"
   }
  ]
 }
