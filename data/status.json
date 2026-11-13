@@ -1,5 +1,5 @@
 {
- "execution": "2026-11-12T13:44:37+00:00",
+ "execution": "2026-11-13T13:04:32+00:00",
  "resultats": [
   {
    "id": "dette_publique_pib",
@@ -35,7 +35,7 @@
    "id": "inflation_ipch_insee",
    "ok": true,
    "observations": 120,
-   "derniere_periode": "2026-09"
+   "derniere_periode": "2026-10"
   },
   {
    "id": "inflation_ipc_insee",
@@ -101,7 +101,7 @@
    "id": "eur_usd",
    "ok": true,
    "observations": 120,
-   "derniere_periode": "2026-11-11"
+   "derniere_periode": "2026-11-12"
   }
  ]
 }

@@ -14,16 +14,11 @@
   "url_source": "https://www.insee.fr/fr/statistiques/serie/011812232",
   "licence": "Réutilisation avec mention de la source (Insee) ; condition exacte à confirmer série par série",
   "titre_insee": "Indice des prix à la consommation harmonisé - Base 2025 - Glissement annuel - Ensemble des ménages - France - Nomenclature Coicop : 00 - Ensemble | HICP - Reference year 2025=100 - Year-on-year change - All households - France - COICOP classification: 00 - Total",
-  "date_publication": "2026-10-15",
-  "date_collecte": "2026-11-12T13:44:37+00:00",
+  "date_publication": "2026-11-13",
+  "date_collecte": "2026-11-13T13:04:32+00:00",
   "url_requete": "https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/011812232?lastNObservations=120"
  },
  "observations": [
-  {
-   "periode": "2016-10",
-   "valeur": 0.5,
-   "statut": "publié"
-  },
   {
    "periode": "2016-11",
    "valeur": 0.7,
@@ -617,6 +612,11 @@
   {
    "periode": "2026-09",
    "valeur": 3.4,
+   "statut": "publié"
+  },
+  {
+   "periode": "2026-10",
+   "valeur": 3.7,
    "statut": "publié"
   }
  ]
