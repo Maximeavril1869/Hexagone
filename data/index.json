@@ -1,5 +1,5 @@
 {
- "genere": "2026-11-13T13:04:32+00:00",
+ "genere": "2026-11-14T12:09:36+00:00",
  "series": [
   {
    "id": "dette_publique_pib",
@@ -16,7 +16,7 @@
    "url_source": "https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1/default/table?lang=en",
    "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
    "date_publication": "2026-10-21T11:00:00+0200",
-   "date_collecte": "2026-11-13T13:04:32+00:00",
+   "date_collecte": "2026-11-14T12:09:36+00:00",
    "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10dd_edpt1?format=JSON&lang=EN&na_item=GD&sector=S13&unit=PC_GDP&geo=FR&sinceTimePeriod=2005",
    "derniere": {
     "periode": "2025",
@@ -125,7 +125,7 @@
    "url_source": "https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1/default/table?lang=en",
    "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
    "date_publication": "2026-10-21T11:00:00+0200",
-   "date_collecte": "2026-11-13T13:04:32+00:00",
+   "date_collecte": "2026-11-14T12:09:36+00:00",
    "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10dd_edpt1?format=JSON&lang=EN&na_item=B9&sector=S13&unit=PC_GDP&geo=FR&sinceTimePeriod=2005",
    "derniere": {
     "periode": "2025",
@@ -234,7 +234,7 @@
    "url_source": "https://ec.europa.eu/eurostat/databrowser/view/nama_10_gdp/default/table?lang=en",
    "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
    "date_publication": "2026-11-11T23:00:00+0100",
-   "date_collecte": "2026-11-13T13:04:32+00:00",
+   "date_collecte": "2026-11-14T12:09:36+00:00",
    "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_gdp?format=JSON&lang=EN&na_item=B1GQ&unit=CP_MEUR&geo=FR&sinceTimePeriod=2005",
    "derniere": {
     "periode": "2025",
@@ -343,7 +343,7 @@
    "url_source": "https://ec.europa.eu/eurostat/databrowser/view/namq_10_gdp/default/table?lang=en",
    "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
    "date_publication": "2026-11-13T11:00:00+0100",
-   "date_collecte": "2026-11-13T13:04:32+00:00",
+   "date_collecte": "2026-11-14T12:09:36+00:00",
    "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?format=JSON&lang=EN&na_item=B1GQ&unit=CLV_PCH_PRE&s_adj=SCA&geo=FR&sinceTimePeriod=2015-Q1",
    "derniere": {
     "periode": "2026-Q3",
@@ -528,7 +528,7 @@
    "url_source": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_minr/default/table?lang=en",
    "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
    "date_publication": "2026-11-04T11:00:00+0100",
-   "date_collecte": "2026-11-13T13:04:32+00:00",
+   "date_collecte": "2026-11-14T12:09:36+00:00",
    "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr?format=JSON&lang=EN&coicop18=TOTAL&unit=RCH_A&geo=FR&sinceTimePeriod=2018-01",
    "derniere": {
     "periode": "2026-10",
@@ -794,7 +794,7 @@
    "licence": "Réutilisation avec mention de la source (Insee) ; condition exacte à confirmer série par série",
    "titre_insee": "Indice des prix à la consommation harmonisé - Base 2025 - Glissement annuel - Ensemble des ménages - France - Nomenclature Coicop : 00 - Ensemble | HICP - Reference year 2025=100 - Year-on-year change - All households - France - COICOP classification: 00 - Total",
    "date_publication": "2026-11-13",
-   "date_collecte": "2026-11-13T13:04:32+00:00",
+   "date_collecte": "2026-11-14T12:09:36+00:00",
    "url_requete": "https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/011812232?lastNObservations=120",
    "derniere": {
     "periode": "2026-10",
@@ -1060,7 +1060,7 @@
    "licence": "Réutilisation avec mention de la source (Insee) ; condition exacte à confirmer série par série",
    "titre_insee": "Indice des prix à la consommation - Base 2025 - Glissement annuel - Ensemble des ménages - France - Nomenclature Coicop : 00 - Ensemble | Consumer Price Index - Base 2025 - Year-on-year change - All households - France - COICOP classification: 00 - All items",
    "date_publication": "2026-11-13",
-   "date_collecte": "2026-11-13T13:04:32+00:00",
+   "date_collecte": "2026-11-14T12:09:36+00:00",
    "url_requete": "https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/011814632?lastNObservations=120",
    "derniere": {
     "periode": "2026-10",
@@ -1325,7 +1325,7 @@
    "url_source": "https://ec.europa.eu/eurostat/databrowser/view/une_rt_m/default/table?lang=en",
    "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
    "date_publication": "2026-11-05T23:00:00+0100",
-   "date_collecte": "2026-11-13T13:04:32+00:00",
+   "date_collecte": "2026-11-14T12:09:36+00:00",
    "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_m?format=JSON&lang=EN&s_adj=SA&age=TOTAL&unit=PC_ACT&sex=T&geo=FR&sinceTimePeriod=2018-01",
    "derniere": {
     "periode": "2026-09",
@@ -1590,7 +1590,7 @@
    "url_source": "https://ec.europa.eu/eurostat/databrowser/view/tepsr_wc310/default/table?lang=en",
    "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
    "date_publication": "2026-10-29T23:00:00+0100",
-   "date_collecte": "2026-11-13T13:04:32+00:00",
+   "date_collecte": "2026-11-14T12:09:36+00:00",
    "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tepsr_wc310?format=JSON&lang=EN&geo=FR",
    "derniere": {
     "periode": "2025",
@@ -1699,7 +1699,7 @@
    "url_source": "https://ec.europa.eu/eurostat/databrowser/view/ilc_di12/default/table?lang=en",
    "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
    "date_publication": "2026-11-12T23:00:00+0100",
-   "date_collecte": "2026-11-13T13:04:32+00:00",
+   "date_collecte": "2026-11-14T12:09:36+00:00",
    "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_di12?format=JSON&lang=EN&age=TOTAL&statinfo=GINI_HND&geo=FR&sinceTimePeriod=2010",
    "derniere": {
     "periode": "2025",
@@ -1788,7 +1788,7 @@
    "url_source": "https://ec.europa.eu/eurostat/databrowser/view/ilc_li02/default/table?lang=en",
    "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
    "date_publication": "2026-10-20T11:00:00+0200",
-   "date_collecte": "2026-11-13T13:04:32+00:00",
+   "date_collecte": "2026-11-14T12:09:36+00:00",
    "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_li02?format=JSON&lang=EN&geo=FR&statinfo=MED_EI&unit=PC&rskpovth=B_60&sex=T&age=TOTAL&sinceTimePeriod=2010",
    "derniere": {
     "periode": "2025",
@@ -1876,8 +1876,8 @@
    "frequence_publication": "annuelle (données provisoires puis révisées)",
    "url_source": "https://ec.europa.eu/eurostat/databrowser/view/demo_mlexpec/default/table?lang=en",
    "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
-   "date_publication": "2026-09-25T23:00:00+0200",
-   "date_collecte": "2026-11-13T13:04:32+00:00",
+   "date_publication": "2026-11-13T23:00:00+0100",
+   "date_collecte": "2026-11-14T12:09:36+00:00",
    "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_mlexpec?format=JSON&lang=EN&sex=T&age=Y_LT1&geo=FR&sinceTimePeriod=2000",
    "derniere": {
     "periode": "2024",
@@ -2002,7 +2002,7 @@
    "url_source": "https://ec.europa.eu/eurostat/databrowser/view/ilc_pw01/default/table?lang=en",
    "licence": "Réutilisation libre avec mention de la source (Eurostat), sous réserve des exceptions signalées par le producteur",
    "date_publication": "2026-10-20T23:00:00+0200",
-   "date_collecte": "2026-11-13T13:04:32+00:00",
+   "date_collecte": "2026-11-14T12:09:36+00:00",
    "url_requete": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_pw01?format=JSON&lang=EN&isced11=TOTAL&sex=T&age=Y_GE16&geo=FR&sinceTimePeriod=2010",
    "derniere": {
     "periode": "2025",
@@ -2057,7 +2057,7 @@
    "url_source": "https://data.ecb.europa.eu/data/datasets/FM",
    "licence": "Conditions de réutilisation de la BCE : mention de la source (à confirmer série par série)",
    "date_publication": null,
-   "date_collecte": "2026-11-13T13:04:32+00:00",
+   "date_collecte": "2026-11-14T12:09:36+00:00",
    "url_requete": "https://data-api.ecb.europa.eu/service/data/FM/B.U2.EUR.4F.KR.DFR.LEV?format=csvdata&lastNObservations=500",
    "derniere": {
     "periode": "2026-09-16",
@@ -2324,7 +2324,7 @@
    "url_source": "https://data.ecb.europa.eu/data/datasets/FM",
    "licence": "Conditions de réutilisation de la BCE : mention de la source (à confirmer série par série)",
    "date_publication": null,
-   "date_collecte": "2026-11-13T13:04:32+00:00",
+   "date_collecte": "2026-11-14T12:09:36+00:00",
    "url_requete": "https://data-api.ecb.europa.eu/service/data/FM/B.U2.EUR.4F.KR.MRR_FR.LEV?format=csvdata&lastNObservations=500",
    "derniere": {
     "periode": "2026-09-16",
@@ -2542,7 +2542,7 @@
    "url_source": "https://data.ecb.europa.eu/data/datasets/IRS",
    "licence": "Conditions de réutilisation de la BCE : mention de la source (à confirmer série par série)",
    "date_publication": null,
-   "date_collecte": "2026-11-13T13:04:32+00:00",
+   "date_collecte": "2026-11-14T12:09:36+00:00",
    "url_requete": "https://data-api.ecb.europa.eu/service/data/IRS/M.FR.L.L40.CI.0000.EUR.N.Z?format=csvdata&lastNObservations=120",
    "derniere": {
     "periode": "2026-10",
@@ -2808,18 +2808,14 @@
    "url_source": "https://data.ecb.europa.eu/data/datasets/EXR",
    "licence": "Conditions de réutilisation de la BCE : mention de la source (à confirmer série par série)",
    "date_publication": null,
-   "date_collecte": "2026-11-13T13:04:32+00:00",
+   "date_collecte": "2026-11-14T12:09:36+00:00",
    "url_requete": "https://data-api.ecb.europa.eu/service/data/EXR/D.USD.EUR.SP00.A?format=csvdata&lastNObservations=120",
    "derniere": {
-    "periode": "2026-11-12",
-    "valeur": 1.1081,
+    "periode": "2026-11-13",
+    "valeur": 1.1052,
     "statut": "publié"
    },
    "serie": [
-    {
-     "periode": "2026-08-21",
-     "valeur": 1.1699
-    },
     {
      "periode": "2026-08-24",
      "valeur": 1.1664
@@ -3055,6 +3051,10 @@
     {
      "periode": "2026-11-12",
      "valeur": 1.1081
+    },
+    {
+     "periode": "2026-11-13",
+     "valeur": 1.1052
     }
    ]
   }
