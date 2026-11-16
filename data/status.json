@@ -1,5 +1,5 @@
 {
- "execution": "2026-11-15T12:42:43+00:00",
+ "execution": "2026-11-16T13:36:32+00:00",
  "resultats": [
   {
    "id": "dette_publique_pib",
@@ -81,23 +81,27 @@
   },
   {
    "id": "taux_depot_bce",
-   "ok": false,
-   "erreur": "FetchError : HTTP 503"
+   "ok": true,
+   "observations": 69,
+   "derniere_periode": "2026-09-16"
   },
   {
    "id": "taux_refi_bce",
-   "ok": false,
-   "erreur": "FetchError : HTTP 503"
+   "ok": true,
+   "observations": 48,
+   "derniere_periode": "2026-09-16"
   },
   {
    "id": "taux_long_terme_fr",
-   "ok": false,
-   "erreur": "FetchError : HTTP 503"
+   "ok": true,
+   "observations": 120,
+   "derniere_periode": "2026-10"
   },
   {
    "id": "eur_usd",
-   "ok": false,
-   "erreur": "FetchError : HTTP 503"
+   "ok": true,
+   "observations": 120,
+   "derniere_periode": "2026-11-13"
   }
  ]
 }
