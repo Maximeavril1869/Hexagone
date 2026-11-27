@@ -14,16 +14,11 @@
   "url_source": "https://www.insee.fr/fr/statistiques/serie/011814632",
   "licence": "Réutilisation avec mention de la source (Insee) ; condition exacte à confirmer série par série",
   "titre_insee": "Indice des prix à la consommation - Base 2025 - Glissement annuel - Ensemble des ménages - France - Nomenclature Coicop : 00 - Ensemble | Consumer Price Index - Base 2025 - Year-on-year change - All households - France - COICOP classification: 00 - All items",
-  "date_publication": "2026-11-13",
-  "date_collecte": "2026-11-26T15:09:49+00:00",
+  "date_publication": "2026-11-27",
+  "date_collecte": "2026-11-27T15:01:34+00:00",
   "url_requete": "https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/011814632?lastNObservations=120"
  },
  "observations": [
-  {
-   "periode": "2016-11",
-   "valeur": 0.5,
-   "statut": "publié"
-  },
   {
    "periode": "2016-12",
    "valeur": 0.6,
@@ -618,6 +613,11 @@
    "periode": "2026-10",
    "valeur": 3.4,
    "statut": "publié"
+  },
+  {
+   "periode": "2026-11",
+   "valeur": 2.9,
+   "statut": "provisoire"
   }
  ]
 }
